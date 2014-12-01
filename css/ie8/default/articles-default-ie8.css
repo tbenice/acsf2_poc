@@ -1,0 +1,457 @@
+
+/*  ARTICLES Stylesheet - Default only */
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ ARTICLE TEASER LIST & ARTICLE TAGS TEASER LIST
+
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.teaser-list .media-thumb-item {
+    float: left;
+    margin-right: 30px;
+    width: 160px;
+}
+.page-news .views-row .field-name-body p:last-child,
+.page-taxonomy .views-row .field-name-body p:last-child {
+ 	margin-bottom: 0;
+}
+.page-news .teasers-main-content .teaser-list-row,
+.page-taxonomy .teasers-main-content .teaser-list-row {
+	padding: 30px 0;
+}
+.page-news .teasers-main-content .teaser-list-row h3.title,
+.page-taxonomy .teasers-main-content .teaser-list-row h3.title {
+	font-size: 25px;
+}
+.page-news .article-row .title,
+.page-news .article-row .post-date,
+.page-news .article-row .field-name-body,
+.page-taxonomy .article-row .title,
+.page-taxonomy .article-row .post-date,
+.page-taxonomy .article-row .field-name-body {
+	margin-left: 190px;
+}
+.page-news .teaser-list-row p:last-child,
+.page-taxonomy .teaser-list-row p:last-child {
+	margin-bottom: 0;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ ARTICLE NODE
+
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+/* node sidebar - quotes, media */
+
+.node-sidebar-container {
+	float: right;
+	padding: 0;
+	width: auto;
+}
+.node-sidebar-container .quote-item {
+	margin-bottom: 30px;
+	width: 180px;
+	margin-left: 30px;
+}
+
+/*-------------------------------------------
+
+ ARTICLE PULL QUOTE 
+ 
+--------------------------------------------*/
+
+.node-content-container .quote-item,
+.node-sidebar-container .quote-item {
+	text-align:left;
+	margin-bottom: 30px;
+	padding: 5px;
+	position: relative;
+}
+.node-content-container .quote-item .quote-start,
+.node-sidebar-container .quote-item .quote-start {
+	float: left;
+	font-size: 70px;
+	left: 0;
+	margin-right: 10px;
+	position: relative;
+	top: 14px;
+}
+.node-content-container .quote-item .quote-end,
+.node-sidebar-container .quote-item .quote-end {
+	float: right;
+	font-size: 70px;
+	left: 0;
+	margin-left: 5px;
+	position: relative;
+	top: 5px;
+}
+.node-content-container .quote-body,
+.node-sidebar-container .quote-body {
+	font-size: 20px;
+	line-height: 140%;
+	padding: 0;
+	margin-bottom: 10px;
+	position: relative;
+}
+.node-content-container .quote-body p,
+.node-sidebar-container .quote-body p {
+	margin-bottom: 0;
+}
+
+/*--------------------------------------
+
+ PRODUCT REFERENCES ( "In This Article" block )
+ 
+---------------------------------------*/
+
+#article-nodes-container {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 30px;
+}
+#article-nodes-container .teaser-list-row {
+	overflow: hidden;
+}
+#article-nodes-container .teaser-list-row:first-child {
+	padding-top: 0;
+}
+#article-nodes-container .teaser-list-row:last-child {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+/* product image - container */
+.article-related-node-image {
+	border: 1px solid #aaa;
+	float: left;
+	height: auto;
+	margin-right: 4%;
+	width: 15%;
+}
+
+/* product title - container */
+.article-related-node-product-body,
+.article-related-node-album-body {
+	float: left;
+	width: 47%;
+}
+.article-related-node-product-title,
+.article-related-node-album-title {
+	font-size: 16px;
+}
+
+/* product created date */
+.article-related-node-created-date {
+	font-size: 13px;
+}
+
+/* product price */
+#article-nodes-container .field-commerce-price {
+	font-size: 15px;
+	margin-bottom: 0; /* override from store-global.css */
+}
+
+/* Links - container */
+.article-related-node-links {
+	float: right;
+	margin-left: 4%;
+}
+/* Links - buttons */
+a.related-node-album-view-link,
+a.related-node-album-buy-link,
+a.related-node-product-view-link,
+a.related-node-product-buy-link {
+	background-color: #444;
+	border-radius: 30px 30px 30px 30px;
+	display: block;
+	float: left;
+	height: 0;
+	margin-right: 10px;
+	overflow: hidden;
+	padding-top: 35px;
+	width: 35px;
+	position: relative;
+	color: #fff;
+}
+/* buy link only */
+a.related-node-album-buy-link,
+a.related-node-product-buy-link {
+	margin-right: 0;
+}
+
+/* Hover State */
+a.related-node-album-view-link:hover,
+a.related-node-album-buy-link:hover,
+a.related-node-product-view-link:hover,
+a.related-node-product-buy-link:hover {
+	background-color: #777;
+	color: #fff;
+	text-decoration: none;
+}
+
+/* view more link icon */
+a.related-node-album-view-link:before,
+a.related-node-product-view-link:before {
+	position: absolute;
+	content: "\25";
+	font-size: 18px;
+	left: 9px;
+	top: 6px;
+	font-family: "IcoMoonBasic";
+}
+
+/* buy now link icon */
+a.related-node-album-buy-link:before,
+a.related-node-product-buy-link:before {
+	position: absolute;
+	content: "\3c";
+	font-size: 18px;
+	left: 8px;
+	top: 6px;
+	font-family: "IcoMoonBasic";
+}
+
+
+/*--------------------------------------
+
+ ARTICLE - NODE ENTITY PAGER (prev & next)
+ Overwrites defaults in general-global.css
+ 
+---------------------------------------*/
+
+.node-type-article .block-entity-pager {
+	overflow: visible;
+}
+.node-type-article .node-pager-container {
+	height: auto;
+	min-height: 60px;
+}
+.node-type-article .entity-pager-item {
+	width: 40%;
+}
+.node-type-article a#entity-pager-previous-link,
+.node-type-article a#entity-pager-next-link {
+	margin-left: 40px;
+	overflow: visible;
+	text-transform: capitalize;
+	height: auto;
+	line-height: 15px;
+	padding-top: 7px; /* places top text in line with center of arrow icon */
+}
+.node-type-article a#entity-pager-next-link {
+	margin-right: 40px;
+	margin-left: 0;
+	text-align: right;
+}
+
+/* arrows */
+.node-type-article a#entity-pager-previous-link:before {
+	left: 0;  
+	margin-right: 20px;  
+	position: absolute;  
+	top: 15px;
+}
+.node-type-article a#entity-pager-next-link:after {
+	right: 0;  
+	margin-left: 20px;  
+	position: absolute;  
+	top: 15px;
+}
+
+/* All Articles link */
+
+.node-type-article .back-to-river-link-container {
+ 	margin-left: -15px;
+}
+.node-type-article #entity-pager-back-to-river-link {
+	width: 28px;
+	height: 0px;
+	padding-top: 28px;
+	overflow: hidden;
+}
+.node-type-article a.legacy-all-tour-dates-link:before, 
+.node-type-article a.back-to-river-link:before {
+	left: 0;
+	position: absolute;
+	top: 0;
+	float: none;
+}
+
+/*-------------------------------------
+
+ RECENT & MORE ARTICLES content block 
+ 
+---------------------------------------*/
+
+#article-more-articles-container {
+	width: 53%;
+	padding-right: 5%;
+	position: relative;
+}
+#article-recent-articles-container {
+	width: 47%;
+	position: relative;
+}
+#article-more-articles-container h3.title,
+#article-recent-articles-container h3.title {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+#article-more-articles-container .views-row,
+#article-recent-articles-container .views-row {
+	margin-bottom: 0px;
+	padding: 10px 0;
+	border-bottom: 1px dashed #aaa;
+}
+#article-more-articles-container .field-title,
+#article-recent-articles-container .field-title {
+	font-size: 13px;
+	line-height: 16px;
+	padding-right: 10px;
+	display: block;
+}
+#article-more-articles-container .field-date,
+#article-recent-articles-container .field-date {
+	font-size: 11px;
+	display: block;
+	line-height: 15px;
+	font-style: italic;	
+}
+#article-recent-articles-container .view-footer {
+	padding: 10px 0;
+}
+
+/* Recent articles more link */
+
+#article-recent-articles-container .more-link,
+#article-more-articles-container .more-link {
+	position: relative;	
+	left: 0;
+	top: 0;
+	background: none;
+}
+#article-more-articles-container .more-link {
+	padding: 10px 0;
+}
+#article-recent-articles-container .more-link a,
+#article-more-articles-container .more-link a {
+	width: auto;
+	padding: 0;
+	text-align: right;
+}
+#article-recent-articles-container .more-link a:after,
+#article-more-articles-container .more-link a:after {
+	background: none;
+	padding: 0;
+	float: right;
+	margin: 0;
+	position: relative;
+	font-size: 16px;
+	line-height: 25px;
+	
+}
+/* if no more articles of a type */
+#article-more-articles-container .view-empty {
+	font-size: 13px;	
+}
+
+
+/*-------------------------------------
+
+ ARTICLE GALLERY 
+ 
+---------------------------------------*/
+
+.node-type-article #article-middle-row4-container {
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+.node-type-article .photo-gallery-container {
+	overflow: hidden;
+}
+.node-type-article .feature-photo {
+	float: left;
+	margin-right: 10px;
+	width: 254px;
+	height: 166px;
+	overflow: hidden;
+}
+.node-type-article .photo-gallery-container .teaser-grid {
+	padding-left: 0;	
+	height: 175px; /* set height on div toggle section */
+}
+.node-type-article .photo-row {
+	height: auto;
+	margin: 0 1.5% 1.5% 0;
+	padding: 0;
+	width: 18.5%;
+}
+
+/*====================================!!! SIDEBAR !!!=========================================*/
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ ARTICLES SIDEBAR 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/*-------------------------------
+
+ NEWS - sidebar list
+ 
+-------------------------------*/
+
+.region-sidebar-second #block-views-articles-sidebar-list .image {
+	float: left;
+	margin-right: 15px;
+	width: 60px;
+}
+.region-sidebar-second #block-views-articles-sidebar-list .title {
+	margin-left: 75px;
+}
+.region-sidebar-second #block-views-articles-sidebar-list .views-row-last {
+	border-bottom: 0;
+}
+
+/*-------------------------------
+
+ VIDEOS sidebar grid - (sidebar, song node) 
+ 
+--------------------------------*/
+
+.region-sidebar-second #block-views-articles-videos .videos-main-content  { 
+	overflow:hidden;
+}
+.region-sidebar-second #block-views-articles-videos .teaser-grid-row a {
+	display: block;
+}
+.region-sidebar-second #block-views-articles-videos .views-row-even {
+	margin-right: 0;
+}
+
+/*--------------------------------
+
+ RECENT ARTICLES - Sidebar list
+ 
+---------------------------------*/
+
+.region-sidebar-second #block-views-articles-recent .field-title {
+	display: block;
+}
+.region-sidebar-second #block-views-articles-recent .field-date {
+	font-size: 13px;
+	font-style: italic;
+}
+
+

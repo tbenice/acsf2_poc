@@ -1,0 +1,146 @@
+/* This file holds styles that apply to all screen/viewport sizes unless overriden. */
+
+/* remember to toggle styles off "text styles: omega-text.css" in the theme settings */
+
+
+
+/*-------------------------------------------------
+ 
+ This file holds only the font declarations. 
+ The remaining global css is located in /global/general-global.css
+ 
+--------------------------------------------------*/
+
+/* Custom fonts */
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-regular/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato-regular/lato-regular-webfont.ttf') format('truetype'),
+         url('../fonts/lato-regular/lato-regular-webfont.svg#latoregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-light/lato-light-webfont.eot');
+    src: url('../fonts/lato-light/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-light/lato-light-webfont.woff') format('woff'),
+         url('../fonts/lato-light/lato-light-webfont.ttf') format('truetype'),
+         url('../fonts/lato-light/lato-light-webfont.svg#latoregular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-bold/lato-bold-webfont.eot');
+    src: url('../fonts/lato-bold/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold/lato-bold-webfont.woff') format('woff'),
+         url('../fonts/lato-bold/lato-bold-webfont.ttf') format('truetype'),
+         url('../fonts/lato-bold/lato-bold-webfont.svg#latoregular') format('svg');
+    font-weight: 700;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/lato-black/lato-black-webfont.eot');
+    src: url('../fonts/lato-black/lato-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-black/lato-black-webfont.woff') format('woff'),
+         url('../fonts/lato-black/lato-black-webfont.ttf') format('truetype'),
+         url('../fonts/lato-black/lato-black-webfont.svg#latoregular') format('svg');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'abelregular';
+    src: url('../fonts/abel-regular/abel-regular-webfont.eot');
+    src: url('../fonts/abel-regular/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/abel-regular/abel-regular-webfont.woff') format('woff'),
+         url('../fonts/abel-regular/abel-regular-webfont.ttf') format('truetype'),
+         url('../fonts/abel-regular/abel-regular-webfont.svg#abelregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'beaunormal';
+    src: url('../fonts/beau-normal/beau_normal-webfont.eot');
+    src: url('../fonts/beau-normal/beau_normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/beau-normal/beau_normal-webfont.woff') format('woff'),
+         url('../fonts/beau-normal/beau_normal-webfont.ttf') format('truetype'),
+         url('../fonts/beau-normal/beau_normal-webfont.svg#beaunormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'beaubold';
+    src: url('../fonts/beau-bold/beau_bold-webfont.eot');
+    src: url('../fonts/beau-bold/beau_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/beau-bold/beau_bold-webfont.woff') format('woff'),
+         url('../fonts/beau-bold/beau_bold-webfont.ttf') format('truetype'),
+         url('../fonts/beau-bold/beau_bold-webfont.svg#beaubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Social Network Icons */
+@font-face {
+    font-family: 'IcoMoonSocial';
+    src: url('../fonts/IcoMoonSocial/fonts/IcoMoonSocial.eot');
+    src: url('../fonts/IcoMoonSocial/fonts/IcoMoonSocial.eot?#iefix') format('eot'),
+         url('../fonts/IcoMoonSocial/fonts/IcoMoonSocial.woff') format('woff'),
+         url('../fonts/IcoMoonSocial/fonts/IcoMoonSocial.ttf') format('truetype'),
+         url('../fonts/IcoMoonSocial/fonts/IcoMoonSocial.svg#webfontmuk63VQd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Interface icons */
+@font-face {
+	font-family: 'IcoMoonBasic';
+	src: url('../fonts/IcoMoonBasic/fonts/icomoon_basic.eot');
+	src: url('../fonts/IcoMoonBasic/fonts/icomoon_basic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/IcoMoonBasic/fonts/icomoon_basic.svg#IcoMoon') format('svg'),
+		url('../fonts/IcoMoonBasic/fonts/icomoon_basic.woff') format('woff'),
+		url('../fonts/IcoMoonBasic/fonts/icomoon_basic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Arrows icons */
+@font-face {
+	font-family: 'IcoMoonArrows';
+	src:url('../fonts/IcoMoonArrows/fonts/icomoon_arrows.eot');
+	src:url('../fonts/IcoMoonArrows/fonts/icomoon_arrows.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/IcoMoonArrows/fonts/icomoon_arrows.svg#icomoon') format('svg'),
+		url('../fonts/IcoMoonArrows/fonts/icomoon_arrows.woff') format('woff'),
+		url('../fonts/IcoMoonArrows/fonts/icomoon_arrows.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Extras - admin icons */
+@font-face {
+	font-family: 'IcoMoonExtras';
+	src:url('../fonts/IcoMoonExtras/fonts/icomoon_extras.eot');
+	src:url('../fonts/IcoMoonExtras/fonts/icomoon_extras.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/IcoMoonExtras/fonts/icomoon_extras.svg#icomoon') format('svg'),
+		url('../fonts/IcoMoonExtras/fonts/icomoon_extras.woff') format('woff'),
+		url('../fonts/IcoMoonExtras/fonts/icomoon_extras.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+

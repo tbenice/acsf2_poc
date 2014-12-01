@@ -1,0 +1,723 @@
+/* This file will hold styles that are loaded using the same media query as the NORMAL grid. */
+
+
+/********* NORMAL **********/
+
+
+/*--------------------------
+ ELEMENT SWITCHING BY SIZE
+ 
+ .omega-[size]-up : style applies to [size] and larger formats
+ .omega-[size]-only : style applies only the [size] format
+--------------------------*/
+
+.omega-narrow-only {
+  display:none !important;
+}
+.omega-normal-up, .omega-normal-only {
+  display:block !important;
+}
+
+
+
+
+
+/*==========================================!!! LAYOUT !!!============================================*/
+
+
+/* Negate grid margin - using <body> to override omega grid */
+
+#page .container-12 {
+	width: 980px;
+}
+#page .container-12 .grid-12 {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 980px;
+}
+#page .container-12 .grid-8 {
+	width: 680px;
+}
+
+
+/*==========================================!!! HOME PAGE !!!============================================*/
+
+
+/*---------------------------------------------------------
+-----------------------------------------------------------
+
+ LOGO - BRANDING
+ 
+-----------------------------------------------------------
+----------------------------------------------------------*/
+
+.front #fantorrent-logo-container {
+	padding-top: 135px;
+}
+
+
+/*----------------------------------------------------
+------------------------------------------------------
+
+ SLIDESHOW BLOCK - Custom 1 & 3
+ 
+------------------------------------------------------
+-----------------------------------------------------*/
+
+.front #zone-custom3-wrapper .region-inner {
+	width: 58.5%;
+}
+
+/*==========================================!!! NAVIGATION !!!============================================*/
+
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ MAIN NAVIGATION  - - - - Overrides Per Layout Size
+ 
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+#block-superfish-1 ul li a {
+	padding: 19px 12px;
+}
+
+/* home only */
+.front #block-superfish-1 ul li a {
+	padding: 19px 25px;
+	font-size: 22px;
+}
+
+/*-----------------------------------------
+ 
+ Sub navigation - Main menu
+ 
+------------------------------------------*/
+
+/* sub nav position below main nav */
+#block-superfish-1 ul ul {
+	margin-top: 23px;
+}
+
+/* home only */
+.front #block-superfish-1 ul ul {
+	margin-top: 23px;
+}
+
+#block-superfish-1 ul li li a,
+.front #block-superfish-1 ul li li a {
+	padding: 10px;
+	font-size: 16px;
+}
+
+
+/*---------------------------------
+
+ HOME link - interior LOGO 
+ 
+----------------------------------*/
+
+.not-front li#menu-1174-1 {
+	width: 208px;
+}
+
+.not-front li#menu-1174-1 a {
+	padding: 60px 0 0;
+}
+
+
+
+/*==========================================!!! ARTICES !!!============================================*/
+
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ ARTICLES - NODE
+ 
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+/* article pull quote */
+
+.node-sidebar-container .quote-item {
+	width: 220px;
+}
+
+/* article pull quote */
+
+.node-sidebar-container .quote-item .quote-start {
+	font-size: 90px;
+	margin-right: 10px;
+	top: 20px;
+}
+.node-sidebar-container .quote-item .quote-end {
+	font-size: 90px;
+	margin-left: 10px;
+}
+.node-sidebar-container .quote-body {
+	font-size: 20px;
+	line-height: 140%;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ ARTICLES SIDEBAR 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/*-------------------------------
+
+ NEWS - sidebar list
+ 
+-------------------------------*/
+
+.region-sidebar-second #block-views-articles-sidebar-list .image {
+	float: left;
+	margin-right: 15px;
+	width: 60px;
+	display: block;
+}
+.region-sidebar-second #block-views-articles-sidebar-list .title {
+	margin-left: 75px;
+}
+
+
+
+/*==========================================!!! MUSIC !!!============================================*/
+
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ DISCOGRAPHY - Teaser List
+ 
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+.page-music-albums .album-info-container {
+	width: 40%;
+	float: left;
+	margin-right: 5%;
+	/*margin-right: 4%; /* only for full page layout */
+}
+.page-music-albums .song-list-container {
+	width: 55%;
+	float: left;
+}
+.page-music-albums .song-list-title {
+	display: inline-block;
+	vertical-align: top;
+	width: 78%;
+}
+
+/*------------------------------------ 
+
+ POPUP WINDOW - song lyrics and player 
+
+------------------------------------*/
+
+.page-music-albums .song-popup-title-and-player-container, 
+.page-music-albums .song-popup-lyrics, 
+.page-music-albums .song-popup-more-link {
+	margin-left: 16px;
+}
+/* css3 arrow */
+.page-music-albums .song-popup-title-and-player-container:before {
+	left: 2px;
+}
+
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ ALBUM - Node
+
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+/* MIDDLE ROW 3 - Discography + Related Products */
+
+#album-store-view-container .teaser-grid li {
+	width: 29.5%;
+}
+
+
+
+/*==========================================!!! TOUR !!!============================================*/
+
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ TOUR - UPCOMING EVENTS - Teaser List
+ 
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+/*--------------------------------
+
+ POPUP WINDOW - event details 
+ 
+----------------------------------*/
+
+/* Containers */
+.responsive-layout-normal.page-tour .popup-main-content {
+	margin-left: 26px;
+}
+
+/* css3 arrow */
+.page-tour #views-popup-wrapper:before {
+	left: 12px;
+	top: 28px;
+}
+
+
+/*------------------------------------
+
+ TOUR - MAP
+ 
+--------------------------------------*/
+
+.page-tour .attachment .views-popup-container .view-header p {
+	margin-bottom: 0;
+}
+
+/* Addes margin when MAP content displayed */
+.events_page_map-main-content .view-content {
+	margin-top: 20px;
+}
+.events_page_map-main-content .views-slidein:before {
+	border-bottom: 15px solid #000;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	content: "";
+	display: block;
+	left: 20%;
+	margin-left: -15px;
+	position: absolute;
+	top: -15px;
+}
+.events_page_map-main-content .views-slidein-processed:before {
+	display: none;
+}
+
+/*---------------------------------------
+
+ TOUR - Article block - tour details
+
+----------------------------------------*/
+
+/* article block toggle button only  */
+.page-tour .view-display-id-article .view-header a {
+	left: 215px;
+	position: absolute;
+	top: 0;
+}
+/* Map Toggle Link button only */
+.page-tour .attachment .view-display-id-events_page_map .view-header a {
+	width: 190px;
+}
+
+/* article container */
+.page-tour .article-main-content {
+	background-image: url();
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center top;
+	background-attachment: scroll;
+	background-color: #000;
+	margin-bottom: 30px;
+}
+
+/* top arrow to appear in the "open" state */
+.page-tour .article-main-content li.views-slidein {
+	position: relative;
+}
+.page-tour .article-main-content li.views-slidein:before {
+	border-bottom: 15px solid #000000;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	content: "";
+	display: block;
+	left: 65%;
+	margin-left: 0;
+	position: absolute;
+	top: -15px;
+}
+/* negate top padding on closed state */
+.page-tour li.views-slidein {
+	padding-top: 540px; /* change depending on bg img height */
+}
+.page-tour li.views-slidein-processed {
+	padding-top: 0;
+}
+
+
+/* tour article text body */
+.tour-article-column-1 {
+	width: 100%;
+	margin: 0;
+	padding: 3%;
+	background: transparent url(../images/transparent_black_60.png) repeat scroll left top;
+	color: #ccc;
+	border: 0;
+}
+
+/* Article title */
+.tour-article-column-1 h3 {
+	color: #fff;
+}
+
+/* video */
+.tour-article-video {
+	width: 49%;
+	float: left;
+	padding: 3% 3% 3% 0;
+	text-align: left;
+	display:none;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ WE ARE PIONEERS - custom events page
+  
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/*----------------------------------------------------
+
+ VIDEO section 
+ 
+-----------------------------------------------------*/
+
+.context-we-are-pioneers #block-block-11 .mobile,
+.context-we-are-pioneers #block-block-11 .narrow,
+.context-we-are-pioneers #block-block-11 .wide {
+	display: none;
+}
+.context-we-are-pioneers #block-block-11 .normal {
+	display: block;
+}
+
+
+
+
+
+/*==========================================!!! LEGACY !!!============================================*/
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ LEGACY - LIST of all dates
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/*-------- Available content Icons - trait links ---------*/
+
+.legacy-trait-links {
+	position: absolute;
+	margin-left: 0;
+	overflow: hidden;
+	width: 30%;
+	right: 0;
+	top: 15px; /* equal to top padding of the .teaser-list-row */
+}
+
+.page-legacy-list .location-venue-wrapper {
+	width: 55%;
+}
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ LEGACY - Archived Event - Node
+
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+/*-------------------------------------------------- 
+
+ NODE PAGER - override default in .general-global.css 
+
+----------------------------------------------------*/
+
+/* OLDER (previous) */
+
+#legacy-header-row-container a#node-pager-previous-link {
+	line-height: 19px;
+	position: relative;
+	width: 145px;
+	padding-left: 40px;
+	overflow: visible;
+	height: 30px;
+	padding-top: 0;
+}
+
+/* NEWER (next) */
+
+#legacy-header-row-container a#node-pager-next-link {
+	line-height: 19px;
+	position: relative;
+	width: 105px;
+	overflow: visible;
+	height: 30px;
+	padding-top: 0;
+}
+
+
+
+/*========================================!!! COMMUNITY !!!============================================*/
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ COMMUNITY SIDEBAR BLOCKS
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/*----------------------------------------
+
+ BAND MEMBER POSTS - sidebar 
+ 
+----------------------------------------*/
+
+/*-------------------------
+ Band Pics 
+--------------------------*/
+
+/* kimberly */
+#block-views-tfp-custom-nodes-latest-any .band-post-author-image.user-uid-8,
+.view-display-id-latest_kimberly .band-post-author-image.user-uid-8 {
+	height: 150px; 
+}
+
+/* Reid */
+#block-views-tfp-custom-nodes-latest-any .band-post-author-image.user-uid-10,
+.view-display-id-latest_reid .band-post-author-image.user-uid-10 {
+	height: 150px; 
+}
+
+/* Neil */
+#block-views-tfp-custom-nodes-latest-any .band-post-author-image.user-uid-9,
+.view-display-id-latest_neil .band-post-author-image.user-uid-9 {
+	height: 150px;
+}
+
+.page-band .view-header {
+	min-height: 1700px;
+}
+
+.page-band .view-header h3 {
+	top: 400px;
+	margin: auto;
+}
+
+.header_band_member_info_wrapper {
+	top: 450px;
+}
+
+
+
+
+/*==========================================!!! STORE !!!============================================*/
+
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ STORE - LANDING
+
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+/*-----------------------------------------
+
+ TOP DOWNLOADS LIST
+
+------------------------------------------*/
+
+/*---------- container ----------*/
+.page-store .view-display-id-dl_shows { 
+	clear: both;
+	overflow: hidden;
+	padding: 30px 0;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 30px;
+}
+
+/*----------- rows --------------*/
+.page-store .dl_shows-main-content .views-row {
+	float: left;
+	margin: 0 1% 1% 0;
+	width: 32%;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+.page-store .dl_shows-main-content .views-row:hover {
+	background-color: #efefef;
+}
+
+/*------- download icon --------*/
+.page-store .top-downloads-list-item:before {
+	content: "\e00f";
+	display: block;
+	float: left;
+	font-family: IcoMoonBasic;
+	font-size: 35px;
+	height: 55px;
+	left: 0px;
+	line-height: 40px;
+	margin-right: 10px;
+	padding: 0;
+	position: relative;
+	top: 15px;
+	width: 35px;
+	color: #5FA933;
+}
+
+/*---------- row content ----------*/
+.page-store .top-downloads-list-item .legacy-event-date-top,
+.page-store .top-downloads-list-item .legacy-event-date-bottom {
+	line-height: 15px;
+}
+.page-store .top-downloads-list-item .legacy-event-location {
+	font-size: 23px;
+	line-height: 120%;
+}
+.page-store .top-downloads-list-item .legacy-event-venue {
+	font-size: 11px;
+	line-height: 120%;
+}
+
+/*---------------------------------------------
+
+ DEPARTMENT NAVIGATION
+
+----------------------------------------------*/
+
+#edit-department-id-wrapper .form-radios .form-item {
+	margin-right: 10px;
+	padding: 7px 15px;
+	font-size: 16px;
+}
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ STORE - PRODUCT NODES
+ 
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+/*--------------------------------
+
+ RELATED PRODUCTS 
+
+---------------------------------*/
+
+#product-related-products-container .view-content li,
+.view-cart-upsell li.teaser-grid-row {
+	height: 160px;
+	margin: 0 2% 2% 0;
+	width: 130px;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ PRODUCT HIGHLIGHT - JOIN PAGE
+
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+.block-product-highlight-intro {
+	padding-top: 615px;
+}
+
+
+
+/*====================================!!! CUSTOM PAGES !!!=========================================*/
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ WE ARE PIONEERS - custom events page
+  
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+
+/*====================================!!! Band PAGES !!!=========================================*/
+/* read more link */
+.band_member_more_link {
+	bottom: 10%;
+	position: absolute;
+	right: 0;
+}
+
+/** tour page store sidebar **/
+.page-tour .region-preface-first {
+	/* position: absolute;
+	left: 700px; */
+	position: absolute;
+	margin-left: 560px;
+	margin-top: 33px;
+	z-index: 0;
+}
+
+
+/** Message stylings **/
+#messages {
+	position: fixed;
+    top: 195px;
+    left: 50%; 
+    transform: translate(-50%);
+    z-index: 100;
+}
+
+.front #messages,
+.front.logged-in #messages,
+.front.logged-in.toolbar #messages,
+.front.logged-in.toolbar.toolbar-drawer #messages {
+    top: 350px;
+}
+
+.logged-in #messages {
+	position: fixed;
+    top: 200px;
+    left: 50%; 
+    transform: translate(-50%);
+    z-index: 100;
+}
+
+.logged-in.toolbar #messages {
+	position: fixed;
+    top: 205px;
+    left: 50%; 
+    transform: translate(-50%);
+    z-index: 100;
+}
+.logged-in.toolbar.toolbar-drawer #messages {
+	position: fixed;
+    top: 240px;
+    left: 50%; 
+    transform: translate(-50%);
+    z-index: 100;
+}
+

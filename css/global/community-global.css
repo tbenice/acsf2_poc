@@ -1,0 +1,2660 @@
+
+/* COMMUNITY - Global styles only */
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ COMMUNITY POST FORM 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+/* Anonymous login block */
+
+/* old block - still used on community page */
+.community-login-block,
+#community-anon-login-block  {
+	margin-bottom: 30px;
+	padding: 10px;
+	text-align: center;
+	background-color: #2a2e46;
+	color: #fff;	
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-weight: normal;
+}
+
+.community-login-block a:link,
+#community-anon-login-block a:link,
+.community-login-block a:visited,
+#community-anon-login-block a:visited {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+
+/* newer block - used on all but community page */
+.not-logged-in .community-post-form-container {
+	padding: 20px;
+	background-color: #eee;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	text-align: center;
+}
+.community-post-form-container {
+	position: relative;
+}
+
+/*-----------------------------------------
+
+ FORM
+ 
+-------------------------------------------*/
+
+/* outer-most container for the form section */
+.community-post-form {
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #eee;
+	padding: 15px;
+	overflow: hidden;
+	font-size: 14px;
+	margin-bottom: 30px;
+	position: relative;
+}
+.community-post-form h2 {
+	font-size: 30px;
+}
+
+/*------------------
+ text area 
+-------------------*/
+
+.community-post-form .form-textarea {
+    color: #999;
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+    clear: both;
+    font-size: 13px !important;
+    margin-bottom: 10px;
+}
+.community-post-form .field-name-body {
+	margin-bottom: 30px;
+}
+#edit-field-user-post-facebook,
+#edit-field-user-post-twitter {
+	float: right;
+	font-size: 13px;
+	margin-right: 10px;
+}
+#edit-field-user-post-facebook .form-item,
+#edit-field-user-post-twitter .form-item {
+	margin-top: 0;
+}
+
+/*-----------------------------
+ photo & video select buttons 
+-----------------------------*/
+
+ul#post-buttons-list {
+	margin: 0 0 15px;
+	overflow: hidden;
+	padding: 0;
+	z-index: 10;
+}
+ul#post-buttons-list li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 10px 0 0;
+	float: left;
+}
+ul#post-buttons-list li.last {
+	margin-right: 0;
+}
+ul#post-buttons-list li a {
+	text-decoration: none;
+	color: #444;
+	width: auto;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #aaa;
+	text-transform: uppercase;
+	display: block;
+	padding: 4px 10px;
+}
+ul#post-buttons-list li a:hover {
+	color: #fff;
+	background-color: #2a2e46;
+	border-color: #2a2e46;
+}
+ul#post-buttons-list li a:before {
+	font-family: IcoMoonBasic;
+	font-size: 19px;
+	margin-right: 9px;
+	position: relative;
+	top: 2px;
+	left: 0;
+	speak: none;
+	vertical-align: top;
+}
+/* photo button */
+.post-photo-button a:before {
+	content: "\e007"; /* camera */
+}
+/* video button */
+.post-video-button a:before {
+	content: "\2c"; /* video icon */
+}
+/* image upload button */
+#edit-field-user-post-image-und-0-upload-button {
+	margin-left: 20px;
+}
+
+
+/*---------------------
+ ADD Photo form 
+----------------------*/
+
+.community-post-form .form-type-managed-file {
+	margin-top: 0;
+}
+.community-post-form .form-type-managed-file input.form-file {
+	margin: 0 0 10px 0;
+}
+.community-post-form .form-type-managed-file .image-widget-data {
+	background-color: #ddd;
+	border-radius: 5px;
+	float: none;
+	padding: 15px;
+	width: 100%;
+}
+
+/*---------------------
+ Video Embed form 
+----------------------*/
+
+#field-embed-video-values fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#field-embed-video-values th.field-label {
+	padding-left: 1em;
+}
+
+/*-------------------------
+ post form submit button 
+--------------------------*/
+ 
+.community-post-form .form-actions input.form-submit {
+	border: medium none;
+	cursor: pointer;
+	font-size: 23px;
+	font-weight: normal;
+	margin-right: 0;
+	padding: 15px;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+/*--------------------------
+ Post to Twitter
+---------------------------*/
+
+.community-post-form .form-item-twitter-post {
+	margin: 0;
+}
+.community-post-form legend {
+	background-color: transparent;
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	color: #444;
+}
+.community-post-form legend a {
+	color: #444;
+}
+.community-post-form legend:hover,
+.community-post-form legend:hover a,
+.community-post-form legend a:hover {
+	background-color: #2a2e46;
+	border-color: #2a2e46; /* same as bg color */
+	color: #fff;
+	text-decoration: none;
+}
+
+/*---------------------------
+ Post to your accounts button 
+----------------------------*/
+
+.community-post-form .field-type-list-boolean {
+    font-size: 13px;
+}
+.community-post-form .field-type-list-boolean .form-item {
+	margin: 0;
+}
+
+/* Ajax form upload - images */
+
+.edit-field-images-1-und-ajax-wrapper table td {
+	padding: 10px 0;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ COMMUNITY POSTS 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.community-feed-row {
+	position: relative;
+	padding: 25px 0;
+	border-bottom: 3px double #aaa;
+	margin: 0px;
+}
+.view-community-feed .views-row-last {
+	border-bottom: 0;
+}
+
+/* User Profile Image */
+.community-user-profile-image,
+#region-sidebar-second .community-user-profile-image {
+	float: left;
+	width: 32px; /* accommodate 1px border on 30px image */
+	height: 32px;
+	margin-right: 10px;
+}
+
+
+/* ------------------------------------------- 
+
+ User Contact Links - FOLLOW, MESSAGE, WAVE
+ 
+--------------------------------------------*/
+
+/* main container */
+.community-user-contact-links {
+	height: 42px;
+	width: auto;
+	margin: 0 0 10px;
+}
+
+/* link containers */
+.community-flag-follow,
+.community-user-message,
+.community-flag-wave {
+	width: 42px;
+	height: 42px;
+	float: left;
+	margin-right: 7px;
+}
+
+/* links */
+.community-user-contact-links a {
+	color: #444;
+	display: block;
+	font-size: 35px;
+	height: 0;
+	line-height: 40px;
+	overflow: hidden;
+	padding-top: 42px;
+	position: relative;
+	text-align: center;
+	width: 42px;
+}
+.community-user-contact-links a:hover {
+	color: #2a2e46;
+}
+
+/* icon */
+.community-user-contact-links a:before {
+	font-family: "IcoMoonBasic";
+	position: absolute;
+	top: 1px;
+	left: 1px;	
+	speak: none;
+}
+
+/*--------------------------
+ Follow icon - link 
+----------------------------*/
+
+.community-flag-follow a.flag-action:before,
+.community-flag-follow a.anon-login-link:before {
+	content: "\49"; /* plus sign square */
+}
+
+/* UnFollow */
+.community-flag-follow a.unflag-action {
+	color: #2a2e46;
+}
+.community-flag-follow a.unflag-action:before {
+	content: "\4f"; /* minus sign circle */
+}
+
+/*----------------------------
+ Icon - Send A Message 
+-----------------------------*/
+
+.community-user-message a:before {
+	content: "\6e";
+}
+
+/*----------------------------
+ Wave at User 
+-----------------------------*/
+
+.community-flag-wave a.flag-action:before,
+.community-flag-wave a.anon-login-link:before,
+.community-flag-wave a.unflag-action:before {
+	content:"\e018";
+}
+.community-flag-wave a.unflag-action {
+	color: #2a2e46;
+}
+
+/*------------- end contact user links ------------*/
+
+
+/* Hide text formatting options on user messaging form */
+.page-messages #edit-body-format {
+	display: none;
+}
+.page-messages .text-format-wrapper {
+	margin-bottom: 30px;
+}
+
+/*--------------------
+ User Name 
+----------------------*/
+
+.community-user-full-name {
+	font-size: 20px;
+	line-height: 1;
+	margin-left: 45px;
+	width: 70%;
+}
+
+/*----------------------
+ Post Creation Date 
+------------------------*/
+
+.community-post-created-date {
+	color: #999;
+	font-size: 11px;
+	font-style: italic;
+	margin: 0 0 10px 45px;
+}
+
+
+/*-----------------------
+ Post Body 
+-------------------------*/
+
+.community-post-media-wrapper  {
+	margin: 0 0 15px;
+	overflow: hidden;
+	width: auto;
+	padding: 15px 0 5px;
+	border-top: 1px dashed #aaa;
+	border-bottom: 1px dashed #aaa;
+}
+.post-body { /* includes media & text */
+	font-size: 13px;
+	line-height: 1.5;
+}
+.post-body p:last-child {
+	margin-bottom: 0px !important;
+}
+
+/* post text only */
+.post-update {
+	margin-bottom: 10px;
+}
+
+/*--------------------
+ Post Images 
+----------------------*/
+
+.post-image {
+	overflow: hidden;
+}
+.post-image .field-item {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 0 15px 15px 0;
+	overflow: hidden;
+}
+
+/*---------------------
+ Post Videos 
+----------------------*/
+
+.post-video {
+	overflow: hidden;
+}
+.post-video .field-item {
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 0 15px 15px 0;
+	overflow: hidden;
+}
+
+/*---------------------
+ Post Links
+-----------------------*/
+
+.post-links {
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #ccc;
+}
+.post-links img {
+	float: left;
+	height: auto;
+	margin: 0 15px 0px 0;
+	width: 140px;
+}
+.post-links a {
+	clear: both;
+	display: block;
+	font-size: 12px;
+	
+}
+
+/*---------------------
+ Post Groups list 
+-----------------------*/
+
+.view-content ul.post-groups-wrapper {
+	margin: 0 0 10px;
+	overflow: auto;
+}
+.view-content ul.post-groups-wrapper span {
+	float: left;
+	margin:0 10px 20px 0;
+	padding-left: 20px;
+}
+.view-content ul.post-groups-wrapper li {
+	float: left;
+	margin-right: 5px;
+}
+
+/*---------------------
+ Post View link (sidebar view blocks) 
+-----------------------*/
+
+.post-view {
+	margin: 20px 0; 
+}
+
+/*-------------------------------------
+
+ DELETE post & EDIT post - logged in 
+ 
+--------------------------------------*/
+
+/* container - sitewide */
+.community-feed-row .post-delete,
+.community-feed-row	.post-edit,
+.node-type-post .delete-post-link,
+.node-comment-container .views-field-ft-comment-delete /* user's own comments */ {
+	position: absolute;
+	right: 0;
+	top: 15px; /* same # as post <li> padding top */
+	font-size: 5px;
+	line-height: 100%;
+	width: 23px;
+	padding: 0;
+}
+
+/* container - community only */
+.community-post-comments .node-comment-container .views-field-ft-comment-delete {
+	right: 10px;
+	top: 36px;
+}
+
+/* admin logged in only */
+.toolbar .community-feed-row .post-delete a {
+	-webkit-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+}
+.toolbar .community-feed-row .post-edit a {
+	-webkit-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Comment delete button ---- possibly deprecated selectors */
+.node-comment-container .post-delete,
+.comment .post-delete {
+	background: #fff;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	right: 10px;
+	top: 10px;
+}
+.community-feed-row	.post-edit {
+	right: 21px;
+	border-radius: 3px 0 0 3px;
+}
+
+/* link */
+.community-feed-row .post-delete a,
+.community-feed-row	.post-edit a,
+.node-type-post .delete-post-link a,
+.node-comment-container .views-field-ft-comment-delete a {
+	height: 0;
+	padding: 20px 0 0 0;
+	overflow: hidden;
+	background-color: #fff;
+	color: red;
+	display: block;
+	cursor: pointer;
+	border: 1px solid #aaa;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.community-feed-row .post-edit a {
+	color: #888;
+}
+.community-feed-row .post-delete a:hover,
+.community-feed-row	.post-edit a:hover,
+.node-type-post .delete-post-link a:hover,
+.node-comment-container .views-field-ft-comment-delete a:hover {
+	color: #000;
+}
+
+/* Icons */
+.community-feed-row .post-delete a:before,
+.community-feed-row	.post-edit a:before,
+.node-type-post .delete-post-link a:before,
+.node-comment-container .views-field-ft-comment-delete a:before {
+	font-family: IcoMoonBasic;
+	content:"\7e"; /* circle x */
+	position: absolute;
+	top: 3px;
+	left: 4px;
+	font-size: 15px;
+	speak: none;
+	line-height: 15px;
+}
+.community-feed-row .post-edit a:before {
+	content: "\31"; /* pencil */
+	font-size: 15px;
+	left: 3px;
+}
+
+
+/*-----------------------------
+
+ Post - Share links
+ 
+------------------------------*/
+
+.community-feed-row .user-accounts-share-links-container {
+	margin: 0 0 10px;
+	width: auto;
+}
+.community-feed-row .user-accounts-share-links-container ul {
+	padding: 0;
+	border: 0;
+	height: auto;
+}
+.community-feed-row ul.share-links-container.direction-vertical li {
+	min-height: 30px;
+	padding: 0;
+	border: 0;
+	float: none;
+	width: auto;
+	z-index: 100;
+	height: auto;
+}
+.community-feed-row li.share-link-twitter {
+	height: 30px !important;
+}
+.community-feed-row li.share-link-print,
+.community-feed-row li.share-link-email {
+	display: none;
+}
+/* Socialite js links */
+.community-feed-row .share-links-container li a.socialite {
+	max-width: 110px;
+}
+
+/*-----------------------------------------
+
+ SHARE button
+
+-----------------------------------------*/
+
+.post-share {
+	float: left;
+	font-size: 14px;
+	line-height: 1;
+	margin-right: 5px;
+}
+.post-share a.button {
+	height: 27px;
+	padding: 8px 10px 0;
+	color: #fff;
+}
+
+
+/*----------------------------------------
+
+ FLAGS - Like, Message, Report  
+ 
+------------------------------------------*/
+
+.community-post-flag-wrapper {
+	float: right;
+	height: 28px;
+	width: auto;
+}
+
+/*--------------------
+ LIKE button 
+----------------------*/
+
+.post-like {
+	float: left;
+	width: auto;
+	height: 27px;
+	position: relative;
+}
+.post-like .flag-wrapper a,
+.post-like a.anon-login-link {
+	background-color: #eee;
+	-webkit-border-radius: 3px 0 0 3px;
+	border-radius: 3px 0 0 3px;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	padding-top: 25px;
+	text-decoration: none;
+	width: 28px;
+	border: 1px solid #aaa;
+	border-right: 0;
+	float: left;
+	position: relative;
+	color: #444;
+	cursor: pointer;
+}
+.post-like a:hover {
+	border-color: #555;
+	background-color: #444;
+	color: #fff;
+}
+.post-like a.flag-action:before,
+.post-like a.anon-login-link:before {
+	content: "\6a"; /* filled heart */
+	font-family: "IcoMoonBasic";
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	font-size: 18px;
+	speak: none;
+}
+
+/*---------------------
+ unlike 
+----------------------*/
+
+.post-like a.unflag-action:before {
+	content: "\69"; /* outline heart */
+	font-family: "IcoMoonBasic";
+	position: absolute;
+	top: 4px;
+	left: 5px;
+	font-size: 18px;
+	speak: none;
+	cursor: pointer;
+}
+
+
+/*--------------------
+ Flag Throbbers 
+----------------------*/
+
+.post-like .flag-wrapper,
+.post-report .flag-wrapper {
+    position: relative;
+    display: block;
+    float: left;
+}
+.post-like .flag-throbber,
+.post-report .flag-throbber {
+    left: -1px;
+    position: absolute;
+    top: 0;
+    width: 1px;
+}
+
+/*-------------------
+ LIKE counter 
+--------------------*/
+
+.post-count {
+	background-color: #fff;
+	-webkit-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;	
+	padding: 1px 8px 0px 8px;
+	float: left;
+	text-align: center;
+	width: auto;
+	margin: 0 10px 0 0px;
+	border: 1px solid #aaa;
+	height: 27px;
+	font-size: 12px;
+}
+.post-count a {
+	text-decoration: underline;
+}
+
+/*------------------
+ REPORT button 
+-------------------*/
+
+.post-report {
+	float: left;
+	width: auto;
+	height: 25px;
+}
+.post-report a {
+	background-color: #eee;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;  
+	display: block;
+	height: 0;
+	overflow: hidden;
+	padding-top: 25px;
+	text-decoration: none;
+	width: 31px;
+	border: 1px solid #aaa;
+	position: relative;
+	color: #444;
+	cursor: pointer;
+}
+/* Flag icon */
+.post-report a:before{
+	content: "\22"; /* filled "!" icon */
+	font-family: "IcoMoonBasic";
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	font-size: 19px;
+	speak: none;
+}
+/* Unflag icon */
+.post-report a.unflag-action {
+	background-color: #E61212; 
+	border-color: #E61212;
+	color: #FFFFFF;
+}
+
+.post-report a:hover,
+.post-report a.anon-login-link:hover {
+	background-color: #555;
+	border-color: #555; /* same as bg color */
+	color: #fff;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ COMMUNITY POST NODE
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.node-type-post .node-post-full .button {
+	margin-bottom: 30px;
+}
+
+/* Who's Liked This Post - block */
+
+.block-community-feed-likes {
+
+}
+/* New Activity Block */
+
+.block-dash-nodes-activity  {
+
+}
+
+/* share links */
+.node-type-post ul.share-links-container:before, .node-type-instagram-post ul.share-links-container:before {
+	content:"Share:";
+	font-size: 25px;
+	margin-bottom: 15px;
+	display: block;
+	border-bottom: 1px solid #888;
+	padding-bottom: 5px;
+}
+.node-type-post ul.share-links-container, .node-type-instagram-post ul.share-links-container {
+	background-color: rgba(0,0,0,0.1);
+	padding: 3%;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+.node-type-post .share-link-print,
+.node-type-post .share-link-email,
+.node-type-instagram-post .share-link-print,
+.node-type-instagram-post .share-link-email{
+	display: none;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ COMMUNITY COMMENTS
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/*-----------------------
+ add a comment button 
+------------------------*/
+
+.community-post-comment-link-wrapper {
+	width: 32px;
+	/*margin: 0 0 0 45px;*/
+}
+.community-post-comment-link-wrapper a {
+	background-color: #eee;
+	color: #444;
+	display: block;
+	font-size: 11px;
+	padding: 26px 5px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: lowercase;
+	border: 1px solid #aaa;
+	overflow: hidden;
+	position: relative;
+	height: 0;
+	cursor: pointer;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.community-post-comment-link-wrapper a:hover {
+	background-color: #555;
+	border-color: #555;
+	color: #fff;
+}
+
+/*--------------------
+ Comment button Icon 
+---------------------*/
+
+.community-post-comment-link-wrapper a:before {
+	content: "\39"; /* talk bubble */
+	display: block;
+	float: left;
+	font-family: "IcoMoonBasic";
+	font-size: 20px;
+	margin-right: 4px;
+	position: absolute;
+	top: 3px;
+	left: 5px;
+	speak: none;
+}
+
+/*-------------------
+ Comments listing 
+----------------------*/
+
+.community-post-comments { /* comments wrapper */
+	left: 0;
+	padding: 0;
+	position: relative;
+	width: auto;
+	font-size: 12px;
+	border-top: 1px solid #aaa;
+	margin-top: 15px;
+}
+/* inner wrapper - wraps all comments in a post - hides when no content */
+.community-post-comments .node-comments-wrapper {
+	margin-top: 10px;
+}
+.community-post-comments .node-comment-container {
+	background-color: #efefef;
+	margin-bottom: 3px;
+	padding: 10px;
+	position: relative;
+}
+.community-post-comments .node-comment-container:first-child {
+	border-radius: 5px 5px 0px 0px;
+}
+.community-post-comments .node-comment-container:last-child {
+	border-bottom: 0;
+	border-radius: 0 0 5px 5px;
+}
+/* user icon */
+.community-post-comments .views-field-field-images-1 {
+	width: 32px; /* accounts for border */
+	height: 32px;
+	margin-right: 10px;
+	float: left;
+}
+.community-post-comments .views-field-field-images-1 img {
+	width: 30px;
+	height: 30px;
+}
+.community-post-comments h2 {
+	display: none;
+}
+
+/*---------------------------
+ text & media fields margin 
+----------------------------*/
+
+.community-post-comments .views-field-field-user-full-name,
+.community-post-comments .views-field-created, 
+.community-post-comments .views-field-comment-body {
+	margin-left: 42px;
+	margin-right: 35px;
+}
+.community-post-comments .views-field-field-user-full-name {
+	font-size: 14px;
+}
+.community-post-comments .views-field-created {
+	color: #999;
+	font-size: 11px;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+.community-post-comments .views-field-comment-body p {
+	margin-bottom: 10px;
+}
+.community-post-comments .views-field-comment-body p:last-child {
+	margin-bottom: 0;
+}
+
+/*---------------------------
+ view all comments - toggle 
+----------------------------*/
+
+.community-post-comments-expand-link {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+a.community-post-comments-toggle {
+	background-color: rgba(0,0,0,0.2);
+	display: block;
+	left: 0;
+	position: relative;
+	text-align: center;
+	padding: 3px 0;
+	color: #444;
+	text-decoration: none;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 13px;
+}
+a.community-post-comments-toggle:hover {
+	background-color: #000;
+	color: #fff;
+	text-shadow: none;
+}
+a.community-post-comments-toggle:before {
+	content: "\e00b"; /* small triangle/arrow */
+	font-family: IcoMoonBasic;
+	margin-right: 2px;
+	position: relative;
+	top: 0;
+	vertical-align: middle;
+	speak: none;
+}
+a.community-post-comments-toggle.community-post-comments-toggle-limit:before {
+	content: "\e008";
+	speak: none;
+}
+
+/*----------------------------
+ Confirm delete comment - page 
+------------------------------*/
+
+form#comment-confirm-delete #edit-submit {
+	float: left;
+	padding: 8px 10px;
+}
+
+/*-------------------------------------
+
+ FLAG AS INAPPROPRIATE - link in post comments
+ 
+--------------------------------------*/
+
+/* container */
+.node-comment-container .views-field-ops {
+	position: absolute;
+	right: 10px;
+	top: 10px; /* same # as post <li> padding top */
+	font-size: 5px;
+	line-height: 100%;
+	width: 23px;
+	height: 23px;
+	padding: 0;
+}
+/* link */
+.node-comments-wrapper .views-field-ops .flag-inappropriate a {
+	border: 1px solid #aaa;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	padding: 20px 0 0 0;
+	width: 23px;
+	color: #444;
+	background-color: #fff;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+/* Flag icon */
+.flag-inappropriate a:before {
+	content: "\22"; /* filled "!" icon */
+	font-family: "IcoMoonBasic";
+	position: absolute;
+	/* top: 8px; */
+	top: 4px;
+	left: 4px;
+	font-size: 15px;
+	line-height: 15px;
+	speak: none;
+}
+/* Unflag icon */
+.flag-inappropriate a.unflag-action:before {
+	content: "\21"; /* open ! icon */
+	speak: none;
+}
+.flag-inappropriate a:hover:before,
+.flag-inappropriate a.anon-login-link:hover:before {
+	color: red;
+}
+
+/*---------------------------------------
+
+ COMMENT FORM
+ 
+----------------------------------------*/
+
+.community-post-comment-form {
+	clear: both;
+	font-size: 14px;
+	position: relative;
+}
+.community-post-comment-form .comment-form {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 20px 0;
+	padding: 0 15px;
+	font-size: 14px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+/* close link */
+
+.community-post-comment-form a.node-comment-form-popup-close {
+	height: 0;
+	overflow: hidden;
+	padding-top: 25px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	color: #444;
+	width: 25px;
+}
+.community-post-comment-form a.node-comment-form-popup-close:before {
+	content: "~";
+	font-family: IcoMoonBasic;
+	font-size: 22px;
+	left: 2px;
+	line-height: 22px;
+	position: absolute;
+	top: 2px;
+}
+
+/* soon to be yanked from fantorrent_base.css */
+.node-comment-form-popup {
+	display: none;
+	height: auto;
+	width: auto;
+}
+
+
+/*---------------------------
+ Community Exra Form Stuff to HIDE 
+----------------------------*/
+
+#community-post-form .filter-wrapper,
+#community-post-form .field-type-image,
+#community-post-form .field-type-video-embed-field,
+#community-post-form .field-type-media,
+#community-post-form .vertical-tabs,
+#community-post-form h2.element-invisible,
+#community-post-form #edit-preview,
+#community-post-form .grippie,
+#community-post-form .field-name-field-textarea,
+#community-post-form #edit-group-audience,
+.community-post-linkbox-image img.safe-img,
+div.fantorrent-community-ct-youtubebox {
+ 	display: none;
+}
+
+
+/*--------------------------
+ linkbox styles 
+---------------------------*/
+
+.community-post-linkbox-inner {
+	background: white;
+	padding: 3px;
+	display: none;	
+	margin-bottom: 5px;
+}
+.ft-colorbox-info {
+	display: none;
+}
+.meetgreet-image-links {
+	position: absolute;
+	top: 0px;
+	z-index: 100;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ COMMUNITY LOGIN PAGE 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+#register-form {
+	margin: 0 auto;
+	width: 55%;
+}
+#register-form input[type="text"] {
+	width: 100%;
+	padding: 10px 13px;
+	height: auto;
+}
+#register-form .form-submit {
+	padding: 15px 20px;
+}
+
+/*----------------------------------
+
+ Login message 
+ 
+-----------------------------------*/
+
+.toboggan-unified #login-message {
+	margin-bottom: 20px;
+}
+.toboggan-unified #login-links {
+	font-size: 18px;
+	line-height: 150%;
+	margin-bottom: 40px;
+}
+.toboggan-unified a#login-link,
+.toboggan-unified a#register-link,
+.toboggan-unified #login-links a.lt-active {
+	-webkit-border-radius: 55px;
+	border-radius: 55px;
+	margin: 0 auto 20px auto;
+	width: 100%;
+	border: 0;
+	padding: 13px;
+}
+.toboggan-unified a#login-link:hover,
+.toboggan-unified a#register-link:hover,
+.toboggan-unified #login-links a.lt-active:hover {
+	text-decoration: none;
+	border: 0;
+}
+
+/*----------------------------------
+
+ Login Form 
+ 
+-----------------------------------*/
+
+.page-user-login #login-form .form-item input {
+	font-size: 20px;
+	height: 50px;
+	margin-bottom: 5px;
+	padding: 10px;
+	width: 100%;
+}
+.page-user-login #login-form .form-item label {
+	font-size: 20px;
+	font-weight: normal;
+	margin-bottom: 8px;
+}
+
+/*-----------------------------------
+
+ Login Forgot 
+ 
+-------------------------------------*/
+
+.page-user-login .login-forgot {
+	margin-bottom: 20px;
+}
+.page-user-login #login-form .item-list {
+	border-bottom: 1px dashed #ccc;
+	border-top: 1px dashed #ccc;
+	padding: 20px 0;
+}
+
+/*-----------------------------------
+
+ Submit button 
+ 
+-------------------------------------*/
+
+.page-user-login #login-form .form-submit {
+	padding: 20px 10px;
+	width: 100%;
+	font-size: 20px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	background-color: #444;
+}
+.page-user-login #login-form .form-submit:hover {
+	background-color: orange;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ USER DASHBOARD
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/* MOBILE ONLY */
+
+.responsive-layout-mobile #homebox .homebox-column-wrapper {
+	float: none;
+}
+.responsive-layout-mobile #homebox.column-count-3 .homebox-column-wrapper {
+	width: 100%;
+}
+
+/* General Dashboard Styles */
+#homebox .homebox-column {
+	padding: 0;
+	margin: 0 15px 0 0;
+	background: none;
+}
+#homebox .homebox-portlet {
+	border: 0;
+	margin: 0 0 20px 0;
+}
+#homebox .homebox-portlet .portlet-header {
+	background-color: #444;
+	border-bottom: 0 none;
+	color: #fff;
+	font-size: 21px;
+	margin: 0;
+	min-height: 18px;
+	padding: 10px;
+	text-shadow: none;
+}
+#homebox .portlet-content {
+	padding: 15px; /* wide, 10px normal & narrow */
+	font-size: 14px;
+	line-height: 140%;
+}
+#homebox .portlet-content .views-field {
+	position: relative; /* so edit buttons can be pos absolute top left */
+}
+#homebox .portlet-content table .views-field { /* fixes missing top&right borders in <th> */
+	position: inherit; 
+}
+#homebox .teaser-list {
+	padding: 0;
+}
+/* size CSV export button - override 100% default img width */
+#homebox .portlet-content .feed-icon a img {
+	height: 14px;
+	width: 36px;
+}
+
+/*----- UI ICONS -----*/
+
+a.portlet-icon {
+	cursor: pointer;
+	float: right;
+	height: 24px;
+	position: relative;
+	width: 19px;
+	z-index: 10;
+	margin-right: 12px;
+	font-weight: normal;
+	color: #ccc;
+	text-align: right;
+	line-height: 100%;
+}
+a.portlet-icon:hover {
+	text-decoration: none;
+	color: #fff;
+}
+a.portlet-icon:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-family: IcoMoonBasic;
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: normal;
+	speak: none;
+}
+
+/* Collapse */
+a.portlet-minus:before {
+    content: "M";
+   	speak: none;
+}
+a.portlet-minus {
+	background: none;
+}
+
+/* Expand */
+a.portlet-plus:before {
+	content: "G";
+	speak: none;
+}
+a.portlet-plus {
+	background: none;
+}
+
+/* Maximize */
+a.portlet-maximize:before {
+	content: "R";
+	speak: none;
+}
+a.portlet-maximize {
+	background: none;
+}
+
+/* Minimize */
+.portlet-maximized a.portlet-minimize:before {
+	content: "P";
+	speak: none;
+}
+.portlet-maximized a.portlet-minimize {
+	background: none;
+}
+
+/* Close Block */
+a.portlet-close:before {
+	content: "\007e";
+	speak: none;
+}
+a.portlet-close {
+	background: none;
+	margin-right: 0;
+}
+
+
+/*----------------------------------------------
+
+ INLINE EDITING styles
+ 
+----------------------------------------------*/
+
+#homebox .inline-editing .description {
+	font-size: 13px; /* 13px */
+	font-weight: normal;
+	line-height: 1.3;
+}
+#homebox .inline-editing-field .field {
+	padding: 10px;
+	border: 1px solid #ddd;
+	margin-bottom: 8px;
+}
+
+/* edit link = .parent */
+
+#homebox .inline-editing-field .parent {
+    width: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+#homebox .inline-editing-field .parent a,
+#homebox .views-field-edit-node a {
+    font-size: 12px;
+    line-height: 100%;
+    padding: 6px;
+    background-color: #1ed2f1;
+    color: #fff;
+    float: right;
+}
+#homebox .inline-editing-field .parent a:hover,
+#homebox .views-field-edit-node a:hover {
+	background-color: #000;
+}
+
+/* Editing form */
+#homebox .inline-editing-form-wrapper {
+	background-color: #eee;
+	padding: 10px;
+	margin: 0 0 10px 0;
+}
+#homebox .inline-editing-form-wrapper fieldset {
+	background-color: #fff;
+	margin-bottom: 10px;
+}
+#homebox .inline-editing-form-wrapper input.form-submit {
+	margin: 10px 0;
+}
+
+
+/*-----------------------------------------
+
+ My Profile - widget 
+ 
+------------------------------------------*/
+
+#homebox .view-dash-profile {
+	overflow: hidden;
+	position: relative;
+}
+
+/* profile image */
+#homebox .view-dash-profile .field-name-field-images-1 {
+	position: relative;
+}
+#homebox .view-dash-profile .field-name-field-images-1 .field-item {
+	margin: 0 10px 10px 0;
+	float: left;
+}
+#homebox .view-dash-profile .field-name-field-images-1 .first-item {
+	box-shadow: 3px 3px 0px #2a2e46;
+}
+#homebox .view-dash-profile table .image-widget-data {
+	display: none;
+}
+
+/* ----------Stats Grouping ----------*/
+
+/* user name */
+#homebox .view-dash-profile .field-name-field-text-4 {
+	font-size: 17px; /* 17px */
+}
+/* name - edit textfield */
+#homebox .view-dash-profile #edit-field-text-4 input[type="text"] {
+	max-width: 80%;
+	overflow: hidden;
+}
+/* Member since - matches ".inline-editing-field .field" in general-global.css */
+#homebox .view-dash-profile .views-field-created {
+	padding: 10px;
+	border: 1px solid #ddd;
+	margin: 0 0 8px 0px; 
+}
+
+/*------------About User -------------*/
+
+#homebox #user-dashboard-profile-about .views-label,
+#homebox-block-views_dash_com_profile-account .views-field-type .field-content {
+	display: block;
+	padding: 3px 6px;
+	background-color: #eee;
+}
+
+/*------- Profile Complete Percentage ------*/
+
+.responsive-layout-mobile #block-pcp-pcp-profile2-main {
+	display: none; /* hide in mobile for now */
+}
+#block-pcp-pcp-profile2-main {
+	background-color: #eee;
+	border: 1px solid #aaa;
+	margin: 20px 0;
+	padding: 10px;
+}
+#block-pcp-pcp-profile2-main h2.block-title {
+	font-size: 17px;
+}
+
+/* progress bar wrapper */
+#block-pcp-pcp-profile2-main .pcp-percent-bar-wrapper {
+	border: 1px solid #aaa;
+	padding: 1px;
+	width: 99%;
+	background-color: #fff;
+}
+
+/* progress bar */
+#block-pcp-pcp-profile2-main .pcp-percent-bar {
+  background-color: #1ED2F1;
+  height: 10px;
+}
+
+/* View-Edit Public Profile Links */
+#profile-view-link a,
+#profile-edit-link a,
+#my-orders-link a {
+	display: block;
+	text-align: center;
+	padding: 3px 10px;
+	background-color: #eee;
+	color: #444;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin-bottom: 5px;
+}
+#profile-view-link a:hover,
+#profile-edit-link a:hover,
+#my-orders-link a:hover {
+	background-color: #444;
+	color: #fff;
+	text-decoration: none;
+}
+
+/*---------------------------------------------
+
+ My Groups - widget 
+ 
+---------------------------------------------*/
+
+#homebox .groups-main-content {
+	line-height: 1.2;
+}
+#homebox .groups-main-content li.teaser-list-row {
+	overflow: hidden;
+}
+#homebox .groups-main-content li.views-row-first {
+	padding-top: 0;
+}
+#homebox .groups-main-content li.views-row-last {
+	border-bottom: 0;
+}
+.dashboard-legacy-group-image,
+.dashboard-user-group-image {
+	float: left;
+	margin-right: 15px;
+	width: 50px;
+}
+.groups-main-content .event-location-title {
+	font-size: 15px;
+}
+.dashboard-user-group-info {
+	font-weight: normal;
+	font-size: 13px;
+}
+
+/*-----------------------------------------
+
+ My Account - widget 
+ 
+------------------------------------------*/
+
+#homebox-block-views_dash_com_profile-account .view-empty {
+	margin: 10px 0;
+	padding: 5px;
+	background-color: #eee;
+	font-size: 13px;
+}
+.username-main-content .views-field-nothing  {
+	margin-bottom: 10px;
+}
+
+/*----------------------------------------
+
+ My Orders - widget 
+ 
+-----------------------------------------*/
+
+/* shopping cart */
+.my_orders-main-content ul,
+.view-dash-orders ul {
+	margin: 0;
+	padding: 0;
+}
+.my_orders-main-content ul li,
+.view-dash-orders ul li {
+	margin: 0 0 10px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px dashed #ccc;
+	list-style-type: none;
+	font-size: 13px;
+	overflow: hidden;
+}
+
+/* Pending Orders */
+#homebox .view-dash-orders {
+	
+}
+
+/*---------------------------------------
+
+ New Activity - widget 
+ 
+---------------------------------------*/
+
+#homebox .activity-main-content .view-link {
+	margin-left: 5px;
+}
+#homebox .activity-main-content .teaser-list-row:first-child .community-user-contact-links {
+	top: 52px; /* amt is less than default to account for no padding on first teaser-list-row item */
+}
+#homebox .teaser-list-row .community-post-media-wrapper {
+	margin: 25px 0 0 0;
+	padding: 10px 0;
+	border-top: 1px dashed #aaa;
+	border-top: 1px dashed #aaa;
+}
+/*-------- New Activity fields -----------*/
+
+#homebox .new-activity-container {
+	margin: 0 0 10px 0px;
+}
+/* new likes notification */
+#homebox .new-activity-container .new-likes:before {
+	font-family: IcoMoonBasic;
+	content: "\6a";
+	margin-right: 8px;
+}
+
+/* new comments notification */
+#homebox .new-activity-container .new-comments,
+#homebox .new-activity-container .new-likes {
+	color: orange; /* set to be the same as site link color */
+}
+#homebox .new-activity-container .new-comments:hover,
+#homebox .new-activity-container .new-likes:hover {
+	color: red; /* set to be the same as site link hover color */
+}
+#homebox .new-activity-container .new-comments:before {
+	font-family: IcoMoonBasic;
+	content: "\35";
+	margin-right: 8px;
+}
+
+/*------ view all link --------*/
+
+#homebox #homebox-block-views_dash_nodes-activity .view-footer a {
+	text-align: right;
+	text-transform: uppercase;
+	display: block;
+}
+#homebox #homebox-block-views_dash_nodes-activity .view-footer a:hover {
+	text-decoration: none;
+}
+#homebox #homebox-block-views_dash_nodes-activity .view-footer a:after {
+	font-family: IcoMoonBasic;
+	content: "\e010"; /* right arrow */
+	vertical-align: middle;
+	margin-left: 5px;
+	position: relative;
+	top: -2px;
+}
+
+/*----------------------------------------
+
+ My Messages
+
+-----------------------------------------*/
+
+.view-dash-messages .views-row {
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.view-dash-messages .more-link a:after {
+	position: relative;
+	top: -2px;
+}
+
+/* User profile image */
+.dashboard-privatemsg-message .image {
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+.dashboard-privatemsg-message .image img {
+	border: 1px solid #aaa;
+}
+
+/* username, send date, subject */
+.dashboard-privatemsg-message .views-field-field-text-4,
+.dashboard-privatemsg-message .views-field-privatemsg-senddate,
+.dashboard-privatemsg-message .views-field-privatemsg-subject {
+	margin-left: 70px;
+}
+.dashboard-privatemsg-message .views-field-privatemsg-senddate,
+.dashboard-privatemsg-message .views-field-privatemsg-subject {
+	font-size: 0.750em;
+	font-style: italic;
+}
+.dashboard-privatemsg-message .views-field-privatemsg-subject {
+	margin-bottom: 20px;
+}
+
+/* message body */
+.dashboard-privatemsg-message .views-field-privatemsg-body {
+	
+}
+/* view/reply link */
+.dashboard-privatemsg-message .views-field-thread-id {
+	overflow: hidden; /* clear float */
+}
+.dashboard-privatemsg-message .views-field-thread-id a {
+	font-size: 12px;
+	display: block;
+	float: right;
+	padding: 3px 8px;
+	text-decoration: none;
+}
+
+/*-----------------------------------------
+
+ I'm Following - widget 
+ 
+------------------------------------------*/
+
+.following-main-content .teaser-grid-row {
+	margin: 0 10px 15px 0;	
+}
+.following-main-content .group-updates .group-updates-number {
+	position: relative;
+	top: -11px;
+	left: 50%;
+	margin-left: -25%;
+}
+.following-main-content .group-updates .group-updates-label {
+	display: none;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ USER PROFILE LANDING page
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.user-profile {
+	overflow: hidden;
+}
+
+/*-------------------------
+
+ EDIT USER ACCOUNT link
+ 
+--------------------------*/
+
+#profile-admin-links {
+	display: block;
+	margin-bottom: 10px;
+}
+#profile-admin-links a {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin-right: 10px;
+}
+#profile-admin-links a:before {
+	content: "1"; /* pencil */
+	font-family: "IcoMoonBasic";
+	font-size: 13px;
+	line-height: 15px;
+	margin-right: 7px;
+	speak: none;
+}
+
+/*-------------------------
+
+ My Dashboard Link
+ 
+--------------------------*/
+
+#profile-header-row {
+	display: block;
+	margin-bottom: 30px;
+	clear: right;
+}
+#profile-header-row a {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+#profile-header-row a:before  {
+	content: "v"; /* dashboard icon */
+	display: inline;
+	font-family: "IcoMoonBasic";
+	font-size: 20px;
+	line-height: 22px;
+	vertical-align: top;
+	width: 40px;
+	margin-right: 8px;
+	speak: none;
+}
+
+
+
+/*---------------------------------
+
+ QR Code img (mobile only)
+ 
+----------------------------------*/
+
+#profile-user-qrcode {
+	display: none; 
+}
+
+/*---------------------------------
+
+ Shared Layout Styles
+ 
+----------------------------------*/
+
+#profile-image-and-completeness-container,
+#profile-user-posts,
+#profile-about-container,
+#profile-user-stats-container,
+#profile-user-groups-container,
+#profile-user-followers-container {
+	padding: 30px 20px 20px 20px;
+	border: 1px solid #aaa;
+	position: relative;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#profile-image-and-completeness-container {
+	padding-top: 20px;
+}
+.page-user #profile-user-posts h2,
+.page-user #profile-about-container .field-label,
+.page-user #profile-user-stats-container h2,
+.page-user #profile-user-groups-container h2,
+.page-user #profile-user-followers-container h2 {
+	padding: 5px 15px;
+	background-color: #444;
+	color: #fff;
+	position: absolute;
+	top: -12px;
+	text-transform: uppercase;
+	font-size: 17px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+/*--------------------------------
+
+ Profile Image
+ 
+--------------------------------*/
+
+.profile-row {
+	margin-bottom: 30px;
+}
+#profile-image .inline-editing-field {
+	margin-left: 0;
+}
+#profile-image .field-type-image img {
+	border: 1px solid #aaa;
+}
+
+/* large profile image */
+#profile-image .first-item {
+	margin-bottom: 2%;
+}
+
+/* thumbnail images */
+#profile-image .field-type-image .not-first-item {
+	width: 22%;
+	margin: 0 2.6% 2% 0;
+	float: left;
+}
+
+/* Inline Image Editing */
+#profile-image .inline-editing-form-wrapper table {
+	width: 100%;
+}
+#profile-image tr.draggable .image-widget-data {
+	display: none;
+}
+#profile-image .inline-editing-form-wrapper {
+	padding: 20px 0 0 0;
+}
+#profile-image .image-widget-data input.form-file {
+	margin-bottom: 10px;
+}
+#profile-image .inline-editing .description,
+#profile-image .inline-editing .fieldset-description {
+	font-size: 12px;
+	line-height: 1.2;
+	margin: 10px 0;
+}
+
+
+/*--------------------------------
+ 
+ Profile Complete %
+ 
+---------------------------------*/
+
+.page-user #block-pcp-pcp-profile2-main {
+	margin: 20px 0 0;
+}
+
+/*-------------------------------
+
+ Profile Info
+ 
+--------------------------------*/
+
+#profile-info-container #profile-user-fullname {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#profile-user-location,
+#profile-user-member-since {
+	font-size: 13px;
+}
+
+/*-------------------------------------
+
+ Profile Contact Links
+ 
+--------------------------------------*/
+
+/*-------------------------
+ button link containers 
+--------------------------*/
+
+#profile-contact-links-container {
+	position: relative;
+	margin-bottom: 30px;
+}
+#profile-contact-links-container .community-user-contact-links {
+	height:auto;
+	position: relative;
+	left: 0;
+	top: 0;
+	width: auto;
+	overflow: hidden;
+	margin-left: 0;
+}
+#profile-contact-links-container .community-flag-follow,
+#profile-contact-links-container .community-user-message,
+#profile-contact-links-container .community-flag-wave {
+	height: auto;
+	width: 31%;
+	display: block;
+	margin-right: 3%;
+	float: left;
+}
+#profile-contact-links-container .community-flag-wave {
+	margin-right: 0;
+}
+
+/*------------------------------
+ reset css from regular 
+ community styling 
+------------------------------*/
+
+#profile-contact-links-container .community-flag-follow a,
+#profile-contact-links-container .community-user-message a,
+#profile-contact-links-container .community-flag-wave a {
+	background: #fff;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	font-size: 13px;
+	text-align: center;
+	text-transform: uppercase;
+	vertical-align: middle;
+	color: #444;
+	padding: 9%;
+	border: 1px solid #aaa;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin: 0;
+}
+#profile-contact-links-container .community-flag-follow a:hover,
+#profile-contact-links-container .community-user-message a:hover,
+#profile-contact-links-container .community-flag-wave a:hover {
+	background: #444;
+	color: #fff;
+}
+
+/*---------------------------
+ icons 
+---------------------------*/
+
+#profile-contact-links-container .community-flag-follow a:before,
+#profile-contact-links-container .community-user-message a:before,
+#profile-contact-links-container .community-flag-wave a:before {
+	display: block;
+	font-family: "IcoMoonBasic";
+	font-size: 50px;
+	line-height: 52px;
+	speak: none;
+	position: relative;
+	margin-bottom: 5px;
+	left: 0;
+	top: 0;
+}
+/* Follow icon */
+#profile-contact-links-container .community-flag-follow a:before {
+	content: "I"; /* plus */
+	speak: none;
+}
+/* Message icon */
+#profile-contact-links-container .community-user-message a:before {
+	content: "n"; /* minus */
+	text-transform: lowercase;
+	speak: none;
+}
+/* Wave icon */
+#profile-contact-links-container .community-flag-wave a:before {
+	content: "\e018"; /* hand */
+	speak: none;
+}
+#profile-contact-links-container .flag-wrapper {
+	display: block;
+}
+
+/*-----------------------
+ Flagged State 
+-------------------------*/
+
+#profile-contact-links-container .community-flag-follow a.unflag-action, 
+#profile-contact-links-container .community-flag-wave a.unflag-action {
+
+}
+/* Unfollow */
+#profile-contact-links-container .community-flag-follow a.unflag-action:before {
+	content: "O";
+	color: red;
+	speak: none;
+}
+#profile-contact-links-container .community-flag-wave a.unflag-action:before {
+	color: red;
+	speak: none;
+}
+
+/* hover state */
+#profile-contact-links-container .community-flag-follow a.flag-action:hover, 
+#profile-contact-links-container .community-user-message a:hover, 
+#profile-contact-links-container .community-flag-wave a.flag-action:hover,
+#profile-contact-links-container a.anon-login-link:hover,
+#profile-contact-links-container .community-flag-follow a.unflag-action:hover, 
+#profile-contact-links-container .community-flag-wave a.unflag-action:hover {
+	text-decoration: none;
+}
+
+/*-------------------------------
+
+ Profile - About User
+ 
+--------------------------------*/
+
+
+
+/*-------------------------------
+
+ Profile User Statistics
+ 
+--------------------------------*/
+
+#profile-user-stats,
+#profile-user-badges {
+	overflow: hidden; /* to clear floats */
+}
+#profile-user-stats-container .label {
+	float: left;
+}
+#profile-user-stats-container .value {
+	float: right;
+}
+#profile-user-stats-container #num-posts,
+#profile-user-stats-container #num-comments,
+#profile-user-stats-container #followers {
+	overflow: hidden;
+	border-bottom: 1px dashed #ccc;
+}
+
+/*-------------------------------
+
+ Profile User Groups
+ 
+--------------------------------*/
+
+#profile-user-groups-container li.teaser-list-row {
+	border-bottom: 1px dashed #ccc;
+	overflow: hidden;
+}
+#profile-user-groups-container li.views-row-first {
+	padding-top: 0;
+}
+#profile-user-groups-container li.views-row-last {
+	margin-bottom: 0;
+	border-bottom: 0;
+	padding-bottom: 0;
+}
+
+/*-----------------------------
+ Group # of updates 
+-----------------------------*/
+
+.profile-group-updates {
+	background-color: #fff;
+	border: 1px solid #aaa;
+	border-radius: 4px 4px 4px 4px;
+	clear: both;
+	margin-left: 70px;
+	padding: 2px;
+}
+.group-updates-label {
+	cursor: pointer;
+}
+.group-updates-label:hover {
+	color: #2a2e46;
+}
+.group-updates-number {
+	background-color: #B71515;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	line-height: 15px;
+	margin-top: 3px;
+	padding: 1px 8px;
+	text-align: center;
+}
+
+/*----------------------------
+ Legacy event updates 
+-----------------------------*/
+
+#profile-user-groups-container .image {
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+#profile-user-groups-container .group-info {
+	overflow: hidden;
+	margin-left: 70px;
+}
+#profile-user-groups-container .views-field-field-date-hour,
+#profile-user-groups-container .views-field-title {
+	line-height: 1.2;
+}
+
+/*----------------------------
+ community group (only) - updates 
+-----------------------------*/
+
+.profile-user_group-group {
+	margin-left: 70px;
+	overflow: hidden;
+	min-height: 50px;
+}
+
+/* Icon (instead of uploaded group img) */
+.profile-user_group-group:before {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #444;
+	color: #fff;
+	content: "0";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 15px; /* amt of top padding of container <li> */
+	font-family: IcoMoonBasic;
+	font-size: 35px;
+	height: 50px;
+	line-height: 35px;
+	margin: 0 20px 10px 0;
+	overflow: hidden;
+	padding: 8px;
+	width: 50px;
+}
+.views-row-first .profile-user_group-group:before {
+	top: 0; /* account for no top padding on first item */
+}
+
+/* image */
+.profile-user_group-group .image {
+	display: none;
+}
+
+/* title */
+#profile-user-groups-container .profile-user_group-group .group-info {
+	margin: 0 0 10px;
+	padding: 0;
+}
+/* # of updates */
+.profile-group-updates {
+	margin-left: 0;
+}
+
+
+/*-------------------------------
+
+ Profile User Followers
+ 
+--------------------------------*/
+
+#profile-user-followers-container .view-community-followers {
+	overflow: hidden;
+}
+#profile-user-followers-container .teaser-grid-row {
+	margin: 0 2% 2% 0;
+	width: 50px;
+	height: 50px;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ USER MESSAGES PAGE 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.page-messages .form-actions {
+	overflow: hidden;
+}
+.page-messages .form-actions .form-submit {
+	margin-bottom: 10px;
+}
+ul.action-links {
+	margin: 0 0 30px 0;
+	padding: 0;
+	overflow: hidden;
+}
+ul.action-links li {
+	margin: 0 10px 0 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+}
+ul.action-links li a {
+	display: block;
+	padding: 8px 15px;
+	float: left;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #fff;
+	border-radius: 20px;
+	background-color: #2a2e46;
+}
+ul.action-links li a:before {
+	content: "I";
+	font-family: "IcoMoonBasic";
+	font-size: 16px;
+	display: inline-block;
+	margin-right: 5px;
+	vertical-align: middle;
+	speak: none;
+}
+
+.form-actions a#edit-cancel {
+	display: block;
+	padding: 3px 10px;
+	border: 1px solid #aaa;
+	font-size: 13px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
+	float: left;
+}
+.form-actions a#edit-cancel:hover {
+	background-color: #444;
+	color: #fff;
+}
+
+form#privatemsg-list div.container-inline * {
+    margin: 0 2px 10px 0;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ ADMIN DASHBOARD 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.page-admin-dashboard #homebox .homebox-column-wrapper-1 {
+	margin: 0 0 20px 0;
+}
+.page-admin-dashboard #homebox .homebox-column-wrapper-2 {
+	margin-right: 2%;
+	width: 64% !important;
+	margin-bottom: 20px;
+}
+.page-admin-dashboard #homebox .homebox-column-wrapper-3 {
+	margin-bottom: 20px;
+}
+
+/*------------------------------------
+
+ ADD A BLOCK 
+ 
+-------------------------------------*/
+
+#homebox-buttons {
+	margin-bottom: 20px;
+}
+#homebox-buttons a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#homebox-buttons a#homebox-add-link:before {
+	content: "\49"; /* plus sign circle */
+	font-family: "IcoMoonBasic";
+	font-size: 25px;
+	line-height: 20px;
+	margin-right: 10px;
+	vertical-align: middle;
+	speak: none;
+}
+#homebox-add {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#homebox-add ul {
+	margin-left: 35px !important;
+}
+#homebox-add ul li {
+	font-size: 11px;
+	margin: 0 10px 10px 0;
+	overflow: hidden;
+	padding: 0;
+}
+#homebox-add li a {
+	background-color: #eee;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	color: #444;
+	display: block;
+	height: 65px;
+	padding: 7px 10px 7px 40px;
+	position: relative;
+	width: 140px;
+	font-weight: normal;
+}
+#homebox-add li a:before {
+	content: "\4f"; /* minus sign circle */
+	font-family: "IcoMoonBasic";
+	color: #2a2e46;
+	font-size: 25px;
+	display: block;
+	position: absolute;
+	left: 7px; /* so the icon doesn't get cut off on the left side */
+	top: 8px;
+	line-height: 25px;
+	speak: none;
+}
+#homebox-add li a:hover  {
+	text-decoration: none;
+	background: #444;
+	color: #fff;
+}
+
+/* USED blocks */
+#homebox li a.used:before {
+	color: #54b150;
+	content: "\e003"; /* checkmark circle */
+	display: block;
+	font-family: "IcoMoonBasic";
+	font-size: 25px;
+	left: 7px; /* so the icon doesn't get cut off on the left side */
+	line-height: 25px;
+	position: absolute;
+	speak: none;
+}
+
+/* RESTORE button */
+#homebox-add ul li:last-child {
+	clear: both;
+}
+#homebox-add li a.restore {
+	background-color: #444;
+	color: #fff;
+	height: 45px;
+}
+#homebox-add li a.restore:hover {
+	background-color: #000;
+}
+#homebox-add li a.restore:before {
+	content: "\e00e"; /* circle arrow left */
+	font-family: "IcoMoonBasic";
+	font-size: 25px;
+	line-height: 25px;
+	color: #fff;
+	speak: none;
+}
+
+/*------------------------------------
+
+ CHARTS
+ 
+--------------------------------------*/
+
+#master-chart-pies {
+	height: 450px;
+}
+
+/*-------------------------------------
+
+ Online Store Stats
+ 
+------------------------------------*/
+
+#admin-store-transactions,
+#admin-store-average-transaction,
+#admin-store-total {
+	border-bottom: 1px solid #aaa;
+	padding: 10px 0;
+	position: relative;
+	overflow: hidden;
+	height: 70px;
+}
+#admin-store-total {
+	border: 0;
+}
+#admin-store-transactions-title,
+#admin-store-average-transaction-title,
+#admin-store-total-title {
+	position: absolute;
+	top: 30px;
+	left: 0;
+	font-size: 18px;
+}
+#admin-store-transactions-number, 
+#admin-store-average-transaction-number, 
+#admin-store-total-number {
+	display: block;
+	font-size: 43px;
+	font-weight: normal;
+	left: 160px;
+	line-height: 50px;
+	position: absolute;
+	top: 15px;
+}
+
+/*-------------------------------------
+
+ ADD CONTENT block
+ 
+------------------------------------*/
+
+#homebox ul#admin-add-content-block {
+	margin: 0;
+	padding: 0;
+}
+#homebox ul#admin-add-content-block li {
+	margin: 0;
+	border-bottom: 1px solid #aaa;
+	list-style-type: none;
+	font-size: 18px;
+	overflow: hidden;
+	padding: 10px 0;
+	height: auto;
+}
+#homebox ul#admin-add-content-block li:first-child {
+	padding-top: 10px;
+}
+#homebox ul#admin-add-content-block li span.icon:before {
+	display: block;
+	width: 30px;
+	height: 30px;
+	float: left; 
+	margin-right: 10px;
+	font-size: 24px;
+	font-family: "IcoMoonBasic";
+	vertical-align: middle;
+	line-height: 24px;
+	speak: none;
+	position: relative;
+	left: 1px;
+	content: "I";
+}
+#homebox ul#admin-add-content-block li a {
+	display: block;
+	text-decoration: none;
+}
+#homebox-block-views_admin_orders-open .view-content {
+	padding: 10px;
+}
+#homebox-block-views_admin_orders-open .view-admin-orders span.field-content {
+	font-size: 70px;
+	text-align: center;
+	display: block;
+	line-height: 70px;
+}
+#homebox-block-views_admin_orders-open .view-admin-orders .suffix {
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 25px;
+	text-align: center;
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 5px;
+	padding-bottom: 15px;
+}
+
+/*-------------------------------------
+
+ POPULAR CONTENT block
+ 
+------------------------------------*/
+
+.community-post-stats-wrapper {
+	overflow: hidden;
+}
+.community-post-stats-wrapper .stats-item {
+	float: left;
+	margin-right: 15px;
+	font-size: 12px;
+}
+.community-post-stats-wrapper .stat-post-type {
+	padding: 0px 10px 2px;
+	background-color: #444;
+	color: #fff;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	font-size: 11px;
+	margin-top: 3px;
+}
+.community-post-stats-wrapper .stat-like-count:before {
+	content: "\6a"; /* heart */
+	margin-right: 1px;
+	font-family: "IcoMoonBasic";
+	speak: none;
+	vertical-align: middle;
+}
+.community-post-stats-wrapper .stat-comment-count:before {
+	content: "\35";
+	margin-right: 1px;
+	font-family: "IcoMoonBasic";
+	font-size: 13px;
+	speak: none;
+	vertical-align: middle;
+}
+/* view post button */
+.community-post-media-wrapper .post-view {
+	overflow: hidden;
+}
+.community-post-media-wrapper .post-view a {
+	display: block;
+	padding: 5px 10px;
+	float: left;
+}
+.community-post-media-wrapper .post-view a:hover {
+	
+}
+.community-post-media-wrapper .post-view a:before {
+	content: "\41"; /* magnifying glass */
+	font-family: IcoMoonBasic;
+	margin-right: 5px;
+	speak: none;
+}
+
+/*-------------------------------------
+
+ MEET & GREET ADMIN
+ 
+------------------------------------*/
+
+.form-item #edit-operation {
+	float: left;
+	margin-right: 20px;
+}
+
+/*-------------------------------------
+
+ SOCIAL block
+ 
+------------------------------------*/
+
+#homebox-block-fantorrent_control_center_blocks_fantorrent_social tr.qv-header td {
+	background-color: #888;
+	color: #fff;
+	padding: 5px 15px;
+	text-transform: uppercase;
+}
+
+/*-------------------------------------
+
+ SITE USAGE block
+ 
+------------------------------------*/
+
+#homebox-block-fantorrent_control_center_blocks_fantorrent_site_usage tr.qv-header td {
+	background-color: #888;
+	color: #fff;
+	padding: 5px 15px;
+	text-transform: uppercase;
+}
+

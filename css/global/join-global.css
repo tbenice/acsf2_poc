@@ -1,0 +1,481 @@
+
+/* Fantorrent Join Styles - Global */
+
+
+
+/* General */
+
+.responsive-layout-mobile .block-fantorrent-join-login-form {
+	border-bottom: 1px solid #444;
+}
+
+
+
+/*------------------------------
+
+ login button 
+ 
+------------------------------*/
+
+#login-link-container {
+	height: 40px;
+	text-align: left;
+	position: relative;
+}
+#login-link-container a {
+	color: #FFFFFF;
+	display: block;
+	font-size: 12px;
+	height: 40px;
+	padding: 8px 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 80px;
+}
+#login-link-container a:hover {
+	background-color: #333;
+}
+#login-link-container a:before {
+	content: "\5d";
+	font-family: "IcoMoonBasic";
+	margin-right: 5px;
+	color: #777;
+	font-size: 15px;
+	padding: 0;
+	vertical-align: top;
+	speak: none;
+}
+
+/*----------------------------------------
+
+ LOGIN DROPDOWN FORM 
+ 
+-----------------------------------------*/
+
+#fantorrent-join-login-dropdown-form {
+	background-color: #333;
+	padding: 25px 25px 40px 25px;
+	font-size: 15px;
+	color: #aaa;
+}
+#fantorrent-join-login-dropdown-form label {
+	font-weight: normal;
+	font-size: 18px;
+}
+/* name */
+#fantorrent-join-login-dropdown-form .form-item-name {
+	margin: 0 0px 20px 0;
+}
+/* password */
+#fantorrent-join-login-dropdown-form .form-item-pass {
+	margin: 0;
+}
+#fantorrent-join-login-dropdown-form .form-item-name input, 
+#fantorrent-join-login-dropdown-form .form-item-pass input {
+	height: 35px;
+	padding: 6px;
+	width: 100%;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+/* Submit button */
+#fantorrent-join-login-dropdown-form #edit-actions input {
+	padding: 10px 25px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 18px;
+	width: 100%;
+}
+.responsive-layout-mobile #fantorrent-join-login-dropdown-form #edit-actions input {
+	background-color: orange;
+}
+
+/* log in with social accounts */
+#fantorrent-join-login-dropdown-form .item-list {
+	border-top: 1px dashed #666;
+	border-bottom: 1px dashed #666;
+	clear: both;
+	margin: 2em 0;
+	padding: 1em 0;
+}
+#fantorrent-join-login-dropdown-form .item-list h3 {
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 7px;
+	text-align: center;
+}
+#fantorrent-join-login-dropdown-form .item-list h3:before {
+	color: #ABABAB;
+	content: "- OR -";
+	display: block;
+	font-size: 24px;
+	padding: 4px;
+	text-align: center;
+}
+#fantorrent-join-login-dropdown-form .item-list ul.hybridauth-widget {
+	margin: 0 auto;
+	padding: 0;
+	width: 105px;
+}
+
+/* links */
+a.login-block-register-link,
+a.login-block-recover-link {
+	width: 48%;
+	text-align: center;
+	display: inline-block;
+	padding: 5px 10px;
+	background-color: #eee;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin-right: 2%;
+	font-size: 12px;
+	color: #444;
+}
+a.login-block-register-link:hover,
+a.login-block-recover-link:hover {
+	background-color: #444;
+	color: #fff;
+	text-decoration: none;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ USER BAR LOGOUT BOX
+ 
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+.block-fantorrent-join-logged-in-block {
+	color: #ffffff;
+	display: inline-block;
+	margin: 0 10px 0 10px;
+	padding: 5px 0;
+	vertical-align: top;
+	height: 40px;
+} 
+
+/* Image */
+a#fantorrent-join-logged-in-block-user-image {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+	width: 30px;
+	height: 30px;
+	background-color: #000;
+	border: 1px solid #444;
+}
+a#fantorrent-join-logged-in-block-user-image:hover {
+	border-color: #fff;
+}
+
+/* welcome text */
+.block-fantorrent-join-logged-in-block .content span.logged-in-welcome {
+	display: none;
+}
+
+/* username */
+.block-fantorrent-join-logged-in-block .logout-username {
+	display: none;
+}
+
+/* Logout link */
+.block-fantorrent-join-logged-in-block a#fantorrent-join-logged-in-block-log-out {
+	display: inline-block;
+	height: 0;
+	width: 20px;
+	padding: 30px 28px 0 0;
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	color: #999;
+}
+.block-fantorrent-join-logged-in-block a#fantorrent-join-logged-in-block-log-out:hover {
+	color: #fff;
+	background-color: #2a2e46;
+}
+.block-fantorrent-join-logged-in-block a#fantorrent-join-logged-in-block-log-out:before {
+	content: "\5c";
+	font-family: IcoMoonBasic;
+	font-size: 18px;
+	position: absolute;
+	top: 4px;
+	left: 7px;
+	speak: none;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ USER BAR - JOIN FORM (email form)
+ 
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+.block-fantorrent-join-join-form {
+	z-index: 9999;
+	padding: 10px 0 10px 10px;
+	margin: 0;
+	background-color: #2a2e46;
+}
+.block-fantorrent-join-join-form label {
+	display: none;
+}
+.block-fantorrent-join-join-form .form-type-textfield {
+	display: inline-block;
+	margin: 6px 8px 6px 0;
+	width: 60%;
+}
+.block-fantorrent-join-join-form input.form-text {
+	border: medium none;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	color: #666666;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	height: 35px;
+	padding: 7px 5px;
+	width: 100%;
+}
+.block-fantorrent-join-join-form .form-submit {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	display: inline-block;
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 17px;
+	font-weight: normal;
+	height: 35px;
+	line-height: 12px;
+	padding: 0;
+	text-transform: uppercase;
+	width: 34%;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ COLORBOX popup - "SUCCESS" + REGISTER FORM
+ 
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/*--------------------------------
+
+ Header Block 
+ 
+---------------------------------*/
+
+#fantorrent-join-register-header-block {
+	background-color: #CAE89B;
+	border-radius: 10px 10px 10px 10px;
+	line-height: 20px;
+	margin-bottom: 10px;
+	padding: 20px;
+	color: #222;
+	text-align: center;
+}
+
+/* Title */
+#fantorrent-join-register-header-block h2 {
+	margin: 0;
+}
+
+/*----------------------------------
+
+ REGISTRATION VALUE (benefits) block
+
+-----------------------------------*/
+
+h2#fantorrent-join-register-form-block-title {
+	display: none;
+}
+
+#fantorrent-join-register-value-block {
+	border: 1px solid #CCC;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 1rem;
+	padding: 120px 20px 20px;
+	margin-bottom: 10px;
+	background: transparent url(../../images/bg-popup-join-header.jpg) no-repeat scroll center top;
+	background-size: 50% auto;
+}
+/* title */
+#fantorrent-join-register-value-block h2 {
+	text-align: center;
+}
+/* body */
+#fantorrent-join-register-value-block-body {
+	width: 85%;
+	margin: 0 auto;
+}
+#fantorrent-join-register-value-block-body ul {
+	list-style: disc;
+}
+#fantorrent-join-register-value-block-body li {
+	list-style-type: disc;
+	margin-left: 15px;
+}
+
+/*----------------------------------
+
+ REGISTER FORM
+
+-----------------------------------*/
+
+#fantorrent-join-register-form-block-form {
+	border: 1px solid #ccc;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	font-size: 1rem;
+	padding: 20px;
+}
+#fantorrent-join-register-form-block-form label {
+	font-size: 1.250em; /* 20px */
+	font-weight: normal;
+}
+#fantorrent-join-register-form-block-form > form {
+	margin: 0 auto;
+	width: 85%;
+}
+#fantorrent-join-register-form-form .form-item-email input, 
+#fantorrent-join-register-form-form .form-item-password input {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	font-size: 1.125rem; /* 18px */
+	height: 60px;
+	padding: 14px;
+	width: 100%;
+	margin: 10px 0;
+}
+
+/* join button */
+#colorbox #fantorrent-join-register-form-form input.form-submit {
+	font-size: 1.5rem;
+	padding: 10px;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ REMINDER BLOCK - VERIFY EMAIL ADDRESS
+ 
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/*-----------------------------------
+
+ OUTER CONTAINER 
+ 
+------------------------------------*/
+
+.block-fantorrent-join-reminder-block {
+	background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 5px;
+	margin: 50px 0;
+	text-align: center;
+}
+
+/*-----------------------------------
+
+ TITLE 
+ 
+------------------------------------*/
+
+.block-fantorrent-join-reminder-block h2.block-title {
+	background-color: #000;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	font-size: 1.250em; /* 20px */
+	font-weight: normal;
+	line-height: 1.2;
+	margin: 0;
+	padding: 15px;
+	text-transform: uppercase;
+}
+
+/* email icon */
+.block-fantorrent-join-reminder-block h2.block-title:before {
+	content: "\6f";
+	font-family: IcoMoonBasic;
+	font-size: 24px;
+	margin-right: 10px;
+	text-transform: none;
+	vertical-align: -3px;
+	color: #999;
+}
+
+/*-----------------------------------
+
+ BOTTOM CONTENT 
+ 
+------------------------------------*/
+
+.block-fantorrent-join-reminder-block .content {
+	color: #fff;
+	margin: 0 auto;
+}
+
+/* "Verify Your Email Today" */
+h2#fantorrent-join-email-reminder-title {
+	color: #fff;
+	font-size: 1.5rem; /* 24px */
+	letter-spacing: 0;
+	margin-bottom: 5px;
+	text-shadow: none;
+	text-transform: uppercase;
+	letter-spacing: -2px;
+	display: none; /* hide - overkill */
+}
+
+/* Time Remaining */
+#fantorrent-join-email-reminder-time-left {
+	background-color: #fff;
+	color: #444;
+	font-size: 1.125em; /* 18px */
+	line-height: 100%;
+	margin: 25px;
+	padding: 15px;
+	text-align: center; 
+}
+
+/* Resend Email - Request */
+#fantorrent-join-email-reminder-resend-email-link {
+	font-size: 1.125rem;
+	line-height: 1.2;
+	margin: 0 25px 25px;
+	text-align: center; /* for homebox dashboard */
+	color: #222;
+}
+
+/* Resend button */
+.fantorrent-join-verification-email-resend-link.button {
+	background-color: #000;
+	margin: 10px auto;
+	max-width: 200px;
+	color: #fff;
+}
+.fantorrent-join-verification-email-resend-link.button:hover {
+	background-color: #fff;
+	color: #222;
+}
+
+/* for homebox dashboard only */
+.homebox #fantorrent-join-email-reminder-time-left {
+	font-size: 1.5em;
+	margin: 0 0 20px;
+	padding: 0;
+	text-align: center;
+}
+.homebox #fantorrent-join-email-reminder-resend-email-link {
+	margin: 0;
+}

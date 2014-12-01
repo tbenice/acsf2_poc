@@ -1,0 +1,140 @@
+
+/* Gear Pages Stylesheet - Global only */
+
+/*-----------------------------------------------------------
+-------------------------------------------------------------
+
+ GEAR NODE
+ 
+--------------------------------------------------------------
+------------------------------------------------------------*/
+
+#gear-header-row-container {
+	padding-bottom: 15px;
+}
+#gear-header-row-container ul.filter-links-container {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*----------------------------
+
+ IMAGES 
+ 
+-----------------------------*/
+
+#gear-image-container img {
+	width: 100%;
+	height: auto;
+}
+#gear-image-container .field-label {
+	display: none;
+}
+#gear-image-container .not-first-items-container {
+	overflow: hidden;
+}
+#gear-image-container .first-item,
+#gear-image-container .not-first-item {
+	margin: 0 0 20px 0;
+}
+
+/*----------------------------
+
+ INFO 
+ 
+-----------------------------*/
+
+/* Labels */
+#gear-info-container .field-gear-type {
+	margin-bottom: 20px;
+	overflow: hidden;
+	display: block;
+}
+#gear-info-container .field-gear-type .field-label {
+	font-size: 20px;
+}
+#gear-info-container .body {
+	margin-bottom: 30px;
+}
+
+/*--------------------------
+
+ Tags 
+ 
+---------------------------*/
+
+#gear-tags-container .field-label {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+#gear-tags-container .field-items {
+	margin: 0 0 30px 0;
+}
+
+/*---------------------------
+
+ Appears On - songs
+ 
+----------------------------*/
+
+#gear-tags-container .field-item:before {  
+	content: "-";  
+	margin-right: 10px;
+}
+
+/*------------------------------------------------
+
+ RELATED GEAR ITEMS
+ 
+-------------------------------------------------*/
+
+#gear-related-gears-container h2 {
+	font-size: 45px;
+}
+#gear-related-gears-container .view-content {
+	overflow: hidden;
+}
+#gear-related-gears-container .views-row {
+	width: 47%;
+	margin: 0 3% 3% 0;
+	float: left;
+}
+#gear-related-gears-container .views-row img {
+	width: 100%;
+	height: auto;
+}
+#gear-related-gears-container .views-field-field-gear-type {
+	display: none;
+}
+
+/*--------------------------
+ Title 
+--------------------------*/
+
+#gear-related-gears-container .views-field-title {
+	display: none;
+}
+
+/*-------------------------
+ More button 
+--------------------------*/
+
+#gear-related-gears-container .view-footer {
+	text-align: center;
+}
+#gear-related-gears-container .view-footer a {
+	background-color: #444;
+	display: block;
+	font-size: 20px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	width: auto;
+	color: #fff;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+#gear-related-gears-container .view-footer a:hover { 
+	background-color: #ccc;
+}

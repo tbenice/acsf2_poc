@@ -1,0 +1,575 @@
+
+/*  Community Stylesheet - Default only */
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ Community Styles 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.node-type-event .community-container {
+	float: left;
+	width: 60%;
+	margin-right: 3%;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ COMMUNITY POSTS 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/* User Profile Image */
+.community-user-profile-image {
+	width: 52px; /* accommodate 1px border on 50px image */
+	height: 52px;
+	margin-right: 20px;
+}
+
+/*----------------------
+ Post Creation Date 
+------------------------*/
+
+.community-post-created-date {
+	margin-left: 70px;
+}
+
+/* ------------------------------------------- 
+
+ User Contact Links - FOLLOW, MESSAGE, WAVE
+ 
+--------------------------------------------*/
+
+/* main container */
+.community-user-contact-links {
+	width: 52px;
+	height: 17px;
+	position: absolute;
+	top: 67px; /* extra 13px due to views-row 10px padding-top + 3px border */
+	left: 0;
+	margin: 0;
+	border: 0;
+}
+
+/* link containers */
+.community-flag-follow,
+.community-user-message,
+.community-flag-wave {
+	height: 17px;
+	width: 17px;
+	margin-right: 0;
+}
+
+/* links */
+.community-user-contact-links a {
+	font-size: 15px;
+	line-height: 15px;
+	padding-top: 17px;
+	width: 17px;
+}
+
+/*------------- end contact user links ------------*/
+
+
+/* Change left margin on post elements to accommodate larger profile img */
+
+.community-user-full-name /* User Name */,
+.community-post-created-date /* Post Creation Date */,
+.community-post-media-wrapper /* Post Body */,
+.view-content ul.post-groups-wrapper /* Post Groups List */,
+.community-feed-row .user-accounts-share-links-container /* Share Links */ {
+	margin-left: 70px;
+}
+
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ COMMUNITY COMMENTS
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/*-----------------------
+ add a comment button 
+------------------------*/
+
+.community-post-comment-link-wrapper {
+	width: 140px;
+	margin-left: 70px;
+}
+.community-post-comment-link-wrapper a {
+	padding: 2px 7px 1px;
+	margin: 0;
+	text-align: left;
+	overflow: visible;
+	height: auto;
+	width: 140px;
+}
+
+/*--------------------
+ Comment button Icon 
+---------------------*/
+
+.community-post-comment-link-wrapper a:before {
+	margin: 0px 7px 0 0;
+	float: left;
+	position: relative;
+	left: 0;
+	top: 0;
+	speak: none;
+}
+
+/*-------------------
+ Comments listing 
+----------------------*/
+
+.community-post-comments { /* comments wrapper */
+	margin-left: 70px;
+}
+
+/* user icon */
+.community-post-comments .views-field-field-images-1 {
+	width: 42px; /* accounts for border */
+	height: 42px;
+	margin-right: 15px;
+}
+.community-post-comments .views-field-field-images-1 img {
+	width: 40px;
+	height: 40px;
+}
+
+/*---------------------------
+ text & media fields margin 
+----------------------------*/
+
+.community-post-comments .views-field-field-user-full-name,
+.community-post-comments .views-field-created, 
+.community-post-comments .views-field-comment-body {
+	margin-left: 57px;
+}
+
+/*---------------------------
+ view all comments - toggle 
+----------------------------*/
+
+.community-post-comments-expand-link {
+	margin-left: 70px;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ COMMUNITY LOGIN PAGE 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/*----------------------------
+
+ Login Links 
+ 
+-----------------------------*/
+
+.toboggan-unified a#login-link, 
+.toboggan-unified a#register-link, 
+.toboggan-unified #login-links a.lt-active {
+	width: 50%;
+}
+.toboggan-unified a#login-link, 
+.toboggan-unified a#register-link, 
+.toboggan-unified #login-links a.lt-active {
+	border-radius: 40px;
+	padding: 20px;
+}
+
+/*--------------------
+ login button icon 
+----------------------*/
+
+.toboggan-unified a#login-link:before {
+	background-color: #555555;
+	border-radius: 30px 30px 30px 30px;
+	content: "\30";
+	font-family: IcoMoonBasic;
+	font-size: 23px;
+	height: 30px;
+	line-height: 0;
+	margin-right: 15px;
+	padding: 12px;
+	position: relative;
+	top: 4px;
+	width: 54px;
+	speak: none;
+}
+.toboggan-unified a#login-link:hover:before {
+	background-color: #000;
+}
+
+/*--------------------
+ register button icon 
+----------------------*/
+
+.toboggan-unified a#register-link:before {
+	background-color: #555555;
+	border-radius: 30px 30px 30px 30px;
+	content: "+";
+	font-family: Arial,sans-serif;
+	font-size: 40px;
+	height: 30px;
+	line-height: 0;
+	margin-right: 15px;
+	padding: 0 12px;
+	position: relative;
+	top: 7px;
+	width: 54px;
+	speak: none;
+}
+.toboggan-unified a#register-link:hover:before {
+	background-color: #000;
+}
+
+/*------------------------------
+
+ Login Form 
+ 
+------------------------------*/
+
+.page-user-login #login-form {
+	width: 50%;
+	margin: 0 auto;
+}
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ COMMUNITY SIDEBAR BLOCKS
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+#region-sidebar-second .community-user-full-name /* User Name */,
+#region-sidebar-second .community-post-created-date /* Post Creation Date */ {
+	margin-left: 45px;
+}
+#region-sidebar-second .community-post-media-wrapper,
+#region-sidebar-second .community-post-stats-wrapper {
+	margin-left: 0;
+}
+
+/* Community on Legacy node */
+.node-type-event .community-sidebar-container {
+	float: right;
+	width: 37%;
+}
+.community-sidebar-container .community-favorites {
+	padding: 0;
+	border: 0;
+}
+
+/*----------------------------------------
+
+ BAND MEMBER POSTS - sidebar 
+ 
+----------------------------------------*/
+
+#block-views-tfp-custom-nodes-latest-any .view-tfp-custom-nodes {
+	padding: 0;
+}
+#block-views-tfp-custom-nodes-latest-any .clickable-hover,
+#block-views-tfp-custom-nodes-latest-reid .clickable-hover,
+#block-views-tfp-custom-nodes-latest-neil .clickable-hover,
+#block-views-2a61fc76d64c436a6bf695a2498f5c16 .clickable-hover {
+	-webkit-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+}
+.view-tfp-custom-nodes .band-post-bubble {
+	padding: 7%;
+}
+
+.view-tfp-custom-nodes .band-post-top {
+	overflow: hidden;
+}
+
+/* username */
+.view-tfp-custom-nodes .band-post-user-name {
+	display: inline-block;
+	font-size: 23px;
+	margin-right: 10px;
+	padding-top: 5px;
+	vertical-align: top;
+}
+
+/*-------------------------------
+ follow link 
+--------------------------------*/
+
+.band-post-user-follow {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+}
+.band-post-user-follow a {
+	color: #ee4949;
+	display: block;
+	font-size: 35px;
+	height: 0;
+	line-height: 35px;
+	overflow: hidden;
+	padding-top: 42px;
+	position: relative;
+	text-align: center;
+	width: 37px;
+}
+
+/* Icon */
+.band-post-user-follow a:before {
+	font-family: "IcoMoonBasic";
+	position: absolute;
+	top: 1px;
+	left: 1px;	
+	speak: none;
+}
+.band-post-user-follow a.flag-action:before,
+.band-post-user-follow a.anon-login-link:before {
+	content: "\49"; /* plus sign square */
+	font-family: IcoMoonBasic;
+}
+
+/* UnFollow */
+.band-post-user-follow a.unflag-action {
+	color: #679166;
+}
+.band-post-user-follow a.unflag-action:before {
+	content: "\4f"; /* minus sign circle */
+}
+
+/* post date */
+.band-post-posted-date {
+  clear: both;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/*-------------------------------
+ Band Pics 
+-------------------------------*/
+
+/* kimberly */
+#block-views-tfp-custom-nodes-latest-any .band-post-author-image.user-uid-8,
+.view-display-id-latest_kimberly .band-post-author-image.user-uid-8 {
+	height: 190px; /* 150,110 */
+	background: url(../../../images/band-post-headers-kimberly.jpg) no-repeat scroll center top;
+	background-size: 100% auto;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	border-bottom: 1px solid #706E6E;
+}
+
+/* Reid */
+#block-views-tfp-custom-nodes-latest-any .band-post-author-image.user-uid-10,
+.view-display-id-latest_reid .band-post-author-image.user-uid-10 {
+	height: 190px; /* 150,110 */
+	background: url(../../../images/band-post-headers-reid.jpg) no-repeat scroll center top;
+	background-size: 100% auto;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	border-bottom: 1px solid #706E6E;
+}
+
+/* Neil */
+#block-views-tfp-custom-nodes-latest-any .band-post-author-image.user-uid-9,
+.view-display-id-latest_neil .band-post-author-image.user-uid-9 {
+	height: 190px; /* 150,110 */
+	background: url(../../../images/band-post-headers-neil.jpg) no-repeat scroll center top;
+	background-size: 100% auto;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	border-bottom: 1px solid #706E6E;
+}
+
+
+
+
+
+
+/*-----------------------------------------
+
+ I WAS THERE - community group members - Legacy node
+ 
+------------------------------------------*/
+
+.community-sidebar-container .group-members {
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.community-sidebar-container .group-members .view-content .views-row {
+	width: 40px;
+	height: 40px;
+	margin: 0 10px 10px 0;
+	float: left;
+}
+.community-sidebar-container .views-row img {
+	width: 100%;
+	height: auto;
+}
+
+/*----------------------------------------
+
+ HOT TOPICS - recent comments block 
+ 
+----------------------------------------*/
+
+.view-comments-recent .views-field-comment-count {
+	font-size: 12px;
+	color: #999;
+}
+
+/* list item title */
+.hot_topics_block-main-content .views-field.views-field-title {
+	line-height: 17px;
+}
+
+/* Comment count */
+.hot_topics_block-main-content .views-field.views-field-cid {
+	font-size: 13px;
+	padding: 0 2px;
+}
+
+/* talk bubble icon */
+.views-label.views-label-cid:before {
+	content: "5";
+	font-family: IcoMoonBasic;
+	left: 0;
+	margin-right: 5px;
+	position: relative;
+	top: 1px;
+	color: #999;
+}
+
+
+/*---------------------------------------
+
+ TWEETS block 
+
+----------------------------------------*/
+
+.view-twitter-feed .twitter-id {
+	display: block;
+	line-height: 10px;
+}
+.view-twitter-feed .twitter-name {
+	font-size: 13px;
+	font-weight: normal;
+	color: #bbb;
+}
+.view-twitter-feed .community-post-media-wrapper {
+	border: 0;
+	padding: 0;
+	margin-bottom: 0;
+}
+.view-twitter-feed .post-update,
+.view-twitter-feed .post-body {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+.view-twitter-feed .views-row {
+	padding: 15px 0;
+	border-bottom: 1px solid #aaa;
+}
+.view-twitter-feed .views-row img {
+	border: 1px solid #aaa;
+}
+
+/*---------------------------------------
+
+ Who's Like This Post - sidebar block 
+
+----------------------------------------*/
+
+#block-views-community-feed-likes .view-content {
+	overflow: hidden;
+}
+#block-views-community-feed-likes .teaser-grid-row {
+	width: 40px;
+	height: 40px;
+	margin: 0 10px 10px 0;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ USER PROFILE LANDING page
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+/*-------------------------
+
+ EDIT USER ACCOUNT link
+ 
+--------------------------*/
+
+#profile-admin-links {
+	float: left;
+	margin-bottom: 30px;
+}
+
+/*-------------------------
+
+ My Dashboard Link
+ 
+--------------------------*/
+#profile-header-row {
+	float: left;
+	margin-bottom: 30px;
+	clear: right;
+}
+
+/*-------------------------
+
+ Layout 
+
+--------------------------*/
+
+#profile-column-1 {
+	width: 40%;
+	margin-right: 3%;
+	float: left;
+	clear: left;
+}
+#profile-column-2 {
+	width: 56.5%;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

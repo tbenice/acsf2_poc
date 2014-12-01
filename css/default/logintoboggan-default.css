@@ -1,0 +1,117 @@
+
+/* LoginToboggan Default styles */
+
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ LOGIN - login toboggan
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+#zone-user-bar #block-user-login {
+	left: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+}
+
+/*------------------------------
+
+ login button 
+ 
+------------------------------*/
+
+#login-link-container a {
+	padding: 8px 5px;
+	border: 0;
+	width: 135px;
+}
+#login-link-container a:hover {
+	background-color: #666;
+}
+#login-link-container a:before {
+	color: #ccc;
+}
+
+/*------------ drop-down tab form -----------*/
+
+#login-dropdown-form { /* form wrapper */
+	background: #fff;
+	-webkit-border-radius: 0px 0px 8px 8px;
+    -moz-border-radius: 0 0 8px 8px;
+	border-radius: 0 0 8px 8px;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	width: 465px;
+}
+
+/*---- form fields ---*/
+
+#login-dropdown-form .form-item-name,
+#login-dropdown-form .form-item-pass {
+	margin: 0 20px 0 0;
+	float: left;
+}
+#login-dropdown-form .form-item-name label,
+#login-dropdown-form .form-item-pass label {
+	color: #444;
+}
+#login-dropdown-form .form-item-name input, 
+#login-dropdown-form .form-item-pass input {
+	font-size: 15px;
+	height: 35px;
+	padding: 6px;
+	width: 155px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* submit */
+#login-dropdown-form .form-actions {
+	overflow: hidden;
+}
+#login-dropdown-form input.form-submit {
+	float: right;
+	margin-top: 10px;
+}
+
+/*----- create account + reset pass links -----*/
+
+#login-dropdown-form .item-list ul li {
+	float: left;
+	margin: 0 10px 0 0;
+}
+#login-dropdown-form .item-list:last-child {
+	padding-bottom: 0;
+}
+#login-dropdown-form .item-list:last-child a {
+	background-color: #222;
+	color: #fff;
+	padding: 5px 10px;
+}
+#login-dropdown-form .item-list:last-child a:hover {
+	background-color: #36b6e0;
+	color: #fff;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ LOGOUT BOX- login toboggan
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+#fantorrent-user-bar #user-bar-logged-in,
+#user-bar-user-dashboard-link {
+	margin: 0 20px;
+}
+#fantorrent-user-bar #user-bar-logged-in .content span.logged-in-welcome {
+	display: inline-block;
+}
+

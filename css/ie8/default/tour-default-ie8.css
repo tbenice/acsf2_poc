@@ -1,0 +1,378 @@
+
+/* TOUR & EVENTS Stylesheet - Default only */
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ DATE BLOCK (day, month) - FOR TOUR PAGE (if different than default)
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.page-tour .dateblock {
+	font-size: ;
+}
+.page-tour .dateblock .month {
+	font-size: 20px;
+}
+.page-tour .dateblock .day {
+	font-size: 38px;
+}
+.page-tour .dateblock .year {
+	font-size: 12px;
+}
+
+.page-tour .clickable:hover .dateblock {
+	background-color: #ee4949;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ TOUR - UPCOMING EVENTS - Teaser List
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/* sets cursor to default because .clickable action doesn't link on non-mobile */
+.page-tour .clickable { 
+	cursor: default;
+}
+
+
+/*---------------------------------
+
+ Layout 
+ 
+----------------------------------*/
+
+.page-tour .zone-content {
+	background: none;
+}
+.page-tour .region-content-inner {
+	width: 56%;
+	background: #fff;
+	min-height: 450px;
+	padding: 2.7% 2.7% 50px;
+}
+.page-tour #views-popup-wrapper {
+    width: 45%;
+}
+.page-tour .teaser-list .view-content ul {
+    width: 100% !important;
+}
+
+
+/*--------------------------------------------------
+
+ TOUR - MAP
+ 
+--------------------------------------------------- */
+
+.view-events .attachment .openlayers-container,
+.view-events .attachment .openlayers-map {
+	height: 450px !important;
+}
+
+
+/*--------------------------------------------------
+
+ EVENT TEASER LIST  
+ 
+----------------------------------------------------*/
+
+.page-tour .teaser-list .view-content ul {
+	width: 50%;
+	margin: 0 30px 0 0;
+	padding: 0;
+}
+
+/* event popup TRIGGER link */
+
+a.popup-link-item { /* uses .button styling by default */
+	-webkit-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	color: #fff;
+	display: block;
+	float: right;
+	padding: 10px;
+	text-align: center;
+	width: auto;
+	font-size: 13px;
+}
+a.popup-link-item:hover {
+	text-decoration: none;
+}
+
+/* Tickets + Meet & Greet availability icons */
+
+.ticket-and-meetgreet-link-wrapper {
+	width: 60%;
+}
+
+/*----------------------------------------------------
+
+ POPUP WINDOW - event details 
+ 
+-----------------------------------------------------*/
+
+/* Containers */
+.page-tour #views-popup-wrapper {
+	width: 45%;
+}
+.page-tour .popup-main-content {
+	margin-left: 25px;
+}
+
+/* css3 arrow */
+.page-tour #views-popup-wrapper:before {
+	border-bottom: 14px solid transparent;
+	border-right: 14px solid #ee4949;
+	border-top: 14px solid transparent;
+	content: " ";
+	display: block;
+	height: 0;
+	position: absolute;
+	left: 12px;
+	top: 28px;
+	width: 0;
+	speak: none;
+}
+
+/* Popup container for padding & bg */
+.page-tour .popup-main-content > .view-content {
+	background-color: #ee4949;
+	padding: 6%;
+	color: #aaa;
+	-webkit-border-radius: 0 10px 10px 0;
+	border-radius: 0 10px 10px 0;
+}
+
+/*-----------------------------------
+ Popup Fieldset sections 
+------------------------------------*/
+
+.page-tour fieldset.popup-item {
+	background-color: transparent;
+	margin: 0 0 20px 0;
+	padding: 0;
+	border: 0;
+}
+.page-tour fieldset.popup-item legend {
+	background: transparent;
+	border-bottom: 1px solid #F77B7B;
+	color: #fff;
+	font-size: 25px;
+	padding: 0 0 10px;
+	text-transform: uppercase;
+	width: 100%;
+	margin-bottom: 20px;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+/* Buy Tickets - Meet & Greet buttons (overrides event node styles) */
+
+#views-popup-wrapper .event-purchase-link-container ul {
+	overflow: hidden;
+}
+#views-popup-wrapper .event-purchase-link-container li {
+	float: left;
+	font-size: 14px;
+	list-style-type: none;
+	text-transform: uppercase;
+	width: 47%;
+}
+#views-popup-wrapper .event-purchase-link-container li:first-child {
+	margin-right: 6%;
+}
+#views-popup-wrapper .event-purchase-link-container li.button a {
+	background-color: #000;
+}
+#views-popup-wrapper .event-purchase-link-container li.button a:hover {
+	background-color: #fff;
+	color: #222;
+}
+
+/* Share Links section */
+.page-tour fieldset ul.share-links-container {
+	margin: 0 0 20px 0;
+	border: 0;
+}
+.page-tour fieldset .share-link-print a,
+.page-tour fieldset .share-link-email a {
+	color: #ccc;
+}
+
+/* TOUR MERCHANDISE section - Title & Price "on hover" CSS is located in 
+   store-default.css in Related Prods */
+.page-tour .related_prod_popup-main-content ul {
+	margin: 0;
+	padding: 0;
+}
+.page-tour .related_prod_popup-main-content ul li {
+	margin: 0 3% 0 0;
+	padding: 0;
+	display: inline-block;
+	vertical-align: top;
+	list-style-type: none;
+	width: 43%;
+	position: relative;
+}
+
+/* event popup - MORE link [has button class] */
+
+#views-popup-wrapper a.more-info-link {
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ TOUR - UPCOMING EVENTS - Node
+ 
+ .event-node-full = upcoming event node only - does not affect Legacy event nodes
+
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+#block-system-main .event-node-full  {
+	overflow: hidden;
+	margin-top: 30px;
+}
+#block-system-main .event-node-full .node-event {
+	width: 59%;
+	float: left;
+}
+
+.event-node-full .node-content-container {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.event-node-full .event-purchase-link-container ul {
+	background-color: transparent;
+	padding: 0;
+	margin-bottom: 30px;
+}
+.event-node-full .event-purchase-link-container li {
+	width: auto;
+	margin: 0 10px 0 0;
+}
+
+/* event node full - share links */
+.event-node-full ul.share-links-container {
+	padding: 0;
+	border: 0;
+}
+
+/*----------------------------------------------------
+
+ I'm Attending - Facebook comments block (doesn't appear in mobile)
+ 
+-----------------------------------------------------*/
+
+#block-system-main #facebook-event-wall-container {
+	background-color: #efefef;
+	margin-top: 20px;
+	padding: 5%;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+#facebook-event-wall-container .fb-wallpost { 
+	overflow: hidden; /* clear floats */
+}
+#facebook-event-wall-container .fb-posted-by {
+	display: block;
+	float: left;
+	height: 50px;
+	margin: 0 20px 0 0;
+	width: 50px;
+}
+#facebook-event-wall-container a img {
+	float: left;
+	margin-right: 20px;
+}
+#facebook-event-wall-container p {
+	color: #313131;
+	font-size: 0.8em;
+	line-height: 100%;
+	padding-left: 58px;
+}
+
+/*====================================!!! SIDEBAR !!!=========================================*/
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ TOUR - SIDEBAR BLOCKS - Teaser List
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/* Both sidebar (long and short views) & event node sidebar  */
+
+.region-sidebar-second .sidebar-upcoming-events .view-content, /* regular sidebar */
+.region-sidebar-second .view-display-id-upcoming_long .view-content, /* M&G rules page */
+#event-node-sidebar .view-content /* event node sidebar */ {
+	padding: 0;
+}
+.region-sidebar-second .sidebar-upcoming-events .teaser-list-row,
+.region-sidebar-second .view-display-id-upcoming_long .teaser-list-row,
+#event-node-sidebar .teaser-list-row {
+	padding: 0;
+	border-bottom: 1px solid #545454;
+}
+/* kill bottom border */
+.region-sidebar-second .sidebar-upcoming-events .teaser-list-row:last-child,
+.region-sidebar-second .view-display-id-upcoming_long .teaser-list-row:last-child,
+#event-node-sidebar .teaser-list-row:last-child {
+	border-bottom: 0;
+}
+.sidebar-upcoming-events .dateblock,
+.region-sidebar-second .view-display-id-upcoming_long .dateblock,
+#event-node-sidebar .dateblock {
+	border-right: 1px solid #545454;
+}
+
+.sidebar-upcoming-events .titles-container h3,
+.view-display-id-upcoming_long .titles-container h3 {
+	font-size: 19px;
+	margin: 20px 0 5px 0;
+	font-weight: 300;
+	color: #fff;
+}
+.sidebar-upcoming-events .titles-container h4,
+.view-display-id-upcoming_long .titles-container h4  {
+	margin-bottom: 0px;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 17px;
+}
+.sidebar-upcoming-events .titles-container h4 a,
+.view-display-id-upcoming_long .titles-container h4 a {
+	color: #888;
+}
+
+
+/* NODE sidebar only */
+
+#event-node-sidebar {
+	float: right;
+	width: 35%;
+	margin: 0 0 40px 5%;
+	padding: 0;
+	position: relative;
+	background: none;
+	background: #000;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+

@@ -1,0 +1,723 @@
+
+/* HOME - Global styles only */
+
+
+
+/*-------------------------------------------------------------
+ ELEMENT SWITCHING BY SIZE
+
+   .omega-[size]-up : style applies to [size] and larger formats
+   .omega-[size]-only : style applies only the [size] format
+
+   NOTE: there is no .omega-mobile+ because all styles here apply
+   to mobile and larger formats..unless overridden in a higher-format
+   stylesheet
+-------------------------------------------------------------*/
+.omega-narrow-up, .omega-narrow-only, .omega-normal-up, .omega-normal-only, .omega-wide-only {
+	display:none !important;
+}
+.omega-mobile-only {
+	display:block !important;
+}
+/*
+.responsive-layout-mobile a,
+.responsive-layout-mobile a:link,
+.responsive-layout-mobile a:visited,
+.responsive-layout-mobile a.active {
+	color: #fff;
+} */
+
+.responsive-layout-mobile .block-superfish a.show-link {
+	color: #444;
+}
+
+#block-superfish-1 .omega-mobile-only a.show-link {
+	color: white;
+}
+
+#block-superfish-1 .omega-mobile-only a.show-link:hover {
+	color: #fff;
+}
+
+
+/*-------------------------------------------------------------------
+
+ Every selector in this sheet should begin with .front class
+
+--------------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ HOME PAGE Content blocks - mobile
+
+----------------------------------------------------------
+--------------------------------------------------------*/
+
+.front #section-content .zone-wrapper {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 4px double #aaa;
+}
+.front h2.block-title {
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "beaunormal", Arial, sans-serif;
+	font-size: 28px;
+}
+
+
+.front.responsive-layout-mobile .more-link a,
+.front #join-community-bottom a {
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	background-color: #2a2e46;
+}
+.front.responsive-layout-mobile .more-link a:hover,
+.front #join-community-bottom a:hover {
+	background-color: #000;
+}
+
+.front.responsive-layout-mobile .view-id-ft_instagram_home_block .views-row {
+	padding-bottom: 20px;
+}
+
+.front.responsive-layout-mobile #zone-content-wrapper {
+	/* background: #000 url("../../images/Home_TOP-3_mobile.jpg") no-repeat; */
+	background: #000 url("../../images/Home_TOP-4_Mobile.jpg") no-repeat;
+	background-size: 100%;
+	/* height: 300px; */
+	height: auto;
+	width: auto;
+	margin-top: -20px;
+	margin-bottom: 0;
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+
+/*----------------------------------------------------
+------------------------------------------------------
+
+ FEATURE BANNERS slideshow
+
+------------------------------------------------------
+-----------------------------------------------------*/
+
+/* slideshow controls */
+.front .views-slideshow-controls-bottom {
+	margin-top: 10px;
+}
+.front .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
+	background-color: #ddd;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	height: 40px;
+	margin-right: 15px;
+	width: 40px;
+}
+
+.front.responsive-layout-mobile .views-slideshow-controls-bottom {
+	width: 60%;
+	margin: auto;
+}
+.front .views-slideshow-controls-bottom .views-slideshow-pager-field-item.active {
+	background-color: #2a2e46;
+}
+.front .views-slideshow-controls-bottom .views-slideshow-pager-field-item .views-content-counter {
+	font-size: 0px;
+}
+
+/* make banner images allow for 100% width - IMPORTANT */
+.front #block-views-banner-mobile-featured,
+.front #views_slideshow_cycle_teaser_section_banner-mobile_featured {
+	width: 100%;
+	height: 270px;
+	margin-top: 225px;
+	text-align:center
+}
+
+/*.front .views-slideshow-cycle-main-frame-row .views-field-title {
+    display: none;
+}*/
+.front #views_slideshow_cycle_main_banner-feature {
+    width: 100%;
+    margin-top:	20em;
+}
+.front .views-slideshow-cycle-main-frame-row {
+    width: 100%;
+}
+.front .views-slideshow-cycle-main-frame-row .views-field img {
+   /*  width: 100%;
+    height: auto !important; */
+   width: 50%;
+}
+
+.front #views_slideshow_cycle_main_banner-mobile_featured .views-slideshow-cycle-main-frame-row .views-field img {
+	width: 95%;
+}
+
+.front .region-content-inner {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+
+
+#block-views-banner-mobile-featured {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 4px double #aaa;
+}
+
+/*---------------------------------------
+
+ Banner Content
+
+----------------------------------------*/
+
+/*-------------------
+ wrapper
+-------------------*/
+#block-views-banner-mobile-featured {
+	/* margin-bottom: 60px;
+	padding-bottom: 30px; */
+	border-bottom: 4px double #aaa;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+/*------------------
+ images
+------------------*/
+.front #block-views-banner-mobile-featured .views-field-field-images-1 {
+	margin-bottom: 10px;
+}
+
+/*-------------------
+ title
+--------------------*/
+.front #block-views-banner-mobile-featured .views-field-title {
+	margin-bottom: 10px;
+}
+
+/*-------------------
+ body text
+-------------------*/
+.front #views_slideshow_cycle_main_banner-feature .views-field-body {
+	color: #999;
+}
+
+/*--------------------
+ more link
+--------------------*/
+.front #block-views-banner-mobile-featured .views-field-field-links-1 a {
+	display: block;
+	padding: 6px 10px;
+	text-decoration: none;
+	background-color: #444;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+.front #block-views-banner-mobile-featured .views-field-field-links-1 a:hover {
+	background-color: darkorange;
+}
+.front #block-views-banner-mobile-featured .views-field-field-links-1 a:after {
+	content: "\33";
+	font-family: IcoMoonArrows;
+	font-size: 17px;
+	line-height: 17px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+/*----------------------------------------------------
+------------------------------------------------------
+
+ STORE SECTION 
+ 
+------------------------------------------------------
+----------------------------------------------------*/
+
+
+/*----- Product Node Page -----*/
+.front .view-featured-products-imgd .view-content li {
+	margin: 0 4% 4% 0;
+	width: 46%;
+}
+
+/* Override Featured Status */
+.front .view-featured-products-imgd li.product-featured {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+.front .view-featured-products-imgd li.product-featured img {
+	opacity: 1;
+	filter: alpha(opacity=100); /* IE lt 8 */
+	-ms-filter: "alpha(opacity=100)"; /* IE 8 */
+}
+
+/*------ General Styles ------*/
+.front .view-featured-products-imgd ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.front .view-featured-products-imgd li.views-row {
+	width: 30%;
+	position: relative;
+	margin: 0 3% 3% 0;
+	padding: 0;
+	list-style-type: none;
+	float: left;
+}
+.front .view-featured-products-imgd li.views-row img {
+	border: 1px solid #ccc;
+}
+.front .view-featured-products-imgd .views-field-title {
+	font-size: 14px;
+	height: 33px;
+	line-height: 15px;
+	text-align: center;
+}
+
+.front .block-featured-products-imgd-block-1{
+	margin-top: 30px;
+	margin-bottom:15px;
+}
+
+/* list */
+.view-featured-products-imgd ul {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.view-featured-products-imgd ul li {
+	margin: 0 3% 3% 0;
+	width: 31%;
+	float: left;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
+}
+.view-featured-products-imgd ul li.views-row-3,
+.view-featured-products-imgd ul li.views-row-6 {
+	margin-right: 0;
+}
+.front .view-id-featured_products_imgd .more-link {
+	background-color: #E31D1A;
+	background-color:rgba(227, 29, 26, 0.8);
+	width: 96%;
+}
+.front .view-id-featured_products_imgd .more-link:hover{
+	background-color:rgba(0, 0, 0, 0.8);
+}
+
+
+/* title 
+.view-featured-products-imgd .views-field-title {
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	height: auto;
+	left: 5%;
+	position: absolute;
+	top: 75px;
+	width: 90%;
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	background: transparent;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}*/
+
+.view-featured-products-imgd .views-field-title span {
+	display: block;
+}
+.view-featured-products-imgd .views-field-title a {
+	display: block;
+	padding: 20px;
+	font-size: 17px;
+	text-align: center;
+	color: #fff;
+}
+.front .r5-imgd-title-and-price .views-field-title a:hover {
+	text-decoration: none;
+}
+.view-featured-products-imgd ul li:hover .views-field-title {
+	opacity: 1;
+}
+.view-featured-products-imgd ul li:hover .views-field-commerce-price {
+	opacity: 1;
+}
+
+
+.view-featured-products-imgd .view-footer a {
+color: #fff;
+-webkit-border-radius: 0;
+border-radius: 0;
+background-color: #2a2e46;
+font-size: 17px;
+text-transform: uppercase;
+display: block;
+padding: 10px;
+}
+
+.view-featured-products-imgd .view-footer a:after {
+background-color: transparent;
+content: "\33";
+display: inline-block;
+font-family: "IcoMoonArrows";
+font-size: 17px;
+height: 22px;
+line-height: 21px;
+overflow: hidden;
+padding: 0;
+vertical-align: middle;
+width: 20px;
+speak: none;
+}
+
+.view-featured-products-imgd .view-footer a:hover {
+	background: #fff;
+	color: #000;
+}
+
+.view-featured-products-imgd .view-footer a:hover:after {
+	color: #000;
+}
+
+
+/*----------------------------------------------------
+------------------------------------------------------
+
+ TWEETS - Custom 1
+
+------------------------------------------------------
+-----------------------------------------------------*/
+
+.front #block-views-twitter-feed-1-block h2.block-title {
+	margin-bottom: 10px;
+}
+
+/* tweet body */
+.front .view-twitter-feed .view-content {
+	background-color: #fff;
+	padding: 6%;
+	margin-bottom: 5px;
+	font-size: 20px;
+	color: #999;
+	font-weight: 300;
+	line-height: 28px;
+}
+.tweet-author-container {
+	color: #000000;
+	font-weight: 900;
+}
+.tweet-author-container,
+.tweet-body-container {
+	margin-left: 70px;
+}
+
+/* icon */
+.front .view-twitter-feed .tweet-item-field {
+	float: left;
+	height: 52px;
+	margin-right: 20px;
+	width: 52px;
+}
+.front .view-twitter-feed .views-row {
+	border-bottom: 0;
+	padding: 0;
+}
+.front .view-twitter-feed .view-footer a,
+.front .view-ft-instagram-home-block .view-footer a {
+	background-color: #2a2e46;
+	color: #FFFFFF;
+	display: block;
+	padding: 10px;
+	text-align: center;
+}
+
+.front .view-ft-instagram-home-block .view-footer {
+	margin-bottom: 10px;
+	border-bottom: 1px double #ccc;
+	padding-bottom: 10px;
+}
+
+.front .view-twitter-feed .view-footer a:hover {
+	background-color: #2a2e46;
+}
+
+
+
+
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ INSTAGRAM BLOCK - HOME PAGE ONLY
+
+----------------------------------------------------------
+---------------------------------------------------------*/
+
+
+.front #block-views-id-instagram-block-1 .view-content {
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.front #block-views-id-instagram-block-1 .views-row {
+	margin-bottom: 20px;
+	background: #fff;
+	padding: 5px;
+	float: none;
+	border: 1px solid #aaa;
+}
+
+/* hide all */
+.front.responsive-layout-mobile #block-views-id-instagram-block-1 .views-row {
+	display: none;
+}
+/* bring back first item only */
+.front.responsive-layout-mobile #block-views-id-instagram-block-1 .views-row-first {
+	display: block;
+}
+
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ UPCOMING SHOWS BLOCK - HOME PAGE ONLY
+
+----------------------------------------------------------
+---------------------------------------------------------*/
+
+.front .block-views-events-upcoming h3 {
+	margin-bottom: 5px;
+}
+
+
+
+
+/*----------------------------------------------------
+------------------------------------------------------
+
+ MEET & GREET block
+
+------------------------------------------------------
+-----------------------------------------------------*/
+
+.front .block-tfp-custom-nodes-mg-photos .teaser-grid-row {
+	background: #fff;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 20px;
+	border: 1px solid #aaa;
+	float: none;
+	width: 100%;
+}
+
+
+
+
+/*----------------------------------------------------
+------------------------------------------------------
+
+ FAN CLUB block
+
+------------------------------------------------------
+-----------------------------------------------------*/
+
+.community-header {
+	/* height: 170px; */
+	height: auto;
+	margin-bottom: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.responsive-layout-mobile img.join-community-desktop {
+	display: none;
+}
+
+.responsive-layout-narrow img.join-community-mobile,
+.responsive-layout-normal img.join-community-mobile,
+.responsive-layout-wide img.join-community-mobile {
+	display: none;
+}
+
+
+/*--------------------------------
+
+ Community Post
+
+---------------------------------*/
+
+.responsive-layout-mobile #block-views-tfp-custom-nodes-fp-post {
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #aaa;
+}
+
+/* Post body */
+.front #block-views-tfp-custom-nodes-fp-post .fp_post-main-content {
+	margin: 0 0 30px;
+}
+
+/*--------------------------------
+
+ JOIN block
+
+---------------------------------*/
+
+/* Top text */
+
+.front #join-community-top {
+	font-size: 25px;
+	text-align: center;
+	font-weight: 700;
+	line-height: 100%;
+	margin-bottom: 10px;
+	color: #222;
+}
+
+/* body text */
+.front #join-community-middle {
+	color: #c7c7c7;
+	font-size: 16px;
+	line-height: 130%;
+	background: rgba(0,0,0,0.8);
+	padding: 6%;
+	margin-bottom: 10px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.front #join-community-middle span {
+	color: #2a2e46;
+	font-size: 22px;
+	display: block;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+/* list items */
+.front #join-community-middle ul {
+	margin-left: 30px;
+}
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ PRODUCT SECTION - mobile - CUSTOM ZONE 5
+ 
+----------------------------------------------------------
+--------------------------------------------------------*/
+
+.front #zone-custom1-wrapper {
+	background-color: #000000;
+	overflow: hidden;
+	padding: 3em 0;
+}
+.front .jcarousel-skin-updates_carousel .jcarousel-container-horizontal {
+	height: auto;
+	margin: auto;
+	padding: 1.5em 0;
+	width: auto;
+}
+.front .jcarousel-skin-updates_carousel .jcarousel-clip-horizontal {
+	width: auto;
+	overflow: visible;
+}
+.front .jcarousel-skin-updates_carousel .jcarousel-item {
+	background-color: #fff;
+	border: 5px solid #f5f2e9;
+	height: 150px;
+	width: 150px;
+	overflow: hidden;
+	padding: 0;
+}
+
+/*----------------------------------
+
+ Carousel Navigation 
+ 
+----------------------------------*/
+
+.front .jcarousel-skin-updates_carousel .jcarousel-next-horizontal {
+	right: 0;
+}
+.front .jcarousel-skin-updates_carousel .jcarousel-next,
+.front .jcarousel-skin-updates_carousel .jcarousel-prev {
+	position: absolute;
+	top: 38%;	
+	background: none;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	padding: 30px;
+	background-color: #252a26;
+	color: #fff;
+	-webkit-border-radius: 999px;
+	-moz-border-radius: 999px;
+	border-radius: 999px;
+}
+.front .jcarousel-skin-updates_carousel .jcarousel-next:before,
+.front .jcarousel-skin-updates_carousel .jcarousel-prev:before {
+	display: block;
+	left: 12px;
+	top: 18px;
+	position: absolute;
+	content: "\35";
+	font-family: IcoMoonArrows;
+	font-size: 2em;
+}
+.front .jcarousel-skin-updates_carousel .jcarousel-next:before {
+	content: "\36";
+	left: 16px;
+}
+.front .jcarousel-skin-updates_carousel .jcarousel-next:hover,
+.front .jcarousel-skin-updates_carousel .jcarousel-prev:hover {
+	background-color: #2a2e46;
+}
+
+/* price */
+.front .jcarousel-item .field-commerce-price {
+	background-color: #D15A54;
+	border-bottom: 3px solid #B14E48;
+	bottom: 10px;
+	color: #FFFFFF;
+	line-height: 100%;
+	margin: 0;
+	padding: 7px 10px 4px;
+	position: absolute;
+	font-family: "Myriad Pro",Helvetica,Arial,sans-serif;
+	font-size: 13px;
+	display: block;
+}
+
+/* product link */
+.front .jcarousel-item .homepage-updates-link {
+	display: block;
+	height: 0;
+	padding-top: 290px;
+	overflow: hidden;
+	position: relative;
+	top: -290px;
+}
+
+/* hides button when not clickable */
+.front .jcarousel-next-disabled,
+.front .jcarousel-prev-disabled {display: none !important}

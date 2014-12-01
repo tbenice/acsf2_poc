@@ -1,0 +1,331 @@
+
+/* LoginToboggan module css */
+
+
+/*----------------------------
+
+ Button normal state
+ 
+----------------------------*/
+
+.toboggan-unified a#login-link /* login page links */,
+.toboggan-unified a#register-link /* login page links */,
+.toboggan-unified #login-links a.lt-active /* login page links */ {
+	background: #444; 
+	text-align: center;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	text-shadow: none;
+
+}
+
+
+/*------------------------------
+
+ Button hover state
+ 
+-------------------------------*/
+
+.toboggan-unified a#login-link:hover /* login page links */,
+.toboggan-unified a#register-link:hover /* login page links */,
+.toboggan-unified #login-links a.lt-active:hover /* login page links */ {
+	background: darkorange; 
+	text-decoration: none;
+	text-shadow: none;
+}
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ LOGIN - login toboggan
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+#zone-user-bar #block-user-login {
+	padding: 0;
+	width: auto;
+	z-index: 9999;
+}
+
+/*------------------------------
+
+ login button 
+ 
+------------------------------*/
+
+#login-link-container {
+	height: 40px;
+	text-align: left;
+	position: relative;
+}
+#login-link-container a {
+	border-left: 1px solid #444;
+	border-right: 1px solid #444;
+	color: #FFFFFF;
+	display: block;
+	font-size: 12px;
+	height: 40px;
+	padding: 8px 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 170px;
+}
+#login-link-container a:hover {
+	background-color: #333;
+}
+#login-link-container a:before {
+	content: "\5d";
+	font-family: "IcoMoonBasic";
+	margin-right: 5px;
+	color: #777;
+	font-size: 15px;
+	padding: 0;
+	vertical-align: top;
+	speak: none;
+}
+
+/*------------------------------
+
+ drop-down tab form 
+ 
+------------------------------*/
+
+#login-dropdown-form { /* form wrapper */
+	background: #444;
+	font-size: 14px;
+	margin: 0 0 10px 0;
+	padding: 25px;
+	display: none;
+	color: #bbb;
+}
+
+/*------------------------------
+
+ form fields 
+ 
+-----------------------------*/
+
+#login-dropdown-form .form-item-name,
+#login-dropdown-form .form-item-pass {
+	margin: 0 20px 10px 0;
+}
+#login-dropdown-form .form-item-name input, 
+#login-dropdown-form .form-item-pass input {
+	font-size: 15px;
+	height: 47px;
+	padding: 6px;
+	width: 192px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+#login-dropdown-form input.form-submit {
+	background: #7db738;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 0;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	margin: 22px 0 0 0;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+}
+#login-dropdown-form input.form-submit:hover {
+	color:#fff;
+	background-color: #6f9f43;
+}
+
+
+/*---------------------------------
+
+ create account + reset pass links 
+ 
+--------------------------------*/
+
+#login-dropdown-form .item-list {
+	clear: both;
+	border-top: 1px dashed #CCCCCC;
+	padding: 10px 0;
+}
+
+/* "Or log in With" */
+#login-dropdown-form .item-list h3 {
+	font-size: 17px;
+}
+#login-dropdown-form .item-list:last-child {
+	margin: 0 0 15px 0;
+	padding-top: 10px;
+	clear: both;
+	overflow: hidden;
+}
+#login-dropdown-form .item-list ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#login-dropdown-form .item-list ul li {
+	margin: 0 0 10px 0;
+	padding: 0;
+	list-style-type: none;
+	float: none;
+}
+#login-dropdown-form .item-list ul li.last {
+	margin-right: 0;
+}
+#login-dropdown-form .item-list:last-child a {
+	display: block;
+	background-color: #777;
+	text-align: center;
+	color: #ccc;
+	padding: 3px 6px;
+	text-decoration: none;
+	font-size: 11px;
+	text-transform: lowercase;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+#login-dropdown-form .item-list img {
+    margin-top: 5px;
+}
+#login-dropdown-form .item-list ul li a:hover {
+	background-color: #ccc;
+	color: #444;
+}
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ LOGOUT BOX- login toboggan
+ 
+----------------------------------------------------------
+--------------------------------------------------------*/
+
+.responsive-layout-mobile #zone-user-bar .region-user-bar {
+	margin: 0;
+}
+#zone-user-bar #user-bar-logged-in,
+#user-bar-user-dashboard-link {
+	color: #999;
+	float: left;
+	margin: 0 20px 0 0px;
+	padding: 8px 0px 7px;
+}
+#zone-user-bar #user-bar-logged-in img {
+	width: 25px;
+	height: 25px;
+}
+#zone-user-bar #user-bar-logged-in .content a:first-child {
+	display: inline-block;
+	margin-right: 10px;
+}
+#zone-user-bar #user-bar-logged-in .user-bar-logout {
+	display: inline-block;
+	height: 22px;
+	vertical-align: middle;
+}
+#zone-user-bar #user-bar-logged-in .user-bar-logout a {
+	display: inline-block;
+	height: 0;
+	width: 20px;
+	padding-top: 22px;
+	overflow: hidden;
+	position: relative;
+	color: #999;
+}
+#zone-user-bar #user-bar-logged-in .user-bar-logout a:hover {
+	color: #fff;
+}
+#zone-user-bar #user-bar-logged-in .user-bar-logout a:before {
+	content: "\5c";
+	font-family: IcoMoonBasic;
+	font-size: 18px;
+	position: absolute;
+	top: 0;
+	left: 1px;
+	speak: none;
+}
+#zone-user-bar #user-bar-logged-in .logout-username {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+#zone-user-bar #user-bar-logged-in .content span.logged-in-welcome {
+	display: none;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ USER BAR LOGOUT BOX
+ 
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+.block-fantorrent-base-logged-in-block {
+    color: #999999;
+    display: inline-block;
+    margin: 0 20px 0 10px;
+    padding: 5px 0;
+    vertical-align: top;
+} 
+
+/* Image */
+a#fantorrent-base-logged-in-block-user-image {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    background-color: #444;
+}
+
+/* welcome text */
+.block-fantorrent-base-logged-in-block .content span.logged-in-welcome {
+    display: none;
+}
+
+/* username */
+.block-fantorrent-base-logged-in-block .logout-username {
+    display: inline-block;
+    line-height: 1;
+    margin-right: 10px;
+    padding-top: 8px;
+    vertical-align: top;
+}
+
+/* Logout link */
+.block-fantorrent-base-logged-in-block a#fantorrent-base-logged-in-block-log-out {
+    display: inline-block;
+    height: 0;
+    width: 20px;
+    padding-top: 22px;
+    overflow: hidden;
+    position: relative;
+    color: #999;
+    top: 3px;
+    left: 0;
+}
+.block-fantorrent-base-logged-in-block a#fantorrent-base-logged-in-block-log-out:hover {
+    color: #fff;
+}
+.block-fantorrent-base-logged-in-block a#fantorrent-base-logged-in-block-log-out:before {
+    content: "\5c";
+    font-family: IcoMoonBasic;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 1px;
+    speak: none;
+}

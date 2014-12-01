@@ -1,0 +1,1146 @@
+
+/* MUSIC - DISCOGRAPHY - ALBUMS - Global styles only */
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ DISCOGRAPHY - Teaser List
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.page-music-albums h3#album-teaser-title {
+	font-size: 35px;
+	font-weight: 900;
+	letter-spacing: -0.03em;
+	line-height: 100%;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	color: #222;
+}
+.page-music-albums .view-discography .view-content ul {
+	margin: 0;
+	padding: 0;
+}
+/* List items - albums (not tracks) */
+.page-music-albums .view-discography .view-content ul li {
+	border-bottom: 1px solid #aaa;
+	margin: 0;
+	list-style-type: none;
+	padding: 40px 0;
+}
+.page-music-albums .view-discography .view-content ul li.views-row-last.teaser-list-row {
+	border: 0;
+}
+.page-music-albums .view-discography .view-content ul li.teaser-list-row:first-child {
+	padding-top: 0;
+}
+
+/*-------------------------------------------------
+
+ ALBUM INFO section - art, date, buy buttons 
+ 
+-------------------------------------------------*/
+
+.page-music-albums .teaser-list .album-teaser-title {
+	margin-bottom: 10px;
+}
+.page-music-albums .album-art-container {
+	margin-bottom: 20px;
+	max-width: 350px;
+	padding: 0; /* add padding & border for Polaroid look */
+	border: 0;
+}
+.page-music-albums .album-image-container {
+	overflow: hidden;
+	border: 1px solid #aaa;
+	border-bottom: 0;
+}
+
+/*----------------------------
+ album more info link 
+ (overrides .button styling) 
+-----------------------------*/
+
+.album-more-link a {
+	background: none;
+	font-size: 12px;
+	line-height: 100%;
+	padding: 5px;
+	text-shadow: none;
+	color: #999;
+	text-align: center;
+	border: 1px solid #aaa;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.album-more-link a:hover {
+	background: none;
+	color: #000;
+	border-color: #000;
+}
+/* icon */
+.album-more-link a:before {
+	background-color: #fff;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	content: "%";
+	font-family: IcoMoonBasic;
+	font-size: 11px;
+	line-height: 15px;
+	margin-right: 5px;
+	padding: 3px;
+	border: 1px solid #999;
+}
+.album-more-link a:hover:before {
+	border-color: #000;
+}
+
+/*----------------------------
+ release date & label 
+------------------------------*/
+
+.release-date-and-label-container {
+	margin-bottom: 20px;
+	font-size: 12px;
+	line-height: 18px;
+}
+.album-date-container .field-label {
+	margin-right: 5px;
+}
+
+/*-------------------------------
+ Store Links & Offsite links 
+---------------------------------*/
+
+.album-links-container .buy-link-container {
+	margin-bottom: 7px;
+}
+.album-offsite-purchase-links {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.album-offsite-purchase-links .field-item {
+	width: 48%;
+	float: left;
+	margin-bottom: 7px;
+}
+.album-offsite-purchase-links .field-item.even {
+	margin-right: 4%;
+}
+.album-buy-link a { /* in-house link */
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 20px 10px;
+}
+.album-offsite-purchase-links a {
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+/*----------------------------------------
+ POPUP purchase details & buy link 
+------------------------------------------*/
+
+.page-music-albums .buy-link-container .views-popup-container .views-popup {
+	width: 100%;
+}
+.views-popup-container .commerce-add-to-cart .form-submit {
+	font-size: 16px;
+	font-weight: normal;
+	padding: 5px 15px;
+}
+.views-popup-container .commerce-add-to-cart .form-submit:hover {
+	color: #fff;
+}
+
+/*-----------------------------------------
+
+ TRACK LIST 
+
+------------------------------------------*/
+
+
+/*------------------------------
+ CUSTOM STYLE LIST NUMBERS  
+ 
+ ( !!! remember to close all 
+       comments below !!!)
+-------------------------------
+
+/* RESET THE <ol> COUNTER 
+.page-music-albums .song-list-container ol {
+	counter-reset: li;
+	list-style: none;
+	*list-style: decimal;
+	margin: 0;
+	padding: 0;	
+}
+.page-music-albums .song-list-container ol li {
+	list-style-type: none;
+}
+
+/* SONG TITLES 
+.page-music-albums .song-list-container ol .song-list-title a {
+	position: relative;
+	display: block;
+	padding: 0 0 0 47px;
+	*padding: 0em;
+	margin: 0;
+}
+.page-music-albums .song-list-container ol .song-list-title a:hover {
+	text-decoration: inherit;
+}
+
+/* ADD NEW LIST COUNTER AND STYLE
+.page-music-albums .song-list-container ol .song-list-title {
+	position: relative;
+}
+.page-music-albums .song-list-container ol .song-list-title:before {
+	background-color: #444;
+	color: #fff;
+	content: counter(li, decimal);
+	counter-increment: li;
+	height: 30px;
+	left: 2px;
+	margin-top: -18px;
+	padding-top: 5px;
+	position: absolute;
+	text-align: center;
+	top: 12px;
+	width: 32px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-transition: : all .3s ease-out;
+	transition: all .3s ease-out;
+}
+.page-music-albums .song-list-container ol .song-list-title:hover:before {
+	background-color: #2a2e46;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+/* Animated arrow on the numeral 
+.page-music-albums .song-list-container ol .song-list-title:after {
+	position: absolute;
+	content:"";
+	border: 7px solid transparent;
+	left: 29px;
+	top: 5px;
+	-webkit-transition: : all .3s ease-out;
+	transition: all .3s ease-out;
+}
+.page-music-albums .song-list-container ol .song-list-title:hover:after {
+	left: 33px;
+	border-left-color: #2a2e46;
+}
+
+----------------------*/
+
+
+
+/*------------------------------------
+ Alternate text for tracks 
+-------------------------------------*/
+
+.album_tracks-main-content .field-content.alternate, /* teaser list */
+.album_tracks_media-main-content .field-content.alternate /* node */{
+	color: #888888;
+	display: block;
+	font-size: 11px;
+	font-style: italic;
+	line-height: 14px;
+	margin-left: 0; /* Set this to ~ 45px if using custom <ol> styling css */
+}
+.album_tracks_media-main-content .field-content.alternate /* node */ {
+	margin-left: 0;
+}
+
+/*-----------------------------
+ "Bonus Tracks" - Legend 
+ (inserted before tracklist)
+ 
+ Add .page-node-[number] to the selector to limit to only albums 
+ with bonus tracks so albums without bonus tracks won't have the legend. 
+    
+	EXAMPLE:
+	
+	.page-node-214 .album_tracks_media-main-content:before {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 15px;
+		content:"* = Bonus Tracks";
+		font-style: italic;
+	}
+
+-------------------------------*/
+
+.page-node-5 .album_tracks_media-main-content:before,
+.page-node-240 .album_tracks_media-main-content:before,
+.page-node-570 .album_tracks_media-main-content:before {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 15px;
+	content:"* = Bonus Tracks";
+	font-style: italic;
+}
+
+/*-----------------------------
+ BONUS tracks styling 
+-------------------------------*/
+
+.node-type-album li .bonus-track h6 > span:first-child:after,
+.page-music-albums li.views-row .bonus-track a:after {
+   content:"*";
+   color: red;
+   margin-left: 5px;
+   text-decoration: none;
+}
+.node-type-album li .bonus-track h6 > span:first-child:hover:after,
+.page-music-albums li.views-row .bonus-track a:hover:after {
+	text-decoration: none;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ MP3 Player
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/*----------------------------
+ 360 player
+----------------------------*/
+
+/* "Listen" Label */
+span.listen-label {
+	display: inline-block;
+	padding: 17px 0;
+	color: #fff;
+	font-size: 19px;
+}
+span.listen-label:before {
+	border: 2px solid #666666;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	color: #999999;
+	content: "L";
+	font-family: IcoMoonBasic;
+	font-size: 14px;
+	margin-right: 7px;
+	padding: 4px;
+}
+.sm2-360ui {
+	float: none;
+}
+.song-popup-player {
+	padding-top: 5px;
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: top;
+}
+.song-popup-title {
+	border-top: 1px solid #666;
+	padding-top: 20px;
+}
+
+/*----------------------------
+ 360 player - play button 
+-------------------------------*/
+
+.ui360, .ui360 .sm2-360btn-default, /* play */
+.ui360 .sm2-360ui.sm2_paused .sm2-360btn {
+	background: transparent url(../../images/buttons_player_sm.png) no-repeat scroll 16px -1584px;
+}
+.ui360 .sm2-360btn-default:hover, /* play hover */
+.ui360 .sm2-360ui.sm2_paused .sm2-360btn:hover {
+    background: transparent url(../../images/buttons_player_sm.png) no-repeat scroll 16px -1484px;
+    cursor: pointer;
+}
+/* player is paused - hover */
+.ui360 .sm2-360ui.sm2_paused .sm2-360btn:hover {
+	background: transparent url(../../images/buttons_player_sm.png) no-repeat scroll 2px -1498px;
+}
+
+/* 360 player - Pause */
+.ui360 .sm2-360ui.sm2_paused .sm2-360btn,
+.ui360 .sm2-360ui.sm2_playing .sm2-360btn:hover, 
+.ui360 .sm2-360btn-playing:hover {
+    background: transparent url(../../images/buttons_player_sm.png) no-repeat scroll 2px -1698px;
+    cursor: pointer;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ ALBUM - node
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+/* pager - default overrides */
+
+.node-type-album .node-pager-container {
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 0;
+}
+
+/* album node header - overrides .node-row-container */
+
+#album-header-row-container {
+	padding-bottom: 0;
+	border: 0;
+}
+
+/* ---------------------------------------------------------
+
+ MIDDLE ROW 1 - album art, info description, buy links 
+ 
+----------------------------------------------------------*/
+
+/*-----------------------------
+ Album Art 
+------------------------------*/
+
+.node-type-album #album-art-container {
+	width: 100%;
+	margin-bottom: 15px;
+	float: none;
+}
+.node-type-album #album-art-container .first-item,
+.node-type-album #album-art-container .not-first-item {
+	margin-bottom: 3%;
+	padding: 5px;
+	border: 1px solid #aaa;
+	background-color: #fff;
+}
+
+.node-type-album #album-art-container .first-item:hover,
+.node-type-album #album-art-container .not-first-item:hover {
+	background-color: #fff;
+}
+
+/*--------------------------------
+ Additional album art thumbnails 
+-----------------------------------*/
+
+.node-type-album #album-art-container .not-first-items-container {
+	clear: both;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.node-type-album #album-art-container .not-first-item {
+	float: left;
+	margin-right: 2%;
+	padding: 5px;
+	width: 19%;
+}
+.node-type-album #album-art-container .not-first-item:last-child {
+	margin-right: 0;
+}
+
+/*------------------------
+ TRACK LIST 
+-------------------------*/
+
+.node-type-album .song-list-container {
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 30px;
+}
+.node-type-album .song-list-container .view-content ol li {
+	overflow: visible;
+	list-style-type: decimal;
+	padding: 10px 0;
+	width: auto;
+	clear: both;
+	position: relative;
+	border-bottom: 1px solid #aaa;
+}
+.node-type-album .song-list-container .view-content ol li.views-row-last {
+	border-bottom: 0;
+}
+.node-type-album .song-title {
+	width: 60%;
+}
+.node-type-album .song-title h6 {
+	margin-bottom: 0;
+	font-weight: normal;
+	font-size: 13px;
+}
+
+/*------ more link ------*/
+
+.node-type-album .song-more-link {
+	position: absolute;
+	right: 55px;
+	top: 13px;
+	width: 33px;
+}
+.node-type-album .song-more-link a {
+	display: block;
+	padding: 1px 2px 3px 2px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 11px;
+	line-height: 16px;
+}
+
+/*------ Buy link -------*/
+
+.node-type-album .song-buy-link.button {
+	position: absolute;
+	right: 56px;
+	top: 13px;
+}
+.node-type-album .song-buy-link.button a {
+	display: block;
+	font-size: 11px;
+	line-height: 16px;
+	padding: 2px 7px;
+	text-transform: lowercase;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: #2a2e46; /* needs to be different to set it apart from "more" */
+	color: #444;
+}
+
+/*------ mp3 player -----*/
+
+.node-type-album .song-player {
+	width: 50px;
+	position: absolute;
+	top: -3px;
+	right: 0;
+}
+
+/*------------------------
+ Album buy link - in house 
+--------------------------*/
+
+/* album node uses ID, album teaser uses class */
+#album-buy-link-container {
+	margin-bottom: 7px;
+}
+#album-buy-link-container a.button {
+	text-transform: uppercase;
+	padding: 25px 10px;
+	font-size: 20px;
+}
+#album-buy-link-container a.button:before {
+	content: "\003c";
+	font-family: "IcoMoonBasic";
+	font-size: 21px;
+	line-height: 21px;
+	vertical-align: bottom;
+	speak: none;
+	color: #fff;
+	margin-right: 7px;
+}
+
+/*----------------------- 
+ offsite buy links 
+------------------------*/
+
+.node-type-album #album-offsite-purchase-links .field-item {
+	margin-bottom: 7px;
+	font-size: 12px;
+}
+
+/*--------- Buy button icons ----------*/
+
+.node-type-album #album-offsite-purchase-links a:before,
+.album-offsite-purchase-links a:before {
+	font: 23px/23px "IcoMoonSocial";
+	margin: 0 5px 0 0;
+	vertical-align: middle;
+	display: inline-block;
+	padding-top: 1px;
+	text-transform: none; /* because .button is set to uppercase and alters added content letter */
+}
+
+/* iTunes */
+.node-type-album #album-offsite-purchase-links .field-item:nth-child(1) a:before,
+.album-offsite-purchase-links .field-item:nth-child(1) a:before {
+	content: "\4f";
+}
+
+/* Amazon */
+.node-type-album #album-offsite-purchase-links .field-item:nth-child(2) a:before,
+.album-offsite-purchase-links .field-item:nth-child(2) a:before {
+	content: "\4e";
+}
+
+/* Spotify */
+.node-type-album #album-offsite-purchase-links .field-item:nth-child(3) a:before,
+.album-offsite-purchase-links .field-item:nth-child(3) a:before {
+	content: "\3f";
+}
+
+/* Remove Amazon logo on this one node because it's currently Google Play 
+#album-node-5086 .album-offsite-purchase-links .field-item:nth-child(2) a:before {
+	content: none;
+} */
+
+/*-------------------------------------------------------------------
+
+ MIDDLE ROW 2 - Purchase Options 
+
+-----------------------------------------------------------------*/
+
+#album-purchase-options {
+	position: relative;
+}
+.purchase-options-top,
+.purchase-options-bottom {
+	overflow: hidden;
+}
+
+/* section title - cart icon */
+#album-purchase-options h2:before {
+	content: "\3c";
+	font-family: IcoMoonBasic;
+	position: relative;
+	top: 3px;
+	left: 0;
+	margin-right: 10px;
+}
+#album-purchase-options #edit-product-id {
+	padding: 0;
+}
+
+/*--------------- ADD TO CART  ---------------*/
+
+#album-purchase-options .field-type-commerce-product-reference  {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+/* CSS3 Arrow */
+.responsive-layout-mobile #album-purchase-options .field-type-commerce-product-reference:after {
+	border-left: 14px solid rgba(0, 0, 0, 0);
+	border-right: 14px solid rgba(0, 0, 0, 0);
+	border-top: 14px solid #e3e3e3;
+	bottom: -14px;
+	content: "";
+	display: block;
+	height: 0;
+	left: 80px;
+	position: absolute;
+	width: 0;
+}
+
+/* form container */
+#album-purchase-options .commerce-add-to-cart {
+	padding: 20px;
+	background-color: #e3e3e3;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#album-purchase-options .commerce-add-to-cart > div {
+	overflow: hidden;
+}
+
+/* message */
+#album-purchase-options .cart-form-message {
+	font-size: 12px;
+}
+
+/* Radio select buttons */
+#album-purchase-options.purchase-options-more #edit-product-id {
+	background-color: transparent;
+	background-image: none;
+	position: relative;
+	margin-bottom: 30px;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Price, Qty & Add to Cart Button */
+
+#album-purchase-options .add-to-cart-bottom {
+	border: 0;
+	color: #222;
+}
+#album-purchase-options #edit-display-price {
+	font-size: 24px;
+	margin-top: 0;
+}
+#album-purchase-options #edit-display-price label {
+	display: none;
+}
+#album-purchase-options .form-item-quantity {
+	border: 0;
+	padding-bottom: 0;
+}
+
+
+/*--------------- PRODUCT DETAILS  ----------------*/
+
+.add-to-cart-details {
+	overflow: hidden;
+}
+
+/* Product images */
+.add-to-cart-details .commerce-product-field-field-images-1 {
+	border: 1px solid #aaa;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	max-width: 200px;
+	height: auto;
+	margin-bottom: 20px;
+}
+.purchase-options-one .add-to-cart-details .commerce-product-field-field-images-1 {
+	float: none;
+	margin: 0 20px 20px 0;
+}
+
+/* Product Title */
+.add-to-cart-details .commerce-product-title-label {
+	display: none;
+}
+.add-to-cart-details .commerce-product-title {
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+/*-------------------------------------------------------------------
+
+ MIDDLE ROW 3 - Album Info 
+
+-----------------------------------------------------------------*/
+
+/*----------------------------------
+ ALBUM DETAILS - INFO 
+----------------------------------*/
+
+/*------ Release date --------*/
+
+.node-type-album #album-date-container {
+	font-size: 12px;
+}
+.node-type-album #album-date-container .field-label {
+	margin-right: 5px;
+}
+
+/*------- Record Label -------*/
+
+.node-type-album #album-label-container {
+	font-size: 12px;
+}
+
+/*------- Album Info body -------*/
+
+.node-type-album #album-body-container {
+	padding: 20px 0;
+	clear: both;
+}
+
+
+/*-------------------------------------------------------------------
+
+ MIDDLE ROW 4 - track list + reviews + discography + related products 
+
+-----------------------------------------------------------------*/
+
+.node-type-album .song-list-container,
+.node-type-album .album-reviews-container,
+#album-middle-row2-container .song-list-container,
+#album-discography-view-container,
+#album-store-view-container {
+	margin-bottom: 30px;
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 30px;
+}
+
+#album-bottom-row-container {
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+#album-middle-row4-container {
+	border: 0;
+	margin: 0;
+}
+
+/*----------------------------------
+ REVIEWS 
+-----------------------------------*/
+
+.node-type-album .album-reviews-container ol {
+	margin: 0;
+	padding: 0;
+}
+.node-type-album .album-reviews-container ol li {
+	list-style-type: none;
+	margin: 0 0 15px 0;
+	padding: 0 0 15px 0;
+	overflow: hidden; /* clears floats */
+	border-bottom: 1px dashed #ccc;
+}
+.node-type-album .album-reviews-container ol li.views-row-last {
+	border-bottom: 0;
+}
+.node-type-album .album-reviews-container .quote {
+	display: block;
+	padding: 15px 0 0 60px;
+	font-size: 14px;
+	margin-bottom: 10px;
+	color: #444;
+	min-height: 37px;
+	position: relative;
+}
+
+/* Open Quotes icon */
+.node-type-album .album-reviews-container .quote:before {
+	content:"\43";
+	font-family: "IcoMoonBasic";
+	font-size: 60px;
+	/* color: #ddd; */
+	color: #444;
+	position: absolute;
+	top: 15px;
+	left: -5px;
+}
+.node-type-album .album-reviews-container .quote .field-content {
+	-webkit-border-radius: 7px;
+	border-radius: 7px;
+	display: block;
+	margin-bottom: 15px;
+}
+.album-review-quote-author,
+.album-review-quote-source {
+	padding-left: 60px;
+	font-size: 13px;
+	font-style: italic;
+}
+
+/* read more link */
+.album-review-more-link {
+	text-align: right;
+}
+.album-review-more-link.button a {
+	background: none;
+	color: #2a2e46;
+	display: inline-block;
+	font-size: 15px;
+	padding: 0;
+	text-align: right;
+	text-transform: lowercase;
+}
+.album-review-more-link.button a:hover {
+	color: red;
+}
+.album-review-more-link.button a:after {
+	font-family: IcoMoonArrows;
+	content: "\36";
+	margin-left: 5px;
+	position: relative;
+	vertical-align: middle;
+	top: -1px;
+}
+
+/*-----------------------
+ Discography 
+------------------------*/
+
+#album-discography-view-container .teaser-grid li {
+	margin: 0 3.3% 3.3% 0;
+	width: 30%;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+#album-discography-view-container .teaser-grid li:hover {
+	-webkit-box-shadow: 0px 0px 7px #bbb;
+	-moz-box-shadow: 0px 0px 7px #bbb;
+	box-shadow: 0px 0px 7px #bbb;
+}
+#album-discography-view-container .teaser-grid li img {
+	border: 1px solid #aaa;
+}
+#album-discography-view-container a {
+	display: block;
+	overflow: hidden;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ SONG NODE
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.node-type-song .node-column1-container {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	border-bottom: 0;
+}
+.node-type-song .node-column1-container, 
+.node-type-song .node-column2-container {
+	width: auto;
+}
+
+#song-middle-row1-container {
+	border-bottom: 0; /* override defaults for row container */
+	padding-bottom: 0;
+	overflow: hidden;
+}
+.node-type-song .song-description,
+.node-type-song .song-lyrics,
+.node-type-song .song-albums,
+.node-type-song .song-videos,
+.node-type-song .song-last-performed,
+.node-type-song .song-images,
+.node-type-song #album-store-view-container {
+	margin-bottom: 30px;
+	overflow: hidden;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #aaa;
+}
+
+/*-------------------------------------
+
+ SONG LYRICS 
+ 
+---------------------------------------*/
+
+/*------------------------
+ SONG INFO DESCRIPTION
+-------------------------*/
+
+.node-type-song .song-description {
+	font-size: 12px;
+	font-style: italic;
+	line-height: 150%;
+}
+.node-type-song .song-description label {
+	margin-bottom: 10px;
+}
+.node-type-song .song-description p:last-child {
+	margin-bottom: 0;
+}
+
+/*---------------------------------
+
+ RELATED PRODUCTS block 
+ 
+-----------------------------------*/
+
+
+
+/*-------------------------------------
+
+ APPEARS ON THESE ALBUMS block 
+ 
+--------------------------------------*/
+
+.song-albums .view-content ul {
+	margin: 0;
+	padding: 0;
+}
+.song-albums .view-content ul li {
+	margin: 0;
+	list-style-type: none;
+	padding: 10px 0;
+	border-bottom: 1px dotted #aaa;
+}
+.song-albums .view-content ul li.views-row-last {
+	border: 0;
+}
+.song-album-row {
+	position: relative;
+	overflow: hidden;
+}
+
+/* album image */
+.song-album-image {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 20px;
+	border: 1px solid #aaa;
+}
+.song-albums .view-content ul li img:hover {
+	opacity: .75; /* Standard: FF gt 1.5, Opera, Safari */
+	-ms-filter: "alpha(opacity=75)"; /* IE 8 */
+}
+
+/* Listen label */
+.song-albums .Listen-Label {
+	display: block;
+	text-transform: uppercase;
+	float: left;
+	margin-top: 18px;
+}
+
+/* MP3 player */
+.song-albums .song-album-player {
+	width: 50px;
+	float: left;
+	margin-top: 5px;
+}
+
+/* Alternate version text */
+.song-albums span.track {
+	display: block;
+	color: red;
+	position: absolute;
+	bottom: 0;
+	left: 80px;
+	color: red;	
+	line-height: 100%;
+}
+.song-albums span.track .field-content {
+	color: #000;
+	font-size: 10px;
+	font-weight: normal;
+	margin-left: 2px;
+}
+
+/* buy now button */
+.song-albums .song-buy-link.button > a {
+	margin: 16px 0 0 3px;
+	padding: 4px 6px 2px;
+	font-size: 13px;
+	float: right;
+}
+
+
+/*---------------------------------
+
+ SINGLE ART block 
+ 
+-----------------------------------*/
+
+.song-images img {
+	width: 90px;
+	margin-bottom: 6px;
+	border: 1px solid #bbb;
+}
+.song-images .items-list .field-item {
+	float: left;
+	list-style-type: none;
+	margin: 0 8px 20px 0;
+	padding: 3px;
+	width: 90px;
+	text-align: center;
+	font-size: 10px;
+	line-height: 12px;
+	color: #222;
+}
+
+
+/*-------------------------------------
+
+ "USED IN THIS SONG" - Gear block
+ 
+---------------------------------------*/
+
+.song-gear {
+	margin: 0 0 30px;
+	overflow: hidden;
+	padding: 0 0 30px;
+	border-bottom: 1px solid #888;
+}
+.song-gear .teaser-list-row {
+	border-bottom: 1px solid #bbb;
+}
+.song-gear .views-row-last {
+	border: 0;
+}
+.song-gear .teaser-list-row .views-field-field-images-1 {
+	float: left;
+	margin-right: 20px;
+	width: 90px;
+}
+.song-gear .teaser-list-row .views-field-field-images-1 img {
+	width: 100%;
+	height: auto;
+}
+.song-gear .views-field-title {
+	font-size: 18px;
+}
+
+
+/*---------------------------------
+
+ VIDEO block 
+ 
+-----------------------------------*/
+
+.song-videos .teaser-grid .song_videos-main-content  { 
+	overflow:hidden;
+}
+.song-videos .teaser-grid .teaser-grid-row {
+	margin-bottom: 4%; /* mobile */
+	float: none;
+}
+.song-videos .teaser-grid .teaser-grid-row a {
+	display: block;
+}
+.song-videos .teaser-grid .teaser-grid-row .views-field-title {
+	padding: 5px;
+}
+.song-videos .teaser-grid .views-row-even.teaser-grid-row {
+	margin-right: 0;
+}
+
+
+/*---------------------------------
+
+ PAST PERFORMANCES block 
+ 
+-----------------------------------*/
+
+.node-type-song .song-last-performed .teaser-grid li {
+	float: none;
+	border: 0;
+}
+.node-type-song .song-last-performed li.views-row-last {
+	border: 0;
+}
+.node-type-song .song-last-performed a {
+	display: block;
+	padding: 5px 8px;
+	border: 0;
+}
+.node-type-song .song-last-performed li a:hover {
+	text-decoration: none;
+	background: rgba(0,0,0,0.1);
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Date */
+.song-perfomances-date {
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: top;
+	width: 120px;
+}
+
+/* Location */
+.node-type-song .song-performances-location {
+	display: inline-block;
+}
+
+/* Pager */
+
+.song-last-performed .teaser-grid ul {
+	overflow: visible;
+}
+

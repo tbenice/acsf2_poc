@@ -1,0 +1,603 @@
+
+/* MUSIC - DISCOGRAPHY - ALBUMS - Stylesheet - Default only */
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ DISCOGRAPHY - Teaser List
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/*--------------------------------------------
+
+ LAYOUT: for bg image show-through behind popup
+ 
+---------------------------------------------*/
+
+.page-music-albums .zone-content {
+	background: transparent;
+}
+.page-music-albums .region-content-inner {
+	background: transparent;
+	padding: 0;
+}
+.page-music-albums #zone-content .menu-block-wrapper ul.menu {
+	border-bottom: 1px solid #aaa;
+	border-top: 1px solid #aaa;
+	margin: 0;
+	overflow: hidden;
+	padding: 20px 0;
+}
+.page-music-albums h1#page-title {
+	background: #fff;
+	margin: 0;
+	padding: 2.7% 2.7% 20px;
+	width: 61%;
+	border-bottom: 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+.page-music-albums #zone-content .menu-block-wrapper {
+	background: #fff;
+	border-bottom: 0 none;
+	margin-bottom: 0;
+	overflow: hidden;
+	padding: 0 2.7%;
+	width: 61%;
+}
+.page-music-albums .page-main-content {
+	background: #fff;
+	padding: 2.7%;
+	width: 61%;
+	-webkit-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+}
+.page-music-albums .album-info-container {
+	margin: 0 0 30px 0;
+}
+.page-music-albums .views-popup-container .views-popup {
+	width: 73%; /* is a % of the width of .page-main-content */
+}
+ 
+
+
+/*-------------------------------------------
+
+ TEASER LIST 
+ 
+-------------------------------------------*/
+
+.page-music-albums .view-discography .view-content ul li.teaser-list-row {
+	width: 100%;
+	border-bottom: 4px double #aaa; /* overwrites border-bottom:none in music-global.css */
+}
+
+/*-----------------------------------------
+
+ TRACK LIST 
+
+------------------------------------------*/
+
+.page-music-albums .song-list-container h2.block-title {
+	display: none;
+}
+.page-music-albums .view-discography .view-content ul li ol li {
+	overflow: visible;
+	list-style-type: decimal; /* remove if custom styling <ol> */
+	padding: 8px 0px;
+	width: auto;
+	line-height: 20px;
+}
+.page-music-albums .view-discography .view-content ul li ol li.views-row-first {
+	padding-top: 0;
+}
+.page-music-albums .view-discography .view-content ul li ol li.views-row-last {
+	border-bottom: 0;
+}
+.page-music-albums .song-popup-link {
+	float: right;
+}
+
+/*----------------------------------------
+
+ SONG POPUP TRIGGER link 
+ 
+----------------------------------------*/
+
+.song-popup-link a {
+	-webkit-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+	color: #444;
+	display: block;
+	float: right;
+	font-size: 18px;
+	height: 0;
+	overflow: hidden;
+	padding: 28px 9px 0px;
+	position: relative;
+	text-align: center;
+	top: -4px;
+	width: 55px;
+}
+.song-popup-link a:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #ee4949;
+}
+.song-popup-link a:before {
+	content: "_t";
+	font-family: IcoMoonBasic;
+	left: 5px;
+	letter-spacing: 9px;
+	position: absolute;
+	top: 4px;
+}
+.song-popup-lyrics {
+	font-size: 13px;
+}
+
+/*---------------------------------------- 
+
+ POPUP WINDOW - song lyrics and player 
+
+----------------------------------------*/
+
+.page-music-albums .views-popup-container .views-popup {
+	padding: 0; /*overwrites ".teaser-list .views-row" general style */
+	color: #fff;
+}
+.page-music-albums .song-popup-title-and-player-container,
+.page-music-albums .song-popup-lyrics,
+.page-music-albums .song-popup-more-link {
+	background: #ee4949;
+	padding: 0 20px;
+	margin-left: 10px;
+}
+.page-music-albums .song-popup-title-and-player-container {
+	-webkit-border-radius: 0 10px 0 0;
+	border-radius: 0 10px 0 0;
+}
+
+/* css3 arrow */
+.page-music-albums .song-popup-title-and-player-container:before {
+	border-bottom: 14px solid transparent;
+	border-right: 14px solid #ee4949;
+	border-top: 14px solid transparent;
+	content: " ";
+	display: block;
+	height: 0;
+	left: -4px;
+	position: absolute;
+	top: 20px;
+	width: 0;
+}
+
+/* Buy Now Button */
+.song-popup-title-and-player-container .song-buy-link.button {
+	position: absolute;
+	right: 35px;
+	top: 12px;
+}
+.page-music-albums .song-popup-title-and-player-container .song-buy-link.button > a {
+	font-size: 12px;
+	padding: 4px 8px 2px;
+	background-color: #ee4949;
+}
+.page-music-albums .song-popup-title-and-player-container .song-buy-link.button > a:hover {
+	background-color: #000;
+}
+
+/* Song Title */
+.song-popup-title {
+	border-top: 1px solid #F77B7B;
+	padding-top: 20px;
+}
+.page-music-albums .song-popup-title-and-player-container h6 {
+	margin-bottom: 0;
+	color: #fff;
+	font-size: 22px;
+}
+
+
+/*----------------------------------------
+ MP3 Player
+-----------------------------------------*/
+
+/* "Listen" Label */
+span.listen-label:before {
+	border: 2px solid #000;
+	color: #000;
+}
+
+/*--------------------------
+ Lyrics 
+---------------------------*/
+
+.page-music-albums .song-popup-lyrics {
+	padding: 20px 20px 10px 20px;
+}
+
+/* lyrics - hidden state */
+.page-music-albums .song-popup-lyrics .item-hide { 
+	margin-bottom: 20px;
+}
+
+/*----------------------------------------
+ show MORE lyrics link 
+------------------------------------------*/
+
+.page-music-albums .song-popup-lyrics a.show-link { /* show/hide lyrics button */
+	margin: 0;
+	width: auto;
+	color: #fff;
+	left: 0;
+	background-color: #222;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 8px 10px 7px;
+}
+.page-music-albums .song-popup-lyrics a.show-link:hover {
+	background-color: #fff;
+	color: #222;
+}
+.page-music-albums .song-popup-lyrics a.show-link:before,
+.page-music-albums .song-popup-lyrics a.show-link:after {
+	font-size: 16px;
+	vertical-align: middle;
+	top: 0;
+}
+
+/* show LESS (fewer) lyrics link */
+
+.page-music-albums .song-popup-lyrics a.show-link.show-processed:before, 
+.page-music-albums .song-popup-lyrics a.show-link.show-processed:after {
+	top: 0;
+}
+
+
+/*---------------------------------------- 
+ VIEW TRACK INFO - link to node 
+------------------------------------------*/
+
+.page-music-albums .song-popup-more-link {
+	padding-bottom: 20px;
+	-webkit-border-radius: 0 0 10px 0px;
+	border-radius: 0 0 10px 0px;
+	font-size: 13px;
+	text-transform: capitalize;
+}
+
+/* view track info link */
+.page-music-albums .song-popup-more-link a {
+	text-transform: uppercase;
+}
+.page-music-albums .song-popup-more-link a:hover {
+	background-color: #fff;
+	color: #222;
+}
+
+/* icon */
+.page-music-albums .song-popup-more-link a:before {
+	border: 2px solid #fff;
+	border-radius: 10px 10px 10px 10px;
+	content: "%";
+	font-family: IcoMoonBasic;
+	font-size: 11px;
+	line-height: 15px;
+	margin-right: 5px;
+	padding: 3px;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ ALBUM - node
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/* ------------------------------------------------------
+
+ MIDDLE ROW 1 - album art, info description, buy links 
+ 
+-------------------------------------------------------*/
+
+/*-----------------------
+ Album Art 
+------------------------*/
+
+.node-type-album #album-art-container {
+	width: 33%;
+	margin-right: 3%;
+	float: left;
+}
+.node-type-album #album-art-container .first-item,
+.node-type-album #album-art-container .not-first-item {
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+.node-type-album #album-art-container .first-item:hover,
+.node-type-album #album-art-container .not-first-item:hover {
+	background-color: #ee4949;
+}
+
+/*-----------------------
+ TRACK LIST 
+-----------------------*/
+
+.node-type-album .song-list-container {
+	width: 43%;
+	margin-right: 3%;
+	border-bottom: 0;
+	float: left;
+	margin-bottom: 0;
+}
+.node-type-album .song-title {
+	width: 65%;
+}
+.node-type-album .song-title h6 {
+	font-size: 15px;
+}
+
+/*----------------------
+ album buy links 
+------------------------*/	
+
+.node-type-album #album-links-container {
+	width: 17%;
+}
+
+/*-------------------------------------------------------------------
+
+ MIDDLE ROW 2 - Purchase Options 
+
+-----------------------------------------------------------------*/
+
+/*------------------------
+ PURCHASE OPTIONS 
+-------------------------*/
+
+/* Radio select buttons */
+#album-purchase-options #edit-product-id {
+	float: left;
+	width: 60%;
+	margin-right: 3%;
+	position: relative;
+	margin-bottom: 0;
+	padding: 20px;
+}
+
+/* CSS3 arrow */
+#album-purchase-options #edit-product-id:after {
+	border-bottom: 14px solid transparent;
+	border-left: 14px solid #DDDDDD;
+	border-top: 14px solid transparent;
+	content: "";
+	display: block;
+	height: 0;
+	position: absolute;
+	right: -14px;
+	top: 40%;
+	width: 0;
+}
+
+/* Price, Qty & Add to Cart Button */
+#album-purchase-options.purchase-options-more .add-to-cart-bottom {
+	float: right;
+	width: 34%;
+}
+
+/*------------------------------------------------
+ Purchase option containers for ONE product option 
+------------------------------------------------*/
+
+#album-purchase-options.purchase-options-one .field-type-commerce-product-reference {
+	float: right;
+	width: 42%;
+}
+#album-purchase-options.purchase-options-one .add-to-cart-details {
+	float: left;
+	width: 56%;
+}
+
+/* Product images */
+.add-to-cart-details .commerce-product-field-field-images-1 {
+	float: left;
+	margin-right: 30px;
+}
+
+/*--------------------------------------------------
+ Purchase option containers for MULTIPLE product options 
+---------------------------------------------------*/
+
+/* Radio select buttons */
+#album-purchase-options.purchase-options-more #edit-product-id {
+	background-color: #ddd;
+}
+
+
+/*-------------------------------------------------------------------
+
+ MIDDLE ROW 3 - Album Info 
+
+-----------------------------------------------------------------*/
+
+/*----------------------------------
+ ALBUM DETAILS - INFO 
+----------------------------------*/
+
+.node-type-album #album-info-container {
+	border: none;
+	padding: 0;
+	width: 100%;
+}
+.node-type-album #album-info-container p:last-child {
+	margin-bottom: 0;
+}
+
+.node-type-album #album-date-container {
+	float: left;
+	margin-right: 20px;
+}
+
+/*------- Album Info body -------*/
+
+.node-type-album #album-body-container {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	
+	-webkit-column-gap: 3em;
+	-moz-column-gap: 3em;
+	column-gap: 3em;	
+	
+	-webkit-column-rule: 1px solid #aaaccc;
+	-moz-column-rule: 1px solid #aaaccc;
+	column-rule: 1px solid #aaaccc;
+	
+	clear: both; /* clears album date float if album label field isn't populated */
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/*-------------------------------------------------------------------
+
+ MIDDLE ROW 4  - track list,reviews, discography, related products 
+
+-----------------------------------------------------------------*/
+
+/*-----------------------
+ Discography 
+------------------------*/
+
+#album-discography-view-container,
+#album-store-view-container {
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	width: 100%;
+}
+.node-type-album #album-middle-row4-container .column-1,
+.node-type-album #album-middle-row4-container .column-2 {
+	width: 48%;
+	float: left;
+}
+.node-type-album #album-middle-row4-container .column-1 {
+	margin-right: 4%;
+}
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ SONGS -  LIST PAGE
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ SONG NODE
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+/*------------------------------------
+
+ container 
+ 
+------------------------------------*/
+
+.song-albums,
+.song-videos {
+	border-bottom: 0;
+	padding-bottom: 10px;
+}
+
+.node-type-song .song-description,
+.node-type-song .song-lyrics,
+.node-type-song .song-albums,
+.node-type-song .song-images,
+.node-type-song .song-gear,
+.node-type-song .song-videos,
+.node-type-song .song-last-performed,
+.node-type-song .song-images,
+.node-type-song #album-store-view-container {
+	padding: 4%;
+	border: 1px solid #aaa;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/*-----------------------------------s
+
+ Column 1 - lyrics / video 
+ 
+-------------------------------------*/
+
+.node-type-song .node-column1-container {
+	width: 49%;
+	float: left;
+	margin-right: 3%;
+	/* overwrites global */
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: 0;
+}
+
+/*-------------------------------------
+
+ "USED IN THIS SONG" - Gear block
+ 
+---------------------------------------*/
+
+.song-gear .teaser-list-row {
+	border-bottom: 0;
+	padding: 0 0 15px 0;
+}
+
+/*---------------------------------
+
+ RELATED PRODUCTS block 
+ 
+-----------------------------------*/
+
+
+/*---------------------------------
+
+ Column 2 - albums, single art, performances, products
+  
+------------------------------------*/
+
+.node-type-song .node-column2-container {
+	width: 48%;
+	float: left;
+}
+
+/*---------------------------------
+
+ VIDEO block 
+ 
+-----------------------------------*/
+
+.song-videos .teaser-grid .teaser-grid-row {
+	float: left;
+}
+
+/*---------------------------------
+
+ PAST PERFORMANCES block 
+ 
+-----------------------------------*/
+
+

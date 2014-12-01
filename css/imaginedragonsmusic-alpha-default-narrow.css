@@ -1,0 +1,779 @@
+/* This file will hold styles that are loaded using the same media query as the NARROW grid. */
+
+
+/********* NARROW **********/
+
+
+/*--------------------------
+ ELEMENT SWITCHING BY SIZE
+ 
+ .omega-[size]-up : style applies to [size] and larger formats
+ .omega-[size]-only : style applies only the [size] format
+--------------------------*/
+
+.omega-mobile-only {
+  display:none !important;
+}
+.omega-narrow-up, .omega-narrow-only {
+  display:block !important;
+}
+
+/** Message stylings **/
+#messages {
+	position: fixed;
+    top: 195px;
+     left: 50%; 
+    transform: translate(-50%);
+    z-index: 100;
+}
+
+.front #messages,
+.front.logged-in #messages,
+.front.logged-in.toolbar #messages,
+.front.logged-in.toolbar.toolbar-drawer #messages {
+    top: 350px;
+}
+
+.logged-in #messages {
+	position: fixed;
+    top: 200px;
+    left: 50%; 
+    transform: translate(-50%);
+    z-index: 100;
+}
+
+.logged-in.toolbar #messages {
+	position: fixed;
+    top: 205px;
+     left: 50%; 
+    transform: translate(-50%);
+    z-index: 100;
+}
+.logged-in.toolbar.toolbar-drawer #messages {
+	position: fixed;
+    top: 240px;
+    left: 50%; 
+    transform: translate(-50%);
+    z-index: 100;
+}
+
+
+
+
+/*==========================================!!! LAYOUT !!!============================================*/
+
+
+/* Negate grid margin - using <body> to override omega grid */
+
+#page .container-12 {
+	width: 740px;
+}
+#page .container-12 .grid-12 {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 740px;
+}
+#page .container-12 .grid-8 {
+	width: 520px;
+}
+
+
+/*==========================================!!! HOME PAGE !!!============================================*/
+
+
+/*---------------------------------------------------------
+-----------------------------------------------------------
+
+ LOGO - BRANDING
+ 
+-----------------------------------------------------------
+----------------------------------------------------------*/
+
+.front #fantorrent-logo-container {
+	padding-top: 92px;
+}
+
+
+.front #zone-custom1-wrapper .region-inner,
+.front #zone-custom3-wrapper .region-inner {
+	width: 100%;
+}
+
+/*==========================================!!! NAVIGATION !!!============================================*/
+
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ MAIN NAVIGATION
+ 
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+#block-superfish-1 ul li a {
+	padding: 19px 7px;
+	font-size: 17px;
+}
+
+/* home only */
+.front #block-superfish-1 ul li a {
+	padding: 15px 15px;
+	font-size: 19px;
+}
+
+
+/*----------------------------------
+ 
+ Sub navigation - Main menu
+ 
+-----------------------------------*/
+
+#block-superfish-1 ul ul {
+	margin-top: 23px; /* sub nav position below main nav */
+}
+
+/* home only */
+.front #block-superfish-1 ul ul {
+	margin-top: 14px;
+}
+
+#block-superfish-1 ul li li a,
+.front #block-superfish-1 ul li li a {
+	padding: 8px;
+	font-size: 16px;
+}
+
+/* Specific SubNav ul positioning & width (per main nav item ID) */
+
+#block-superfish-1 ul li#menu-1472-1 ul {
+	width: 300px;
+}
+#block-superfish-1 ul li#menu-1743-1 ul {
+	width: 255px;
+}
+
+.not-front li#menu-3366-1 {
+	width: 190px;
+}
+
+/***** HOMEPAGE ***/
+.front .jcarousel-skin-updates_carousel .jcarousel-clip-horizontal {
+	/* width: auto;
+	overflow: visible; */
+}
+
+.front.responsive-layout-narrow .jcarousel-skin-updates_carousel .jcarousel-clip-horizontal {
+/*	width: 100%;
+	overflow: hidden; */
+	
+}
+
+.front.responsive-layout-narrow .jcarousel-skin-updates_carousel .jcarousel-container-horizontal {
+	width: 100%;
+}
+
+
+/*==========================================!!! ARTICLES !!!============================================*/
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ ARTICLE NODE
+ 
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+/*----------------------------------
+
+ ARTICLE GALLERY 
+ 
+----------------------------------*/
+
+/* allows for 3 thumbnails across the row */
+.responsive-layout-narrow.node-type-article .photo-row {
+	width: 31%;
+	height: auto;
+	margin: 0 2% 2% 0;
+}
+
+/* hide images in list items in sidebar news block */
+.region-sidebar-second #block-views-articles-sidebar-list .image {
+	display: none;
+}
+.region-sidebar-second #block-views-articles-sidebar-list .title {
+	margin-left: 0;
+}
+
+/*==========================================!!! TOUR !!!============================================*/
+
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ TOUR - EVENTS - Teaser List
+ 
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+/* event popup TRIGGER link */
+
+.responsive-layout-narrow a.popup-link-item {
+	font-size: 12px;
+	padding: 8px 6px;
+}
+
+.page-tour .views-exposed-widget input.form-text {
+	width: 80%;
+}
+
+.page-tour .region-preface-first {
+	margin-left: 425px;
+}
+
+/*-------------------------------------
+
+ POPUP WINDOW - event details 
+ 
+-------------------------------------*/
+
+/* Containers */
+.responsive-layout-narrow.page-tour .popup-main-content {
+	margin-left: 20px;
+}
+.page-tour #views-popup-wrapper:before {
+	left: 6px;
+	top: 26px;
+}
+
+.page-tour .popup-item a:link,
+.page-tour .popup-item a:visited {
+	color: #fff;
+}
+
+/* buy tickets buttons */
+.responsive-layout-narrow #views-popup-wrapper .event-purchase-link-container li {
+	width: 43%;
+}
+.responsive-layout-narrow .event-purchase-link-container li a {
+	font-size: 11px;
+	padding: 7px;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ WE ARE PIONEERS - custom events page
+  
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/*----------------------------------------------------
+
+ VIDEO section 
+ 
+-----------------------------------------------------*/
+
+.context-we-are-pioneers #block-block-11 .mobile,
+.context-we-are-pioneers #block-block-11 .normal,
+.context-we-are-pioneers #block-block-11 .wide {
+	display: none;
+}
+.context-we-are-pioneers #block-block-11 .narrow {
+	display: block;
+}
+
+/*==========================================!!! Band !!!============================================*/
+.band_member_more_link {
+	right: 0;
+	position: relative;
+	width: 200px;
+	float: right;
+	clear: both;
+	margin-top: 20%;
+}
+
+
+
+
+/*==========================================!!! LEGACY !!!============================================*/
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ LEGACY - LIST of all dates
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+/*-------- Available content Icons - trait links ---------*/
+
+.legacy-trait-links {
+	position: relative;	
+}
+
+/* Dateblock */
+.page-tour .dateblock {
+	padding: 2.3em .5em;
+	width: 20%;
+	margin-right: 4%;
+}
+
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ LEGACY - Archived Event - Node
+ 
+-------------------------------------------------------
+------------------------------------------------------*/
+
+
+/*---------- PAGER - Previous / Next ----------*/
+
+.responsive-layout-narrow span.node-pager-text {
+	display: none;
+}
+.responsive-layout-narrow span.node-pager-date {
+	display: none;
+}
+
+/* Official photos and videos grid */
+
+.official-photos-container .attachment,
+.meetgreet-photos-container .attachment {
+	width: 338px;
+	overflow: hidden;
+}
+
+.official-photos-container ul.teaser-grid li,
+.meetgreet-photos-container ul.teaser-grid li {
+	width: 106px;
+	height: auto;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ LEGACY - List of TOUR GROUPS
+
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.responsive-layout-narrow.page-legacy .event-group-poster-art-item {
+	height: 230px;
+}
+
+
+/*==========================================!!! MUSIC !!!============================================*/
+
+
+/*----------------------------------------------------
+------------------------------------------------------
+
+ DISCOGRAPHY - Teaser List
+ 
+------------------------------------------------------
+-----------------------------------------------------*/
+
+.page-music-albums .album-art-container {
+	max-width: 100%;
+}
+.page-music-albums .song-list-title {
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+}
+
+
+/*----------------------------------------------------
+------------------------------------------------------
+
+ ALBUM - node
+ 
+------------------------------------------------------
+-----------------------------------------------------*/
+
+/*--------------------------------
+
+ TRACK LIST 
+ 
+---------------------------------*/
+
+.responsive-layout-narrow.node-type-album .song-list-container {
+	margin-right: 0;
+	width: 64%;
+}
+
+/* IF IT'S A SINGLE (not full album) THEN BUY LINKS NEED TO BE DIFFERENT  - ADD node id to css below */
+
+.responsive-layout-narrow.node-type-album .album-node-NUMBER #album-links-container {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: auto;
+	clear: both;
+}
+.responsive-layout-narrow.node-type-album .album-node-NUMBER .album-offsite-purchase-links .field-item {
+	float: left;
+	margin-right: 10px;
+}
+
+/*-----------------
+ album buy links 
+-------------------*/
+
+.responsive-layout-narrow.node-type-album #album-links-container {
+	width: 33%;
+	position: absolute;
+	top: 300px;
+}
+
+/*----------------------------------
+
+ ALBUM DETAILS - INFO 
+ 
+----------------------------------*/
+
+/*------- Album Info body -------*/
+
+.responsive-layout-narrow.node-type-album #album-body-container {
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+
+/*----------------------------------
+
+ REVIEWS 
+ 
+-----------------------------------*/
+
+.responsive-layout-narrow.node-type-album .album-review-more-link {
+	font-size: 14px;
+}
+.responsive-layout-narrow.node-type-album .album-review-more-link a {
+	padding: 0 4px;
+}
+
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+
+ SONG NODE
+ 
+-------------------------------------------------------
+-------------------------------------------------------*/
+
+.responsive-layout-narrow .song-albums .view-content ul li /* albums appears on */,
+.responsive-layout-narrow .song-images div.items-list div.field-item /* single art */ {
+	margin-right: 5px;
+}
+
+.responsive-layout-narrow.node-type-song .node-column1-container, 
+.responsive-layout-narrow.node-type-song .node-column2-container {
+	float: none;
+	width: auto;
+	border-right: 0;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+
+
+
+/*========================================!!! COMMUNITY !!!============================================*/
+
+
+
+/*------------------------------------------------------
+--------------------------------------------------------
+
+ COMMUNITY COMMENTS
+ 
+--------------------------------------------------------
+------------------------------------------------------*/
+
+/* add a comment button */
+.responsive-layout-narrow .community-sidebar-container .community-post-comment-link-wrapper {
+	width: 34px;
+}
+.responsive-layout-narrow .community-sidebar-container .community-post-comment-link-wrapper a {
+	height: 0;
+	overflow: hidden;
+	padding: 24px 5px 2px 25px;
+	width: 0;
+}
+
+/*------------------------------------------------------
+--------------------------------------------------------
+
+ COMMUNITY SIDEBAR 
+ 
+--------------------------------------------------------
+-------------------------------------------------------*/
+
+.responsive-layout-narrow #region-sidebar-second .view-community-users .teaser-grid-row {
+	margin: 0 7px 7px 0;
+	width: 55px;
+	height: 55px;
+}
+
+/*----------------------------------------
+
+ BAND MEMBER POSTS - sidebar 
+ 
+----------------------------------------*/
+
+/*-------------------------------
+ Band Pics 
+-------------------------------*/
+
+/* kimberly */
+#block-views-tfp-custom-nodes-latest-any .band-post-author-image.user-uid-8,
+.view-display-id-latest_kimberly .band-post-author-image.user-uid-8 {
+	height: 110px; /* 150,110 */
+}
+
+/* Reid */
+#block-views-tfp-custom-nodes-latest-any .band-post-author-image.user-uid-10,
+.view-display-id-latest_reid .band-post-author-image.user-uid-10 {
+	height: 110px; /* 150,110 */
+}
+
+/* Neil */
+#block-views-tfp-custom-nodes-latest-any .band-post-author-image.user-uid-9,
+.view-display-id-latest_neil .band-post-author-image.user-uid-9 {
+	height: 110px; /* 150,110 */
+}
+
+.page-band .view-header {
+	min-height: 2050px;
+}
+
+.page-band .view-header h3 {
+	top: 300px;
+	margin: auto;
+}
+
+.header_band_member_info_wrapper {
+	top: 300px;
+}
+
+
+/*==========================================!!! STORE !!!============================================*/
+
+
+
+/*------------------------------------------------------
+--------------------------------------------------------
+
+ STORE - landing
+ 
+--------------------------------------------------------
+-------------------------------------------------------*/
+
+/* -----------Department Navigation ----------*/
+
+#views-exposed-form-store-landing-page .views-exposed-form label.option {
+	font-size: 12px;
+}
+
+
+/*------------------------------------------------------
+--------------------------------------------------------
+
+ RELATED PRODUCTS 
+
+--------------------------------------------------------
+-------------------------------------------------------*/
+
+#product-related-products-container .view-content li,
+.view-cart-upsell li.teaser-grid-row {
+	height: 196px;
+	margin: 0 2% 2% 0;
+	width: 160px;
+}
+
+.responsive-layout-narrow .related-products-grid .views-field-title,
+.responsive-layout-narrow.page-tour .related_prod_popup-main-content .views-field-title {
+	font-size: 13px;
+	height: auto;
+	line-height: 15px;
+	text-align: center;
+	padding: 5% 5% 0 5%;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ PRODUCT HIGHLIGHT - JOIN PAGE
+
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+.block-product-highlight-intro {
+	padding-top: 465px;
+}
+
+
+
+/*====================================!!! CUSTOM PAGES !!!=========================================*/
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ WE ARE PIONEERS - custom events page
+  
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+.context-we-are-pioneers h1#page-title {
+	margin-bottom: 200px;
+	margin-top: 25px;
+}
+
+.context-we-are-pioneers.responsive-layout-narrow #block-block-11 {
+	width: 100%;
+	margin-bottom: 30px;
+}
+.context-we-are-pioneers.responsive-layout-narrow #block-block-16 {
+	width: 100%;
+	
+}
+.responsive-layout-narrow #pioneers_banner_1, 
+.responsive-layout-narrow #pioneers_banner_2 {
+	display: inline-block;
+	vertical-align: top;
+	width: 47%;
+}
+.responsive-layout-narrow #pioneers_banner_1 {
+	margin-right: 4%;
+}
+
+/* height on banner body to even out with banner 1 */
+.responsive-layout-narrow #pioneers_banner_2 .banner-body {
+	min-height: 109px;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ Custom Mobile Band About page
+  
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/* Photo wrappers */
+.band_page-main-content .item-list ul .views-row-1,
+.band_page-main-content .item-list ul .views-row-2,
+.band_page-main-content .item-list ul .views-row-3,
+.band_page-main-content .item-list ul .views-row-4 {
+	background-attachment: fixed, scroll;
+}
+
+.page-band .view-header {
+	background-attachment: fixed, scroll;
+}
+
+/* .band_page-main-content .item-list ul li {
+	background-attachment: fixed, scroll;
+}
+
+.band_page-main-content .item-list ul .views-row-1,
+.band_page-main-content .item-list ul .views-row-2,
+.band_page-main-content .item-list ul .views-row-3,
+.band_page-main-content .item-list ul .views-row-4  {
+	background-size: auto auto, cover;
+} */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+	/* .page-band .view-header {
+	background-size: auto auto, auto 20%;
+	}
+	
+	.band_page-main-content .item-list ul .views-row-1,
+	.band_page-main-content .item-list ul .views-row-2,
+	.band_page-main-content .item-list ul .views-row-3,
+	.band_page-main-content .item-list ul .views-row-4 {
+	background-size: auto auto, auto 20%; 
+	} */
+	
+	.band_page-main-content .item-list ul li {
+	/* background-attachment: fixed, scroll; */
+}
+
+.band_page-main-content .item-list ul .views-row-1,
+.band_page-main-content .item-list ul .views-row-2,
+.band_page-main-content .item-list ul .views-row-3,
+.band_page-main-content .item-list ul .views-row-4  {
+	/* background-size: auto auto, cover; */
+}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) {
+	/* .page-band .view-header {
+	background-size: auto auto, auto 20%;
+	}
+	
+	.band_page-main-content .item-list ul .views-row-1,
+	.band_page-main-content .item-list ul .views-row-2,
+	.band_page-main-content .item-list ul .views-row-3,
+	.band_page-main-content .item-list ul .views-row-4 {
+	background-size: auto auto, auto 20%; 
+	} */
+	
+	/* .band_page-main-content .item-list ul li {
+	background-attachment: fixed, scroll;
+}
+
+.band_page-main-content .item-list ul .views-row-1,
+.band_page-main-content .item-list ul .views-row-2,
+.band_page-main-content .item-list ul .views-row-3,
+.band_page-main-content .item-list ul .views-row-4  {
+	background-size: auto auto, cover;
+} */
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio: 1){
+	/* .page-band .view-header {
+	background-size: auto auto, auto 20%;
+	}
+	
+	.band_page-main-content .item-list ul .views-row-1,
+	.band_page-main-content .item-list ul .views-row-2,
+	.band_page-main-content .item-list ul .views-row-3,
+	.band_page-main-content .item-list ul .views-row-4 {
+	background-size: auto auto, auto 20%; 
+	} */
+	
+	/* .band_page-main-content .item-list ul li {
+	background-attachment: fixed, scroll;
+}
+
+.band_page-main-content .item-list ul .views-row-1,
+.band_page-main-content .item-list ul .views-row-2,
+.band_page-main-content .item-list ul .views-row-3,
+.band_page-main-content .item-list ul .views-row-4  {
+	background-size: auto auto, cover;
+} */
+}
+
+
+
+
+
+

@@ -1,0 +1,194 @@
+
+/* Fantorrent Join Styles - Default only */
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ FANTORRENT JOIN
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+/*--------------------------------------- 
+
+ USER BAR LOGIN FORM 
+
+----------------------------------------*/
+
+.block-fantorrent-join-login-form {
+	left: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	z-index: 9998;
+}
+
+/*----------------------------------------
+
+ login button 
+ 
+-----------------------------------------*/
+
+#login-link-container a {
+	padding: 8px 5px;
+	border: 0;
+	width: 80px;
+}
+#login-link-container a:hover {
+	background-color: #2a2e46;
+}
+#login-link-container a:before {
+	color: #ccc;
+}
+
+
+/*----------------------------------------
+
+ LOGIN DROPDOWN FORM 
+ 
+-----------------------------------------*/
+
+#fantorrent-join-login-dropdown-form {
+	background-color: #FFFFFF;
+	width: 385px;
+	padding: 25px;
+	-webkit-border-radius: 0 0 8px 8px;
+	border-radius: 0 0 8px 8px;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	color: #444;
+}
+#fantorrent-join-login-dropdown-form .form-item-name {
+	display: inline-block;
+	margin: 0 20px 0px 0;
+} 
+#fantorrent-join-login-dropdown-form .form-item-pass {
+	display: inline-block;
+}
+#fantorrent-join-login-dropdown-form .form-item-name input, 
+#fantorrent-join-login-dropdown-form .form-item-pass input {
+	width: 155px;
+	-webkit-border-radius: 3px 3px 3px 3px;
+	border-radius: 3px 3px 3px 3px;
+}
+/* Submit button */
+#fantorrent-join-login-dropdown-form #edit-actions input {
+
+}
+
+/* log in with social accounts */
+#fantorrent-join-login-dropdown-form .item-list {
+	border-color: #CCCCCC;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ USER BAR LOGOUT BOX
+ 
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/* Hide mobile items */
+#user-bar-user-dashboard-link-mobile,
+#user-bar-admin-dashboard-link-mobile,
+#user-bar-analytics-dashboard-link-mobile,
+#user-bar-store-dashboard-link-mobile {
+	display: none;
+}
+
+.block-fantorrent-join-logged-in-block {
+	margin: 0 20px 0 0;
+} 
+
+/* username */
+.block-fantorrent-join-logged-in-block .logout-username {
+	display: inline-block;
+	line-height: 1;
+	margin-right: 10px;
+	padding-top: 8px;
+	vertical-align: top;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ USER BAR - JOIN FORM (email form)
+ 
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+.block-fantorrent-join-join-form {
+	left: 105px;
+	position: absolute;
+	top: 0;
+	z-index: 9999;
+	padding: 6px;
+	margin: 0;
+	z-index: 9999;
+	max-width: 250px;
+	background-color: transparent;
+}
+.block-fantorrent-join-join-form .form-type-textfield {
+	margin: 0px 8px 0 0;
+	width: 150px;
+}
+.block-fantorrent-join-join-form input.form-text {
+	font-size: 12px;
+	width: 100%;
+	height: 27px;
+	padding: 3px 5px;
+}
+.block-fantorrent-join-join-form .form-submit {
+	font-size: 12px;
+	line-height: 12px;
+	padding: 0 20px;
+	text-transform: uppercase;
+	height: 27px;
+	width: auto;
+	margin: 0;
+	background-color: #000;
+}
+.block-fantorrent-join-join-form .form-submit:hover {
+	background-color: #2a2e46;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ REMINDER BLOCK - VERIFY EMAIL ADDRESS
+ 
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/*-----------------------------------
+
+ OUTER CONTAINER 
+ 
+------------------------------------*/
+
+.container-12 .region-header-first.grid-6 {
+	width: 100%;
+	margin: 0;
+}
+
+.block-fantorrent-join-reminder-block {
+	border-radius: 15px;
+}
+
+/*-----------------------------------
+
+ TITLE 
+ 
+------------------------------------*/
+
+.block-fantorrent-join-reminder-block h2.block-title {
+	border-radius: 15px 15px 0 0;
+	color: #fff;
+	font-size: 2rem;
+}
+

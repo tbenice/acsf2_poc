@@ -1,0 +1,845 @@
+
+/* TOUR & EVENTS - Global styles only */
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ DATE BLOCK - FOR MOBILE BLOCKS
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.dateblock {
+	width: 80px;
+	/* background-color: #000; */
+	background-color: #2a2e46;
+	float: left;
+	margin: 0 15px 0px 0;
+	padding: 20px 0;
+	text-align: center;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	color: #fff;
+	font-weight: 300;
+}
+.dateblock:hover {
+	
+}
+.dateblock .month {
+	text-transform: uppercase;
+	font-size: 18px;
+	display: block;
+	line-height: 100%;
+}
+.dateblock .day {
+	text-transform: uppercase;
+	font-size: 35px;
+	display: block;
+	line-height: 90%;
+}
+.dateblock .year {
+	font-size: 15px;
+	line-height: 17px;
+	display: block;
+	letter-spacing: 1px;
+	color: #EE4848;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ TOUR - UPCOMING EVENTS - Teaser List
+
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.page-tour .teaser-list .views-popup-container { /* allows for toggle buttons to position inline */
+	position: static;
+}
+
+/*---------------------------------------------
+
+ TOGGLE LINKS - tour map & tour details 
+ 
+---------------------------------------------*/
+
+.page-tour .teaser-list .attachment { /* container for map and details */
+	margin-bottom: 30px;
+	position: relative;
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 30px;
+	display: none; /* hide for now */
+}
+.page-tour .attachment .views-popup-container .view-header p { /* container for button links */
+	margin-bottom: 10px;
+}
+
+/* toggle button links */
+.page-tour .attachment .views-popup-container .view-header a {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: auto;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	color: #fff;
+}
+.page-tour .attachment .views-popup-container .view-header a:hover {
+	text-decoration: none;
+}
+
+/* Map Link Icon */
+.page-tour .attachment .view-display-id-events_page_map .view-header a {
+	width: 100%;
+}
+.page-tour .attachment .view-display-id-events_page_map .view-header a:before {
+	display: inline-block;
+	vertical-align: middle;
+	content: "U";
+	margin-right: 4px;
+	font-family: "IcoMoonBasic";
+	font-size: 22px;
+	font-weight: normal;
+	speak: none;
+}
+
+/* Tour Details Icon */
+.page-tour .attachment .view-display-id-article .view-header a:before {
+	display: inline-block;
+	vertical-align: middle;
+	content: "\5f";
+	font-family: "IcoMoonBasic";
+	font-size: 18px;
+	margin-right: 8px;
+	font-weight: normal;
+	speak: none;
+}
+
+/*----------------------------------------------------
+
+ TOUR - MAP
+ 
+---------------------------------------------------- */
+
+/* Addes margin when MAP content displayed */
+.events_page_map-main-content .view-content {
+	margin: 0 0 30px 0;
+	position: relative;
+}
+
+/* kills margin when NO map content is displayed */
+.events_page_map-main-content .views-slidein-processed {
+	margin: 0;
+}
+
+
+/*----------------------------------------------------- 
+
+ TOUR - Article block - tour details
+
+------------------------------------------------------*/
+
+.page-tour .article-main-content {
+	background-color: #fff;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.page-tour .article-main-content ul { /* overwrites event teaser list below */
+	width: 100% !important;
+	margin: 0 !important;
+}
+.page-tour li.tour-article {
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	-o-background-size: 100% auto;
+	background-size: 100% auto;
+	margin: 0 0 30px 0; /* margin put here keeps extra space from showing when collapsed */
+	list-style-type: none;
+}
+
+/* closed state */
+.page-tour li.views-slidein-processed {
+	margin-bottom: 0px;
+}
+
+/* tour article text body */
+.tour-article-column-1 {
+	padding: 5%;
+	margin-bottom: 30px;
+}
+.tour-article-column-1 h3 {
+	margin-bottom: 10px;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 34px;
+}
+
+/* post date */
+.tour-article-column-1 .item-hide { 
+	font-style: italic;
+	font-size: 13px;	
+}
+.tour-article-column-1 .button {
+	background-color: #666;
+	color: #fff;
+}
+/* video */
+.tour-article-video {
+	padding: 0 0 20px 0;
+	text-align: center;
+}
+
+
+/*-----------------------------------------------------
+
+ TOUR BANNER - CID - VIP experiences
+ 
+------------------------------------------------------*/
+
+#cid-banner {
+	border-radius: 10px;
+	padding: 4%;
+	margin-bottom: 50px;
+	background-size: 100% auto;
+	background-color: #000;
+	color: #999;
+	text-align: center;
+	line-height: 100%;
+	font-size: 14px;
+}
+#cid-banner h3 {
+	color: #2a2e46;
+	font-size: 27px;
+	font-weight: 300;
+	line-height: 32px;
+	margin-bottom: -10px;
+	text-transform: uppercase;
+}
+#cid-banner h4 {
+	border-bottom: 4px double #444444;
+	color: #FFFFFF;
+	font-size: 23px;
+	line-height: 25px;
+	font-weight: 900;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+}
+#cid-banner p a {
+	display: block;
+	background-color: #2a2e46;
+	border-radius: 4px;
+	padding: 10px;
+	color: #fff;
+	margin: 10px 0;
+}
+#cid-banner p a:hover {
+	background-color: #fff;
+	color: #222;
+	text-decoration: none;
+}
+/* cid logo */
+#cid-banner img {
+	width: 50px;
+	height: auto;
+}
+
+/*-----------------------------------------------------
+
+ AUTO PROXIMITY SEARCH - USER Specific when logged in
+
+------------------------------------------------------*/
+
+/* proximity search container */
+.view-display-id-upcoming_proxa {
+	background: url("../../images/transparent_white_60.png") repeat scroll left top transparent;
+	border: 1px solid #aaa;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3%;
+}
+
+/* proximity content */
+.page-tour .teaser-list .view-display-id-upcoming_proxa .attachment {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border: 0;
+}
+.view-display-id-upcoming_proxa .user-location-container { /* ultimately this should only be for alert sentence */
+	font-size: 21px;
+}
+.view-display-id-upcoming_proxa .user-location-container .field-name-field-address {
+	margin: 10px 0 0 0;
+	font-size: 13px;
+	line-height: 130%;
+	font-weight: normal;
+}
+
+/* toggle link */
+.view-display-id-upcoming_proxa .user-location-event-link a {
+	display: block;
+	padding: 4px 10px;
+	background-color: #333;
+	color: #fff;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	width: 150px;
+	text-align: center;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+/* popup (slideout) proximity dates list */
+.upcoming_proxa-main-content .views-row {
+	background-color: #fff;
+	border-radius: 4px 4px 4px 4px;
+	color: #444;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding: 10px;
+	font-size: 14px;
+}
+.upcoming_proxa-main-content .views-row .event-date {
+	margin-right: 20px;
+	width: 50px;
+	display: block;
+	float: left;
+}
+.upcoming_proxa-main-content .views-row .event-location {
+	margin-right: 20px;
+	min-width: 140px;
+	display: block;
+	float: left;
+}
+.upcoming-prox .button {
+	float: right;
+}
+.upcoming-prox .button a,
+.upcoming-prox .button span.sold-out-message {
+	max-width: 170px;
+	overflow: hidden;
+	padding: 3px 10px !important;
+}
+
+
+/*--------------------------------------------------------------- 
+
+ "Find A Show" Proximity search
+
+-----------------------------------------------------------------*/
+
+.page-tour .view-filters { /* container */
+	margin-bottom: 30px;
+	border-bottom: 1px solid #aaa;
+	padding-bottom: 30px;
+}
+.page-tour .views-exposed-widget {
+	padding: 0;
+}
+.page-tour .views-exposed-widget label {
+	color: #333333;
+	display: block;
+	font-size: 27px;
+	font-weight: 700;
+	margin: 0 20px 20px 0;
+}
+.page-tour .views-exposed-widget .views-widget {
+	float: left;
+}
+.page-tour .views-exposed-widget .views-widget fieldset {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.page-tour .views-exposed-widget .form-item {
+	margin-bottom: 5px;
+}
+.page-tour .views-exposed-widget .views-widget input { /* spacing the inputs */
+	margin: 0 5px;
+}
+
+/* submit button */
+.page-tour .view-filters .views-exposed-form .views-submit-button {
+	float: left;
+	margin-top: 43px;
+	padding: 0;
+}
+.page-tour .view-filters .views-exposed-form .form-submit {
+	margin: 0;
+	padding: 5px 10px;
+}
+
+/*----------------------------------------------------- 
+
+ TEASER LIST EVENTS
+
+------------------------------------------------------*/
+
+.page-tour .teaser-list .view-content ul li.event-row {
+	list-style-type: none;
+	margin: 0;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+.page-tour .teaser-list .view-content ul li.event-row:hover {
+	background-color: transparent;
+}
+.page-tour .teaser-list .view-content ul li.event-row .clickable {
+	cursor: default; /* prevents user from mistaking the entire row for a link */
+	clear: both;
+}
+
+/* City & State */
+.page-tour .teaser-list h5 {
+	color: #333333;
+	font-size: 22px;
+	font-weight: 900;
+	margin-bottom: 3px;
+}
+/* Venue */
+.page-tour .teaser-list h6 {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 0;
+	letter-spacing: 0;
+	line-height: 17px;
+	margin-left: 60px; /* dateblock width + its right margin */
+}
+
+/* Tickets + Meet & Greet availability icons */
+
+.ticket-and-meetgreet-link-wrapper {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin-left: 60px;
+	margin-top: 5px;
+	overflow: hidden;
+	padding: 0;
+	font-size: 11px;
+	border: 1px solid #aaa;
+}
+.ticket-and-meetgreet-link-wrapper:before {
+	content: "Available:";
+	display: inline-block;
+	font-size: 11px;
+	margin-right: 10px;
+	padding: 1px 6px;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+.tickets-text {
+	margin-right: 10px;
+}
+
+/* Tickets & M&G Icons */
+.tickets-text:before {
+	font-family: "IcoMoonBasic";
+	content: "\3a";
+	margin-right: 3px;
+	speak: none;
+}
+.meet-greet-text:before {
+	font-family: "IcoMoonBasic";
+	content: "\2e";
+	margin-right: 3px;
+	speak: none;
+}
+
+/* Facebook Attending */
+
+.facebook-attending-container {
+	overflow: hidden;
+}
+.facebook-attending-container .item-hide a,
+.facebook-attending-container .item-shown a,
+.node-type-event .facebook-attending-container a /* node */ {
+	width: 50px;
+	height: 50px;
+	margin: 0 10px 10px 0;
+	float: left;
+	display: block;
+}
+.facebook-attending-container h3 a,
+.node-type-event .facebook-attending-container h3 a /* node */ {
+	float: none; /* override */
+	height: auto;
+	width: auto;
+	font-size: 16px;
+	font-weight: normal;
+	display: block;
+	padding: 4px 10px;
+	background-color: #000;
+	color: #fff;
+	margin: 0 0 20px 0;
+	text-align: center;
+	letter-spacing: 0;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+.facebook-attending-container h3 a:hover {
+	background-color: #fff;
+	color: #222;
+	text-decoration: none;
+}
+
+
+/*------------------------------------------
+
+ ADMIN Inline Editing: Legacy and Sold out 
+ 
+------------------------------------------*/
+
+.event-legacy-on-switch,
+.event-sold-out-switch,
+.event-edit {
+	padding: 1px 7px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #fff;
+	margin: 0 5px 5px 0;
+	font-size: 12px;
+	width: 145px;
+	line-height: 130%;
+	border: 1px solid #aaa;
+	display: inline-block;
+	margin-bottom: 10px;
+	vertical-align: top;
+}
+.event-sold-out-switch {
+	width: 140px;
+}
+.event-edit {
+	width: auto;
+}
+.event-legacy-on-switch .form-type-checkbox .description {
+ 	margin-left: 1.6em;
+ 	line-height: 12px;
+}
+.event-legacy-on-switch .views-label,
+.event-sold-out-switch .views-label {
+	float: left;
+	margin-right: 5px;
+}
+.event-legacy-on-switch .inline-editing .form-item,
+.event-sold-out-switch .inline-editing .form-item {
+	margin-top: 0;
+}
+.event-legacy-on-switch .inline-editing .form-actions,
+.event-sold-out-switch .inline-editing .form-actions {
+	margin-bottom: 0;
+}
+
+/* OFF or ON statement */
+.event-legacy-on-switch .inline-editing-field .field-items .field-item,
+.event-sold-out-switch .inline-editing-field .field-items .field-item {
+	float: left;
+	margin-right: 10px;
+}
+.event-legacy-on-switch .inline-editing-form-wrapper,
+.event-sold-out-switch .inline-editing-form-wrapper {
+	padding: 10px;
+	border: 1px solid #aaa;
+	background-color: #efefef;
+	margin: 5px 0;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ TOUR - UPCOMING EVENTS - Node
+ 
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/* node row container - default overrides */
+
+.event-node-full .node-row-container {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/*---------------------------------
+
+ top of page info 
+
+----------------------------------*/
+
+.event-node-full h3, /* city-state */
+.event-node-full h5 /* date */{
+	margin-bottom: 5px;
+	clear: both; /* clears inline editing float when logged in as admin */
+	color: #222;
+}
+.event-node-full h3 {
+	font-size: 30px;
+	font-weight: 900;
+}
+.event-node-full h6 /* venue */ {
+	font-weight: normal;
+}
+
+/*-----------------------------------
+
+ BUY TICKETS + MEET & GREET buttons
+ - governs node & teaser list popup 
+
+-----------------------------------*/
+
+.event-node-full .event-purchase-link-container ul {
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+.event-node-full .event-purchase-link-container li {
+	list-style-type: none;
+	margin: 0 0px 10px 0;
+	padding: 0;
+	width: auto;
+}
+.event-node-full .event-purchase-link-container li:last-child {
+	margin-right: 0;
+}
+.event-node-full .event-purchase-link-container .button a {
+	border-radius: 30px;
+	font-size: 20px;
+	margin-bottom: 10px;
+	padding: 16px 10px;
+	text-transform: uppercase;
+}
+
+
+/*----------------------------------
+
+ SOLD OUT Message 
+
+----------------------------------*/
+
+.button span.sold-out-message {
+	background-color: red;
+	display: block;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	padding: 8px 10px;
+	color: #fff;
+	text-align: center;
+}
+
+/*---------------------------------
+
+ EVENT DETAILS 
+ 
+----------------------------------*/
+
+.event-location-venue-link .field-label,
+.event-location-venue-link .views-label {
+	float: left;
+	margin-right: 10px;
+}
+.popup-main-content .event-time, 
+.popup-main-content .event-title,
+.popup-main-content .event-location-title,
+.popup-main-content .event-location-address {
+	font-size: 18px;
+	background: rgba(0,0,0,0.2);
+	border-radius: 4px 4px 4px 4px;
+	color: #EEEEEE;
+	margin-bottom: 5px;
+	padding: 10px;
+}
+
+
+/* Time */
+
+.event-time {
+	
+}
+.views-label-field-event-date,
+.views-label-field-date-hour { /* label */
+	float: left;
+	margin-right: 10px;
+}
+
+/* event title */
+.event-title {
+	
+}
+
+/* Event location */
+.event-location-title {
+	border-radius: 4px 4px 0 0;
+	margin-bottom: 0;
+}
+
+/* Event body */
+.event-body {
+	font-size: 15px;
+	border-radius: 0;
+}
+
+/* venue and address */
+.event-location-address {
+	padding:0 0 10px 30px;
+	border-radius: 0 0 4px 4px;
+	font-size: 15px;
+}
+
+
+/*====================================!!! CUSTOM PAGES !!!=========================================*/
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ WE ARE PIONEERS - custom events page
+  
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+.context-we-are-pioneers .section-content section {
+	border-bottom: 4px double #AAAAAA;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+}
+
+.context-we-are-pioneers h2.block-title {
+	font-size: 25px;
+}
+
+/*----------------------------------------------------
+
+ VIDEO section 
+ 
+-----------------------------------------------------*/
+
+.context-we-are-pioneers #block-block-11 {
+	background: none repeat scroll 0 0 #333;
+	vertical-align: top;
+}
+
+.context-we-are-pioneers #block-block-11 .narrow,
+.context-we-are-pioneers #block-block-11 .normal,
+.context-we-are-pioneers #block-block-11 .wide {
+	display: none;
+}
+
+/*----------------------------------------------------
+
+ BANNERS blocks 
+ 
+-----------------------------------------------------*/
+
+.context-we-are-pioneers #block-block-16 {
+	color: #999;
+}
+.context-we-are-pioneers #block-block-16 h3 {
+	font-size: 25px;
+	font-weight: 300;
+	color: #000;
+}
+
+.context-we-are-pioneers #block-block-16 .banner-body {
+	padding: 4%;
+	background-color: #eee;
+	margin: 0 0 5px 0;
+}
+.context-we-are-pioneers #block-block-16 a {
+	display: block;
+	text-align: center;
+}
+.context-we-are-pioneers #block-block-16 p:last-child {
+	margin: 0;
+}
+
+#pioneers_banner_1,
+#pioneers_banner_2 {
+	margin-bottom: 30px;
+	border: 1px solid #aaa;
+	padding: 3%;
+}
+
+
+
+
+/*----------------------------------------------------
+
+ UPCOMING TOUR DATES section 
+ 
+-----------------------------------------------------*/
+
+.context-we-are-pioneers .sidebar-upcoming-events .dateblock {
+	border: 0;
+}
+
+/* City & State */
+.context-we-are-pioneers .sidebar-upcoming-events .titles-container h3 {
+	color: #333333;
+	font-size: 22px;
+	font-weight: 900;
+	margin-bottom: 3px;
+}
+/* Venue */
+.context-we-are-pioneers .sidebar-upcoming-events .titles-container h4 {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: normal;
+	margin-bottom: 0;
+	letter-spacing: 0;
+	line-height: 17px;
+	margin-left: 60px; /* dateblock width + its right margin */
+}
+
+/* Buttons */
+.context-we-are-pioneers .buttons-container {
+	clear: both;
+	padding-top: 20px;
+}
+.context-we-are-pioneers.responsive-layout-mobile .teaser-list-row {
+	padding: 3%;
+	background-color: #eee;
+	border: 0;
+	margin-bottom: 10px;
+}
+.context-we-are-pioneers.responsive-layout-mobile .teaser-list-row .button a, .context-we-are-pioneers.responsive-layout-mobile .teaser-list-row a.button {
+	background-color: #FFF;
+	border: 1px solid #AAA;
+	color: #777;
+	float: left;
+	font-size: 12px;
+	margin-bottom: 5px;
+	margin-right: 3%;
+	padding: 0px;
+	width: 47%;
+}
+.context-we-are-pioneers.responsive-layout-mobile .teaser-list-row .button a:hover,
+.context-we-are-pioneers.responsive-layout-mobile .teaser-list-row a.button:hover{
+	background-color: #2a2e46;
+	color: #fff;
+}
+
+
+
+/*----------------------------------------------------
+
+ INSTAGRAM section 
+ 
+-----------------------------------------------------*/
+
+
+.context-we-are-pioneers .view-id-instagram .views-row {
+	margin-bottom: 20px;
+	background: #fff;
+	padding: 5px; 
+	border: 1px solid #aaa;
+}

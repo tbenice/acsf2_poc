@@ -1,0 +1,930 @@
+/* This file will hold styles that are loaded using the same media query as the narrow, normal and wide grid. */
+
+
+/********* HOME PAGE DEFAULT **********/
+
+
+
+
+
+/*-------------------------------------------------------------------
+
+ Only add to this stylesheet if 
+ home page items need to be styled differently than 
+ in [site-name]-alpha-default.css
+ 
+ 
+ 
+ > > > > > Every selector in this sheet should begin with .front class
+ 
+--------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ LAYOUT - HOME PAGE ONLY 
+ 
+----------------------------------------------------------
+---------------------------------------------------------*/
+
+body.front {
+	background-color: #000;
+}
+
+/* negate margin-padding that clears fixed user bar & nav */
+.front #section-content {
+	margin: 0;
+	padding: 0;
+}
+
+/* add padding to custom zone wrappers */
+.front #section-content .zone-wrapper {
+	border-bottom: 0;
+	margin-bottom: 0px;
+	padding-bottom: 150px;
+	padding-top: 450px;
+}
+
+/* negate previous margin-padding for first zone */
+.front #section-content #zone-content-wrapper.zone-wrapper {
+	margin: 0px;
+	min-height: auto;
+	padding: 0;
+}
+
+.front h2.block-title {
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 45px;
+	color: #fff;
+	margin-bottom: 30px;
+	text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+/*------------------------------
+
+ More Links - Home 
+ 
+-------------------------------*/
+
+.front .more-link,
+.front .view-twitter-feed .view-footer,
+.front .view-ft-instagram-home-block .view-footer {
+	position: relative;
+}
+.front .more-link a,
+.front .view-twitter-feed .view-footer a,
+.front .view-ft-instagram-home-block .view-footer a {
+	background-color: #2a2e46;
+	padding: 0px;
+	height: 50px;
+	color: #fff;
+	line-height: 20px;
+	vertical-align: middle;
+	font-size: 17px;
+	font-weight: 300;
+	display: block;
+	text-align: right;
+	text-transform: uppercase;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.front .more-link a:hover,
+.front .view-twitter-feed .view-footer a:hover,
+.front .view-ft-instagram-home-block .view-footer a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Arrow icon */
+.front .more-link a:after,
+.front .view-twitter-feed .view-footer a:after,
+.front .view-ft-instagram-home-block .view-footer a:after {
+	background-color: #2a2e46;
+	content: "\33";
+	display: inline-block;
+	font-family: "IcoMoonArrows";
+	font-size: 20px;
+	height: 23px;
+	line-height: 23px;
+	overflow: hidden;
+	padding: 14px 14px 13px;
+	vertical-align: middle;
+	width: 23px;
+	color: #fff;
+	margin-left: 10px;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+.front .more-link a:after {
+  background-color: #b5b5b5;
+}
+
+.front .more-link a:hover:after,
+.front .view-twitter-feed .view-footer a:hover:after,
+.front .view-ft-instagram-home-block .view-footer a:hover:after {
+	color: #000;
+	background-color: #b5b5b5;
+}
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ MAIN NAVIGATION - HOME PAGE ONLY 
+ 
+----------------------------------------------------------
+---------------------------------------------------------*/
+
+.front #zone-menu-wrapper {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    margin: 0;
+}
+/* hide home link */
+.front li#menu-1174-1 {
+	display: none;
+}
+
+
+/* logged in as admin */
+.front.logged-in.toolbar.toolbar-drawer #zone-menu-wrapper {
+	position: relative;
+	top: 0px;
+}
+
+/*---------------------------------------------
+ 
+ Sub navigation - Main menu
+ 
+----------------------------------------------*/
+
+
+/*---------------------------------------------------------
+-----------------------------------------------------------
+
+ LOGO - BRANDING
+ 
+-----------------------------------------------------------
+----------------------------------------------------------*/
+
+.front #zone-branding-wrapper {
+	/* background: #000 url(../../images/bg-repeating-home-logo.png) repeat scroll left top; */
+	background: transparent;
+	margin: 0;
+}
+
+.front #fantorrent-logo-container {
+	margin: 0;
+	text-align: center;
+	margin-top: 40px;
+	height: 0;
+	padding-top: 171px;
+	/* background: transparent url(../../images/imgd-logo.png) no-repeat scroll center center; */
+	background: transparent url(../../images/ID_Logo.png) no-repeat scroll center center;
+	background-size: 60% auto;
+}
+a#fantorrent-logo-link {
+	color: #000;
+	font-size: 20px;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 0;
+}
+
+
+/*----------------------------------------------------
+------------------------------------------------------
+
+ SLIDESHOW BLOCK - Custom 1
+ 
+------------------------------------------------------
+-----------------------------------------------------*/
+
+
+.front #page {
+	background-image: url(../../images/bg-diagonal-lines.png), url(../../images/Home_TOP-4.jpg); 
+	/* background-image: url(../../images/bg-diagonal-lines.png), url(../../images/Home_TOP-3-3.jpg); */
+	background-size: auto, 100% auto;
+	background-repeat: repeat, no-repeat;
+	background-position: left top, center top;
+	/* background-position: left top, center 100px; */
+	background-attachment: fixed, fixed;
+	background-color: #000;
+}
+
+/* kill mobile slideshow in narrow-up */
+.front #block-views-banner-mobile-featured {
+	display: none;
+}
+
+.front #zone-custom1-wrapper {
+	/*background-image: url(../../images/bg-diagonal-lines.png), url(../../images/bg-home-1.jpg);
+	background-size: auto, 100% auto;
+	background-repeat: repeat, no-repeat;
+	background-position: left top, center 60px;
+	background-attachment: fixed, fixed; */
+	min-height: 500px;
+}
+
+.front #section-content #zone-custom1-wrapper .zone-wrapper {
+	padding-top: 50px;
+}
+
+.front #zone-custom1-wrapper .region-inner {
+	margin: 0 auto;	
+}
+
+#block-views-banner-feature {
+	margin-bottom: 0px;
+	margin-top: 15em;
+}
+#block-views-banner-feature .views-field-field-images-1 {
+	/* background-color: #000; */
+	background: transparent;
+	text-align: center;
+}
+
+/*--------------------------------
+
+ Slideshow Controls 
+
+--------------------------------*/
+
+.front #block-views-banner-feature .views-slideshow-controls-bottom {
+	margin-top: 12px;	
+	margin: auto;
+	width: 30%;
+}
+.front .views-slideshow-controls-bottom .views-slideshow-pager-field-item {
+	background-color: transparent;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	height: 30px;
+	margin-right: 15px;
+	width: 30px;
+	border: 3px solid #fff; 
+	-moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+.front .views-slideshow-controls-bottom .views-slideshow-pager-field-item.active {
+	background-color: #2a2e46;
+}
+
+/*---------------------------------------
+
+ Banner Content
+ 
+---------------------------------------*/
+
+/*------------------------
+ text wrapper 
+-------------------------*/
+.front #views_slideshow_cycle_main_banner-feature #feature-content {
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	height: auto;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	padding-top: 20px;
+}
+
+/*-------------------
+ title 
+-------------------*/
+.front #views_slideshow_cycle_main_banner-feature #feature-content h3 {
+	color: #fff;
+	margin: 0 20px 10px;
+}
+
+/*-------------------
+ body text 
+-------------------*/
+.front #views_slideshow_cycle_main_banner-feature .views-field-body {
+	color: #999;
+	margin: 0 20px; 
+}
+
+/*-------------------
+ More link 
+-------------------*/
+.front #views_slideshow_cycle_main_banner-feature .views-field-field-links-1 {
+	overflow: hidden;
+}
+.front #views_slideshow_cycle_main_banner-feature .views-field-field-links-1 a {
+	display: block;
+	padding: 6px 10px;
+	text-decoration: none;
+	background-color: #444;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+.front #views_slideshow_cycle_main_banner-feature .views-field-field-links-1 a:hover {
+	background-color: #2a2e46;
+}
+.front #views_slideshow_cycle_main_banner-feature .views-field-field-links-1 a:after {
+	content: "\33";
+	font-family: IcoMoonArrows;
+	font-size: 17px;
+	line-height: 18px;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ Home Store BLOCK - HOME PAGE ONLY
+ 
+----------------------------------------------------------
+---------------------------------------------------------*/
+
+.front #zone-custom1-wrapper {
+	background-image: url(../../images/bg-diagonal-lines.png), url(../../images/Home_STORE.jpg);
+	background-size: auto, 100% auto;
+	background-repeat: repeat, no-repeat;
+	background-position: left top, center top;
+	background-attachment: fixed, fixed;
+	background-color: #000;
+	min-height: 500px;
+	/* margin-top: 1000px; */
+	margin-top: 500px; 
+}
+
+.front #block-views-id-instagram-block-1 .view-content {
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.front #block-views-id-instagram-block-1 .views-row {
+	width: 22%;
+	margin-right: 3%;
+	margin-bottom: 3%;
+	background: #fff;
+	padding: 5px; 
+	float: left;
+	border: 0;
+}
+.front #block-views-id-instagram-block-1 .views-row-last {
+	margin-right: 0;
+}
+
+.front #zone-custom1 h2.block-title {
+	text-align: center;
+	padding-bottom: .3em;
+	margin-bottom: 1em;
+}
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ PRODUCT SECTION - CUSTOM ZONE 1
+ 
+----------------------------------------------------------
+---------------------------------------------------------*/
+
+
+/* kills grid css */
+.front #page #zone-custom1,
+.front #page #region-custom-1 {
+	width: 100%;
+	margin: 0;
+}
+.front #zone-custom1-wrapper h2 {
+	margin: 0 auto;
+}
+.front #block-views-featured-product-carousel-block {
+	width:100%;
+	margin:0 auto;
+}
+.front .jcarousel-skin-updates_carousel .jcarousel-item {
+	width: 240px;
+	height: 240px;
+	border: 10px solid #F5F2E9;
+}
+
+.jcarousel-skin-updates_carousel {
+	
+}
+
+/*----------------------------------
+
+ Carousel Navigation
+ 
+-----------------------------------*/
+
+.front .jcarousel-skin-updates_carousel .jcarousel-next-horizontal {
+	right: 0px;
+}
+.front .jcarousel-skin-updates_carousel .jcarousel-prev-horizontal {
+	left: 0px;
+}
+.front .jcarousel-skin-updates_carousel .jcarousel-container-horizontal {
+	height: auto;
+	margin: auto;
+	/* padding: 0 3%; */
+	/* width: auto; */
+	padding: 0 4px;
+	width: 1245px;
+	overflow: hidden;
+}
+
+
+
+
+/*----------------------------------------------------
+------------------------------------------------------
+
+ TWEETS - Custom 1
+ 
+------------------------------------------------------
+-----------------------------------------------------*/
+
+.front #block-views-twitter-feed-1-block h2.block-title {
+	margin-bottom: 10px;
+}
+
+.front #block-views-twitter-feed-1-block {
+	margin-top: 100px;
+}
+
+/* tweet body */
+.front .view-twitter-feed .view-content {
+	background-color: #fff;
+	padding: 6%;
+	margin-bottom: 5px;
+	font-size: 20px;
+	color: #999;
+	font-weight: 300;
+	line-height: 28px;
+}
+.tweet-author-container {
+	color: #000000;
+	font-weight: 900;
+}
+.tweet-author-container,
+.tweet-body-container {
+	margin-left: 70px;
+}
+
+/* icon */
+.front .view-twitter-feed .tweet-item-field {
+	float: left;
+	height: 52px;
+	margin-right: 20px;
+	width: 52px;
+}
+.front .view-twitter-feed .views-row {
+	border-bottom: 0;
+	padding: 0;
+}
+.front .view-twitter-feed .view-footer a,
+.front .view-ft-instagram-home-block .view-footer a {
+	background: #2e2e2e;
+}
+
+
+
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ INSTAGRAM BLOCK - HOME PAGE ONLY
+ 
+----------------------------------------------------------
+---------------------------------------------------------*/
+
+.front #zone-custom2-wrapper {
+	background-image: url(../../images/bg-diagonal-lines.png), url(../../images/Home_Instagram-2.jpg);
+	background-size: auto, 100% auto;
+	background-repeat: repeat, no-repeat;
+	background-position: left top, center top;
+	background-attachment: fixed, fixed;
+	background-color: #000;
+	min-height: 500px;
+}
+.front .block-views-id-instagram-block-1 h2.block-title {
+	text-align: center;
+	background: url(../../images/bg-instagram-header.png) no-repeat scroll center center;
+}
+
+.front #block-views-id-instagram-block-1 .view-content {
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.front #block-views-id-instagram-block-1 .views-row {
+	width: 22%;
+	margin-right: 3%;
+	margin-bottom: 3%;
+	background: #fff;
+	padding: 5px; 
+	float: left;
+	border: 0;
+}
+.front #block-views-id-instagram-block-1 .views-row-last {
+	margin-right: 0;
+}
+
+
+
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ UPCOMING SHOWS BLOCK - HOME PAGE ONLY
+ 
+----------------------------------------------------------
+---------------------------------------------------------*/
+
+.front #zone-custom3-wrapper {
+	background-image: url(../../images/bg-diagonal-lines.png), url(../../images/Home-UpcomingTours.jpg);
+	background-size: auto, 100% auto;
+	background-repeat: repeat, no-repeat;
+	background-position: left top, center top;
+	background-attachment: fixed, fixed; 
+	background-color: #000;
+	min-height: 500px;
+	padding: 230px 0 150px 0;
+}
+.front #zone-custom3-wrapper .region-inner {
+	margin: 0 auto;	
+}
+
+/*----------------------------------------------------
+------------------------------------------------------
+
+ SLIDESHOW BLOCK - Custom 1 & 3
+ 
+------------------------------------------------------
+-----------------------------------------------------*/
+
+.front #zone-custom3-wrapper .region-inner {
+	width: 98%;
+}
+
+.front #zone-custom3-wrapper .view-id-events {
+  width: 700px;
+}
+
+/* Block title */
+.front .block-views-events-upcoming h2.block-title:after {
+	font-family: IcoMoonBasic;
+	content:"\55";
+	font-size: 45px;
+	color: #2a2e46;
+	margin-left: 8px;
+	text-shadow: 1px 1px 0 #fff;
+	display: none;
+}
+
+.front .block-events-upcoming h2.block-title {
+text-align: center;
+/* background: url(../../images/bg-header-tour-dates-home.png) no-repeat scroll center center; */
+}
+
+/*--------------------------------
+
+ list rows 
+ 
+----------------------------------*/
+
+.front .view-events .teaser-list-row {
+	padding: 0;
+	margin: 0 0 5px 0;
+	background-color: rgba(255,255,255,0.9);
+	border: 0;
+}
+
+/* arrows */
+.front .view-events .teaser-list-row:after {
+	background-color: #000000;
+	color: #959595;
+	content: "+";
+	display: block;
+	font-family: IcoMoonArrows;
+	font-size: 35px;
+	height: 100%;
+	padding: 50px 0 50px 12px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 40px;
+}
+.front .view-events .clickable-hover.teaser-list-row:after {
+	background-color: #2a2e46;
+	color: #fff;
+}
+
+/*-----------------------
+ dateblock - home page 
+-------------------------*/
+.front .sidebar-upcoming-events .dateblock {
+	padding: 28px 0;
+	width: 120px;
+	margin-right: 30px;
+	border: 0;
+}
+.front .dateblock .month {
+	font-size: 20px;
+}
+.front .dateblock .day {
+	font-size: 50px;
+}
+
+/*------------------------
+ TITLE - city, state 
+--------------------------*/
+.front .sidebar-upcoming-events .titles-container h3 {
+	color: #3f3f3f;
+	font-size: 30px;
+	font-weight: 900;
+	margin: 30px 0 10px;
+}
+
+/*------------------------
+ Venue 
+------------------------*/
+.front .sidebar-upcoming-events .titles-container h4 a {
+	color: #999;
+	font-size: 20px;
+	font-style: italic;
+}
+
+
+
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ MEET & GREET BLOCK - HOME PAGE ONLY
+ 
+----------------------------------------------------------
+---------------------------------------------------------*/
+
+#zone-custom4-wrapper {
+	background-image: url(../../images/bg-diagonal-lines.png), url(../../images/Home-Community-2a.jpg);
+	background-size: auto, 100% auto;
+	background-repeat: repeat, no-repeat;
+	/* background-position: left top, center 190px; */
+	background-position: left top, center 100px;
+	background-attachment: fixed, fixed; 
+	background-color: #000;
+	min-height: 500px;
+}
+
+
+/* Block title */
+.front .block-imgd-custom-nodes-mg-photos h2.block-title {
+	text-align: center;
+	background: url(../../images/bg-meet-greet-header.png) no-repeat scroll center center;
+}
+
+/* images */
+.front .block-imgd-custom-nodes-mg-photos .views-field-field-images-3 {
+	margin: 0px 0 10px 0;
+}
+.front .block-imgd-custom-nodes-mg-photos .teaser-grid-row {
+	width: 47%;
+	height: auto;
+	background: #fff;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 40px;
+	border: 0;
+	float: left;
+}
+.front .block-imgd-custom-nodes-mg-photos .views-row-odd {
+	margin-right: 6%;
+}
+
+/* titles */
+.front .block-imgd-custom-nodes-mg-photos .views-field-field-address {
+	font-weight: 900;
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #000;
+}
+.front .block-imgd-custom-nodes-mg-photos .views-field-field-date-hour {
+	font-size: 17px;
+	text-transform: uppercase;
+	color: #777;
+	font-style: italic;
+}
+
+/* more link */
+.front .block-imgd-custom-nodes-mg-photos .more-link {
+	margin-bottom: 30px;
+}
+
+/* footer */
+.front .block-imgd-custom-nodes-mg-photos .view-footer {
+	font-weight: 900;
+	font-size: 40px;
+	color: #fff;
+	text-align: center;
+	padding: 20px 20px 10px;
+	background-color: #2a2e46;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	line-height: 40px;
+}
+.front .block-imgd-custom-nodes-mg-photos .view-footer a {
+	color: #fff;
+	text-decoration: underline;
+}
+.front .block-imgd-custom-nodes-mg-photos .view-footer a:hover {
+	color: #000;
+}
+
+
+
+
+/*--------------------------------------------------------
+----------------------------------------------------------
+
+ FAN CLUB BLOCK - HOME PAGE ONLY
+ 
+----------------------------------------------------------
+---------------------------------------------------------*/
+
+#zone-custom6-wrapper {
+	background-image: url(../../images/bg-diagonal-lines.png), url(../../images/bg-home-5.jpg);
+	background-size: auto, 100% auto;
+	background-repeat: repeat, no-repeat;
+	background-position: left top, center top;
+	background-attachment: fixed, fixed; 
+	background-color: #000;
+	min-height: 500px;
+}
+
+/* Header banner image */
+.front .community-header {
+	margin-bottom: 65px;
+}
+
+/*--------------------------------
+
+ Community Post 
+ 
+---------------------------------*/
+
+.front #block-views-imgd-custom-nodes-fp-post {
+	/* float: left;
+	margin-right: 6%;
+	width: 47%; */
+	float: right;
+	margin-left: 6%;
+	width: 47%;
+}
+
+/* block title */
+.front #block-views-imgd-custom-nodes-fp-post h2.block-title {
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #AAAAAA;
+	color: #222;
+	font-size: 30px;
+	line-height: 32px;
+	margin: 0;
+	padding: 4% 6% 3%;
+	position: relative;
+	text-shadow: none;
+}
+
+/* title icon */
+.front #block-views-imgd-custom-nodes-fp-post h2.block-title:after {
+	content: "\35";
+	font-family: IcoMoonBasic;
+	float: right;
+	margin-top: 3px;
+}
+
+/* Post body */
+.front #block-views-imgd-custom-nodes-fp-post .fp_post-main-content {
+	background-color: #FFFFFF;
+	padding: 6%;
+	margin: 0;
+	min-height: 350px;
+}
+
+.front #block-views-imgd-custom-nodes-fp-post .views-row {
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+}
+
+.front #block-views-imgd-custom-nodes-fp-post .views-row.views-row-last {
+	border: none;
+}
+
+
+/*--------------------------------
+
+ JOIN block 
+ 
+---------------------------------*/
+
+.front .block-community-join-sidebar-block {
+	float: left;
+	width: 47%;
+}
+
+.community-header {
+	background-color: transparent;
+	height: auto;
+	margin-bottom: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* Top text */
+
+.front #join-community-top {
+	color: #fff;
+	font-size: 32px;
+	text-align: center;
+	padding: 4% 6% 3%;
+	background: rgba(0,0,0,0.7);
+	line-height: 100%;
+	margin: 0;
+	text-transform: uppercase;
+	border-bottom: 1px solid #444;
+}
+
+/* body text */
+.front #join-community-middle {
+	margin-bottom: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	font-size: 20px;
+	background: rgba(0,0,0,0.7);
+}
+.front #join-community-middle span {
+	font-size: 28px;
+	display: block;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/* list items */
+.front #join-community-middle ul {
+	margin-left: 20%;
+}
+
+/* JOIN LINK */
+.front #join-community-bottom a {
+	font-weight: 700;
+	font-size: 45px;
+	text-transform: uppercase;
+	padding: 25px;
+	background-color: #2a2e46;
+	color: #fff;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+.front #join-community-bottom a:hover {
+	background-color: #fff;
+	color: #222;
+}
+
+
+/*----------------------------------------------------------
+ 
+ BACKGROUND IMAGES FOR CUSTOM ZONES  - iPAD landscpape and portrait
+ 
+----------------------------------------------------------*/
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+	.front #zone-custom1-wrapper,
+	.front #zone-custom2-wrapper,
+	.front #zone-custom3-wrapper,
+	.front #zone-custom4-wrapper,
+	.front #zone-custom6-wrapper {
+		background-attachment: scroll;
+	}
+	.front #zone-custom1-wrapper {
+		background-position: left top, center -100px;
+	}
+	.front #section-content .zone-wrapper {
+		padding-bottom: 75px;
+		padding-top: 250px;
+	}
+	.front #section-content #zone-custom1-wrapper.zone-wrapper {
+		padding-top: 450px;
+	}
+
+}
+
+
+

@@ -1,0 +1,912 @@
+
+/* STORE - Global styles only */
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ STORE - landing
+
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/* below show/hide promotions button */
+.view-store-landing .attachment-before {
+	margin: 0px;
+}
+
+/*----------------------------------------------
+
+ STORE BANNERS - top 
+
+-----------------------------------------------*/
+
+.page-store .view-id-banner {
+	height: auto;
+	margin-bottom: 10px;	
+}
+.page-store .views-slideshow-cycle-main-frame-row .views-field img {
+	width: 100% !important;
+	height: auto !important;
+	border: 1px solid #aaa;
+}
+
+/*----------------------------------------------
+
+ TOP DOWNLOADS LIST
+
+-----------------------------------------------*/
+
+/*------------- container -------------*/
+.page-store .view-display-id-dl_shows { 
+	clear: both;
+	overflow: hidden;
+	padding: 30px 0;
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 30px;
+}
+.page-store .view-display-id-dl_shows h3 {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+/*-------------- rows -----------------*/
+.page-store .view-display-id-dl_shows .views-row {
+	margin-bottom: 10px;
+	border: 1px solid #aaa;
+	padding: 5px 10px 10px 10px;
+	text-align: left;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/*------------ row content --------------*/
+
+.top-downloads-list-item .legacy-event-date-top,
+.top-downloads-list-item .legacy-event-date-bottom {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 15px;
+}
+.top-downloads-list-item .legacy-event-date-top:after {
+	content: ", ";
+}
+.page-store .top-downloads-list-item .legacy-event-location {
+	font-size: 23px;
+	line-height: 120%;
+}
+.page-store .top-downloads-list-item .legacy-event-venue {
+	font-size: 11px;
+	line-height: 120%;
+}
+
+/*---------------------------------------------
+
+ DEPARTMENT NAVIGATION
+
+----------------------------------------------*/
+
+#views-exposed-form-store-landing-page {
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #aaa;
+}
+
+/* Department nav container */
+#edit-department-id-wrapper {
+	float: none;
+	overflow: hidden;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+/* Dept label */
+#edit-department-id-wrapper label[for*="department"] {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+/* Dept nav item */
+#edit-department-id.form-radios .form-item {
+	float: left;
+	text-transform: uppercase;
+	border: 1px solid #aaa;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-right: 5px;
+	padding: 5px 8px;
+	margin-bottom: 5px;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+#edit-department-id.form-radios .form-item:hover {
+	background-color: #efefef;
+}
+
+/* Dept nav item - label */
+#views-exposed-form-store-landing-page .views-exposed-form label.option {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+/* Dept nav item - radio button */
+#views-exposed-form-store-landing-page .views-exposed-form input {
+	margin-right: 2px;
+}
+
+/* pointer cursor for buttons */
+#edit-department-id.form-radios .form-item,
+#views-exposed-form-store-landing-page .views-exposed-form label.option,
+#views-exposed-form-store-landing-page .views-exposed-form input {
+	cursor: pointer;
+}
+
+/*---------------------------------------------
+
+ PRODUCT STATUS CHECKBOXES
+
+---------------------------------------------*/
+
+#edit-status-id-wrapper {
+	float: none;
+	overflow: hidden;
+	padding: 5px 0;
+}
+#edit-status-id-wrapper .form-checkboxes .form-item,
+#edit-status-id-wrapper .form-checkboxes .bef-toggle {
+	float: left;
+	margin-right: 15px;
+	font-size: 13px;
+	font-weight: normal;
+	padding: 0;
+}
+/* checkbox */
+#edit-status-id-wrapper .bef-checkboxes input {
+	margin-right: 2px;
+	vertical-align: middle;
+}
+
+
+/*---------------------------------------------
+
+ "SORT BY" Select Box
+
+----------------------------------------------*/
+
+#views-exposed-form-store-landing-page .views-submit-button {
+	float: none;
+	overflow: hidden;
+	height: 40px;
+}
+#views-exposed-form-store-landing-page .views-submit-button label {
+	float: left;
+	margin-right: 10px;
+	font-size: 13px;
+}
+
+/*---------------------------------------------
+
+ STORE PRODUCTS LISTING
+
+----------------------------------------------*/
+
+.page-store .page-main-content .teaser-grid ul { /* overwrites default */
+	overflow: visible;
+}
+.page-store .view-store-landing .item-list li {
+	border: 1px solid #aaa;
+	margin: 0 3% 10px 0;
+	padding: 5px;
+	width: 42%;
+	position: relative;
+}
+
+/* price container */
+.page-store .teaser-grid-row .product-price {
+	border-right: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+	bottom: 5px;
+	font-size: 15px;
+	left: 5px;
+	position: absolute;
+	z-index: 2;
+}
+/* price */
+.page-store .teaser-grid-row .product-price .field-commerce-price {
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 100%;
+	margin: 0;
+	padding: 5px;
+}
+
+/* TEMPORARY HIDE */
+.store-page-popup {
+	display: none !important;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ STORE - PRODUCT NODES
+
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+#store-departments-links-container {
+	clear: both;
+	overflow: hidden;
+}
+#store-departments-links-container h2 {
+	display: none;
+}
+#store-departments-links-container .views-row {
+	float: left;
+	margin: 0 5px 0 0;
+}
+/* keep consistent with #edit-department-id .form-radios .form-item */
+#store-departments-links-container a {
+	text-transform: uppercase;
+	border: 0;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	margin-right: 5px;
+	padding: 5px 8px;
+	margin-bottom: 5px;
+	display: block;
+	text-decoration: none;
+}
+#product-middle-row1-container {
+	clear: both;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #aaa;
+}
+
+/*--------------------------------------------
+
+ Product images 
+ 
+---------------------------------------------*/
+
+#product-image-container {
+	width: 100%;
+	margin-bottom: 10px;
+}
+#product-image-container .first-item,
+#product-image-container .not-first-item {
+	padding: 5px;
+	border: 1px solid #aaa;
+	margin-bottom: 5px;
+	background-color: #fff;
+}
+
+/* Product Img thumbnails */
+#product-image-container .not-first-items-container {
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+#product-image-container .not-first-item {
+	float: left;
+	margin-right: 3%;
+	width: 18.5%;
+}
+#product-image-container .not-first-item:last-child {
+	margin-right: 0;
+}
+
+
+
+/*----------------------------------------------
+
+ PRODUCT STATUS - (new, sale, etc.) 
+ 
+-----------------------------------------------*/
+
+.product-status {
+	display: block;
+	width: 35px;
+	height: 55px;
+	position: absolute;
+	top: 1px;
+	left: 8px;
+	z-index: 1;
+}
+
+/* statuses */
+.product-status-new {
+	background: transparent url(../../images/product-status-icons.png) no-repeat scroll left top;
+}
+.product-status-sale {
+	background: transparent url(../../images/product-status-icons.png) no-repeat scroll left -100px;
+}
+.product-status-presale {
+	background: transparent url(../../images/product-status-icons.png) no-repeat scroll left -200px;
+}
+.product-status-sold-out {
+	background: transparent url(../../images/product-status-icons.png) no-repeat scroll left -300px;
+}
+.product-status-closeout {
+	background: transparent url(../../images/product-status-icons.png) no-repeat scroll left -400px;
+}
+.product-status-album {
+
+}
+
+/*----------------------------------------------
+
+ PRODUCT INFO 
+
+-----------------------------------------------*/
+
+#product-info-container {
+	margin-bottom: 30px;
+}
+
+/* Product Price - under h1 */
+.field-commerce-price {
+	font-size: 22px;
+	margin-bottom: 20px;
+	display: none;
+}
+
+/*.add-to-cart-bottom {
+	border-top: 1px dashed #ccc;
+}*/
+
+/* Add to Cart Price */
+.add-to-cart-bottom .form-type-item {
+	font-size: 25px;
+}
+.add-to-cart-bottom .form-type-item label {
+	display: none;
+}
+
+/* Product Tags */
+#product-tags-container {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#product-tags-container a {
+	-webkit-border-radius: 0 3px 3px 0;
+	border-radius: 0 3px 3px 0;
+	display: block;
+	float: left;
+	font-size: 11px;
+	height: 14px;
+	line-height: 160%;
+	margin-right: 10px;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+#product-tags-container:before {
+	content: "\e004";
+	font-family: "IcoMoonBasic";
+	font-size: 15px;
+	margin-right: 5px;
+	vertical-align: middle;
+	display: block;
+	float: left;
+	line-height: 15px;
+	speak: none;
+}
+
+/*----------------------------------------------
+
+ SIZES 
+ 
+----------------------------------------------*/
+
+.add-to-cart-form label {
+	font-weight: normal;
+	font-size: 14px;
+}
+.commerce-add-to-cart .form-type-radios {
+	font-size: 15px;
+}
+
+/* inserts a colon after the word "select size" */
+.commerce-add-to-cart .form-type-radios > label[for*="edit-attributes-field-product-bulk-size"]:after, 
+.commerce-add-to-cart .form-type-item > label[for*="edit-display-price"]:after {
+	content: ":";
+}
+
+/* size selectors - radio buttons */
+
+.commerce-add-to-cart .form-type-radios { /* outer container*/
+	padding: 15px 0 0;
+	border-top: 1px dashed #aaa;
+}
+
+/* container */
+#edit-product-id {
+	background: transparent url(../../images/transparent_black_10.png) repeat scroll left top;
+	margin-top: 15px;
+	padding: 20px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+#edit-product-id .form-type-radio:hover {
+	color: #2a2e46;
+}
+#edit-product-id:before {
+	content: "Select Format:";
+	font-size: 20px;
+	display: block;
+	border-bottom: 1px solid #444;
+}
+
+/* Store Page only */
+.store-page-popup #edit-product-id {
+	background-color: #000;
+	padding: 10px;
+}
+.store-page-popup #edit-product-id:before {
+	color: #fff;
+}
+
+/* buttons only container */
+.commerce-add-to-cart .form-type-radios { 
+	overflow: hidden;
+	clear: both;
+	padding-bottom: 15px;
+}
+.commerce-add-to-cart .form-type-radios .form-item {
+	background-color: #000;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px 6px;
+	float:left;
+	margin-right: 5px;
+	color: #ccc;
+	border: 0;
+}
+.commerce-add-to-cart .form-type-radios .form-item:hover {
+	background-color: orange;
+}
+.commerce-add-to-cart .form-type-radios .form-item label.option {
+	color: #fff;
+	line-height: 22px;
+	font-size: 11px;
+}
+
+/* hover states */
+.commerce-add-to-cart .form-radios .form-item:hover,
+.commerce-add-to-cart .form-radios .form-item label.option:hover,
+.commerce-add-to-cart .form-radios .form-item input.form-radio {
+	cursor: pointer;
+}
+
+/*-----------------------------------------------
+
+ QUANTITY & ADD TO CART buttons
+ 
+------------------------------------------------*/
+
+#product-info-container .field-name-field-product-reference {
+	margin-bottom: 30px;
+}
+
+/* quantity */
+.form-item-quantity {
+	margin: 20px 0;
+	font-size: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px dashed #ccc;
+}
+.form-item-quantity label {
+	float: left;
+	margin-right: 5px;
+}
+.form-item-quantity label:after {
+	content: ":";
+}
+
+/* add to cart */
+.commerce-add-to-cart { 
+	margin-bottom: 20px;
+}
+.commerce-add-to-cart .form-submit {
+	display: block;
+	font-size: 20px;
+	padding: 20px;
+	text-transform: uppercase;
+}
+.commerce-add-to-cart .form-submit:hover {
+	
+}
+
+/*-----------------------------------------------
+
+ ADD TO CART popup confirmation message
+ 
+------------------------------------------------*/
+
+/* Message */
+#cart-popup-item-message {
+	font-size: 23px;
+	height: auto;
+}
+#cart-popup-links-container {
+  padding-left: 20px;
+}
+
+/* "Success!" text */
+#cart-popup-header {
+	background-color: #53CFF8;
+	border-radius: 5px 5px 5px 5px;
+	color: #FFFFFF;
+	display: block;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* Cart links */
+#cart-popup-links-container a {
+	font-size: 16px;
+}
+#cart-popup-cart-link-container:before, 
+#cart-popup-checkout-link-container:before, 
+#cart-popup-store-link-container:before, 
+#cart-popup-browse-link-container:before {
+	color: #999;
+	content: ">";
+	margin-right: 10px;
+	vertical-align: middle;
+	position: relative;
+	top: -3px;
+}
+
+
+/*----------------------------------------------
+ 
+ SOCIAL NETWORK LINKS 
+ 
+----------------------------------------------*/
+
+.node-type-product .share-links-container {
+	display: none;
+}
+
+
+
+/*----------------------------------------------
+
+ RELATED PRODUCTS & CART UPSELL BLOCKS
+
+-----------------------------------------------*/
+
+
+/*----- Product Node Page -----*/
+#product-related-products-container .view-content li {
+	margin: 0 4% 4% 0;
+	width: 46%;
+}
+
+/* Override Featured Status */
+#product-related-products-container li.product-featured {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+#product-related-products-container li.product-featured img {
+	opacity: 1;
+	filter: alpha(opacity=100); /* IE lt 8 */
+	-ms-filter: "alpha(opacity=100)"; /* IE 8 */
+}
+
+/*------ General Styles ------*/
+.related-products-grid li.teaser-grid-row,
+.view-cart-upsell > li.teaser-grid-row  {
+	width: 46%;
+	position: relative;
+	margin: 0 3% 3% 0;
+	padding: 0;
+}
+.related-products-grid li.teaser-grid-row img,
+.view-cart-upsell li.teaser-grid-row img {
+	border: 1px solid #aaa;
+}
+.related-products-grid .views-field-title,
+.view-cart-upsell .views-field-title {
+	font-size: 14px;
+	height: 33px;
+	line-height: 15px;
+	text-align: center;
+}
+.related-products-grid .title-and-price,
+.view-cart-upsell .title-and-price {
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 88%;
+	opacity: 0;
+}
+.related-products-grid .views-field-commerce-price,
+.view-cart-upsell .views-field-commerce-price {
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+}
+
+/* legacy event related products */
+
+#legacy-middle-row6-container .view-event-assets li.teaser-grid-row {
+	margin: 0 3% 3% 0;
+	width: 17%;
+}
+
+/* Upcoming Event Node */
+.event-node-full .view-event-assets li.teaser-grid-row {
+	margin: 0 3% 3% 0;
+	width: 30%;
+}
+
+/*--------------------------------------------
+
+ TOP DOWNLOADS - block
+ 
+--------------------------------------------*/
+
+#product-top-downloads-container li {
+	overflow: hidden;
+}
+#product-top-downloads-container .views-field-field-address {
+	float: left;
+	margin-right: 10px;
+}
+#product-top-downloads-container .views-field-field-event-date {
+	float: right;
+}
+
+/* separator icon */
+#product-top-downloads-container .views-field-field-address:after {
+	content: "\23";
+	font-family: "IcoMoonArrows";
+	margin-left: 10px;
+}
+
+/* download icon */
+#product-top-downloads-container a:before {
+	border-radius: 20px 20px 20px 20px;
+	color: #4E4842;
+	content: "\29";
+	display: inline-block;
+	float: left;
+	font-family: "IcoMoonArrows";
+	font-size: 23px;
+	margin-right: 10px;
+	position: relative;
+	line-height: 25px;
+}
+
+
+/*-------------------------------------------
+
+ SHOPPING CART - PAGE
+
+-------------------------------------------*/
+
+.commerce-line-item-views-form input.delete-line-item {
+	padding: 6px;
+}
+
+/* form submit buttons */
+.page-cart .commerce-line-item-views-form #edit-submit, 
+.page-cart .commerce-line-item-views-form #edit-checkout {
+	display: inline-block;
+	margin: 0;
+}
+.page-cart .commerce-line-item-views-form #edit-submit {
+	margin-right: 10px;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ CHECKOUT
+
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+table.checkout-review td {
+	font-size: 14px;
+}
+/* section titles */
+table.checkout-review .pane-title td {
+	font-size: 19px;
+}
+
+/* newsletter checkbox */
+.page-checkout #edit-buttons .form-item-opt-in {
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+/* Totals table */
+.commerce-order-handler-area-order-total .commerce-price-formatted-components {
+	margin-left: auto;
+	width: 100%;
+}
+
+/* continue */
+.checkout-buttons .checkout-continue {
+	display: inline;
+	margin-right: 20px;
+	font-size: 20px;
+	padding: 15px;
+}
+.checkout-buttons .checkout-continue: after {
+	content: "\4a";
+	margin-left: 8px;
+	font-family: "IcoMoonArrows";
+	speak: none;
+}
+/* Cancel or Go Back */
+.checkout-buttons .checkout-cancel, 
+.checkout-buttons .checkout-back {
+	background: none;
+	border: 0 none;
+	color: orange;
+	margin: 10px 0 10px 20px;
+	padding: 0;
+	text-decoration: underline;
+	text-transform: capitalize;
+	display: inline;
+	font-size: 17px;
+	font-weight: normal;
+	text-decoration: underline;	
+}
+.checkout-buttons .checkout-cancel:hover, 
+.checkout-buttons .checkout-back:hover {
+	color: red;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ SHIPPING - section of checkout
+
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/* Shipping times */
+#shipping_time_markup ul:before {
+	display: block;
+	font-size: 24px;
+	content: "Shipping Times";
+	margin-bottom: 20px;
+}
+#shipping_time_markup ul {
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #aaa;
+}
+#shipping_time_markup ul li {
+	margin: 0;
+	padding: 8px;
+	border: 1px solid #aaa;
+	border-bottom: 0;
+	list-style-type: none;
+}
+
+/*-------------------------------------------
+
+ USER - ORDER PAGES
+
+--------------------------------------------*/
+
+.page-user-orders .field-name-commerce-customer-billing {
+	margin-bottom: 30px;
+}
+
+.page-user-orders .field-name-commerce-customer-billing .field-items:first-child,
+.page-user-orders .field-name-commerce-customer-shipping .field-items:first-child {
+	margin-left: 30px;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ PRODUCT HIGHLIGHT - JOIN
+
+-----------------------------------------------------------------------
+----------------------------------------------------------------------*/
+
+/*------------------------------------------
+
+ Intro section - description 
+ 
+------------------------------------------*/
+
+.block-product-highlight-intro {
+	margin-bottom: 50px;
+	border-bottom: 4px double #aaa;
+	padding-bottom: 50px;
+	font-size: 18px;
+}
+.block-product-highlight-intro p:last-child {
+	margin-bottom: 0;
+}
+
+/*-----------------------------------------
+
+ Product List 
+ 
+------------------------------------------*/
+
+.page-store-product-highlight .view-product-highlight .views-row {
+	overflow: hidden;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+	border-bottom: 4px double #aaa;
+}
+
+/*-------------------------
+ Product Images 
+--------------------------*/
+.view-product-highlight .highlight-product-image {
+	margin-bottom: 20px;
+}
+
+/*---------------------------
+ product title 
+-----------------------------*/
+.view-product-highlight .highlight-product-title {
+	line-height: 120%;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+/*----------------------------
+ product body 
+----------------------------*/
+
+.highlight-product-body li {
+	margin-left: 30px;
+}
+
+/*---------------------------
+ Add to Cart 
+-----------------------------*/
+
+.view-product-highlight .commerce-add-to-cart {
+	margin-bottom: 0px;
+}
+
+/* format label */
+.view-product-highlight .form-type-radio label {
+	margin-left: 10px;
+}
+
+/* Price */
+.view-product-highlight .add-to-cart-bottom label {
+	display: none;
+}
+.view-product-highlight .add-to-cart-bottom .form-item {
+	font-size: 25px;
+}
+
+/* Overrides inherited content width from main store list page */
+.page-store.page-store-product-highlight .page-main-content {
+	margin: 0;
+	width: auto;
+}
+
+
+

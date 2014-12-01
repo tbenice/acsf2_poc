@@ -1,0 +1,279 @@
+
+/*  Articles Stylesheet - Global only */
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ ARTICLES - TEASER LIST
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.page-news .view-articles .teaser-list-row .post-date {
+	margin-bottom: 10px;
+}
+.page-news .teasers-main-content .teaser-list-row h3.title {
+	font-size: 20px;
+	line-height: 110%;
+}
+.page-news .teasers-main-content .teaser-list-row h3.title a, 
+.page-taxonomy .teasers-main-content .teaser-list-row h3.title a {
+	color: #4c4c4c;
+}
+.page-news .teasers-main-content .teaser-list-row h3.title a:hover, 
+.page-taxonomy .teasers-main-content .teaser-list-row h3.title a:hover {
+	color: #2a2e46;
+}
+
+
+/*-----------------------------------------------------
+ taxonomy page overrides
+ -- place a tag icon before page title on taxonomy page
+-------------------------------------------------------*/
+.page-taxonomy h1.title:before {
+	content: "\e004";
+	font-family: IcoMoonBasic;
+	margin-right: 15px;
+	vertical-align: middle;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ ARTICLES - NODE
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/*---------------------------------
+ node container overrides 
+----------------------------------*/
+
+#article-header-row-container,
+#article-middle-row1-container,
+#article-middle-row2-container {
+	padding-bottom: 0;
+	border: 0;
+}
+#article-header-row-container /* subnav + h2.node-title */ {
+	margin-bottom: 10px;
+}
+#article-middle-row3-container /* social links container */ {
+	overflow: hidden;
+}
+#article-node-middle-row5-container /* pager container */ {
+	padding-bottom: 0px;
+	border-bottom: 0;
+}
+
+/*----------- mobile only ----------*/
+#article-mobile-middle-row3-container {
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+.responsive-layout-mobile #article-middle-row1-container {
+	margin: 0; /* social links container */
+}
+
+/*-------------------------
+ Article - page title 
+---------------------------*/
+
+.node-type-article h2.node-title {
+	margin-bottom: 0px;
+}
+
+/*--------------------------------------------------------
+ submitted info
+ -- (may contain posted date only or also author full name)
+----------------------------------------------------------*/
+
+.node-type-article .node-article .submitted {
+	font-size: 12px;
+	font-style: italic;
+	margin-bottom: 20px;
+	display: block;
+}
+
+/*--------------------------
+ related songs 
+----------------------------*/
+
+#article-songs-container {
+	font-size: 13px;
+	font-style: italic;
+}
+#article-songs-container h2 {
+	display: none;
+}
+#article-songs-container span.views-label:before {
+	content: "\4b";
+	font-family: IcoMoonBasic;
+	font-size: 18px;
+	margin-right: 3px;
+	vertical-align: middle;
+	font-style: normal;
+}
+
+
+/*--------------------------
+ article tags
+----------------------------*/
+
+/* tag outer container */
+#article-tags-container {
+	font-size: 0.688em; /* 12px */
+	font-style: normal;
+	margin: 15px 0;
+}
+
+/* tags list container */
+#article-tags-container .field-name-field-tags .field-items {
+	overflow: hidden;
+}
+#article-tags-container .field-name-field-tags .field-items:before {
+	content: "\e004";
+	font-family: IcoMoonBasic;
+	font-size: 16px;
+	margin-right: 8px;
+	vertical-align: middle;
+	font-style: normal;
+	display: inline-block;
+}
+#article-tags-container .field-name-field-tags .field-item {
+	margin: 0 8px 0 0;
+	display: inline-block;
+}
+#article-tags-container .field-name-field-tags .field-item a {
+	width: auto;
+	text-align: center;
+	border-radius: 4px;
+	text-decoration: none;
+	padding: 4px 8px;
+	background: #ddd;
+	border-radius: 4px;
+	margin: 0 4px 6px 0;
+	font-size: 11px;
+	line-height: 13px;
+	text-decoration: none;
+	color: #333;
+}
+#article-tags-container .field-name-field-tags .field-item a:hover{
+	background: #2a2e46;
+	color:#fff;
+
+}
+
+
+/*--------------------------
+ article body 
+---------------------------*/
+
+#article-body-container p:last-child {
+	margin-bottom: 0;
+}
+
+/*--------------------------
+ gallery images 
+----------------------------*/
+
+#article-mobile-middle-row3-container .first-item,
+#article-mobile-middle-row3-container .not-first-item {
+	margin-bottom: 15px;
+}
+
+/*--------------------------
+ pager - default overrides 
+---------------------------*/
+
+.node-type-article .node-pager-container {
+	margin-bottom: 0;
+}
+
+/*--------------------------------------------
+
+ Article Node - Content Sidebar
+
+---------------------------------------------*/
+
+/* article pull quote */
+
+#article-pullquote { /* mobile only class */
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #aaa;
+}
+#article-pullquote .quote-start {
+	float: left;
+	font-size: 80px;
+	line-height: 60px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+#article-pullquote .quote-body {
+	margin-left: 40px;
+}
+#article-pullquote .quote-end {
+	display: none;
+}
+.quote-author,
+.quote-url {
+	font-size: 13px;
+	line-height: 140%;
+	font-style: italic;
+	text-align: left;
+}
+
+/* album node reference */
+
+.node-type-article .album-item {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #aaa;
+}
+.node-type-article .album-teaser-title {
+	font-size: 13px;
+	line-height: 100%;
+}
+.node-type-article .album-teaser-release-date {
+	font-size: 11px;
+	font-style: italic;
+}
+.node-type-article .album-teaser-image {
+	margin-bottom: 5px;
+}
+.node-type-article .album-item .not-first-items-container {
+	display: none;
+}
+
+
+/*-------------------------------------------
+ 
+ Article Comments with tabs
+ 
+--------------------------------------------*/
+
+.comment-tabs .node-comment-container .delete-post-link {
+	top: 0;
+}
+
+/*----------------------------
+
+  VIDEO
+  
+----------------------------*/
+
+#page .embedded-video {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+#page .embedded-video iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

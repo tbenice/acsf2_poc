@@ -1,0 +1,428 @@
+
+/* LEGACY - Stylesheet - Default only */
+
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ LEGACY - LIST of all dates
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+#edit-field-legacy-traits-reference-tid-wrapper {
+	float: left; 
+	clear: both;
+	overflow: hidden;
+}
+#edit-field-legacy-traits-reference-tid-wrapper .bef-checkboxes .form-item {
+	float: left;
+	border: 1px solid #bbb;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 16px;	
+}
+
+/* Checkboxes */
+#edit-field-legacy-traits-reference-tid-wrapper .form-item label.option {
+	font-size: 14px;
+}
+#edit-field-legacy-traits-reference-tid-wrapper .form-item:hover {
+	background: transparent url(../../images/transparent_black_10.png) repeat scroll left top;
+	cursor: pointer;
+}
+
+/* Checkbox option icons */
+#edit-field-legacy-traits-reference-tid-wrapper .form-item label.option:before {
+	font-size: 16px;
+	margin-right: 6px;
+}
+
+/*-------------------------------------------
+
+ Filter by years 
+ 
+-------------------------------------------*/
+
+.page-legacy-list .gallery-years-view .view-header p {
+	font-size: 13px;
+	margin-bottom: 10px;
+}
+
+/*------------------------------------------
+
+ LEGACY EVENT LIST 
+ 
+------------------------------------------*/
+
+/* no float keeps info from wrapping below dateblock */
+
+.page-legacy-list .location-venue-wrapper {
+	display: block;
+}
+
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ LEGACY - Archived Event - NODE
+
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/* Padding on Anchors to clear navigation and header elements */
+
+.named-anchor-wrapper a {
+	position: absolute;
+	top: -150px;
+}
+
+/* Date & Location */
+
+.node-type-event .date-and-location-container {
+	border: 0;
+	padding-bottom: 0;
+}
+
+/* Feature photo & links */
+
+.node-type-event .photo-and-links-container {
+	margin-bottom: 30px;
+	clear: both;
+}
+.photo-and-links-container .view-event-assets {
+	float: left;
+	margin-right: 3%;
+	width: 67%;
+}
+.legacy-links-container {
+	float: right;
+	width: 30%;
+}
+
+/* share links */
+
+.legacy-node-full div.share-links-container {
+	clear: both; /* container outside ul with same class */
+}
+.legacy-node-full ul.share-links-container {
+	border: 0;
+	clear: both;
+}
+
+/* Show-blog and Playlist */
+
+.playlist-container {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+}
+.legacy-shownotes-item {
+	float: left;
+	padding-right: 5%;
+	width: 50%;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	border-bottom: 0;
+}
+
+
+/*--------------------------------------------------
+
+ ADD TO CART form - top of legacy node
+
+---------------------------------------------------*/
+
+#legacy-buy-show-link-container .add-to-cart-bottom {
+	border: 1px solid #aaaCCC;
+	padding: 10px;
+}
+#legacy-buy-show-link-container #edit-display-price {
+  	margin: 0 0 20px 0;
+  	font-size: 30px;
+  	padding: 10px;
+  	text-align: center;
+  	background-color: #fff;
+  	-webkit-border-radius: 4px;
+  	border-radius: 4px;
+}
+#legacy-buy-show-link-container .commerce-add-to-cart .form-submit {
+	width: 100%;
+}
+
+/*--------------------------------------------------
+
+ LEGACY PURCHASE OPTIONS (when located further down page)
+
+---------------------------------------------------*/
+
+/* Add to Cart - Details */
+#legacy-purchase-options .add-to-cart-details {
+	float: left;
+	overflow: hidden;
+	width: 70%;
+}
+
+/* image */
+#legacy-purchase-options .commerce-product-field-field-image {
+	margin-bottom: 20px;
+	float: left;
+	margin-right: 20px;
+	max-width: 180px;
+}
+#legacy-purchase-options .add-to-cart-bottom {
+	border: 0;
+}
+
+/* Add to Cart - Form */
+#legacy-purchase-options .field-type-commerce-product-reference {
+	float: right;
+	width: 30%;
+}
+
+/*----------------------------------------------------------
+
+ OFFICIAL Photos & Videos - & - MEET & GREET Photos
+ 
+------------------------------------------------------------*/
+
+/* UNHIDE official photos block (from hide in mobile only) */
+.legacy-node-full .official-photos-container {
+	display: block;
+}
+
+/* "Login To See Photos" Message */
+.meet-greet-login-message {
+	background-color: #444;
+	border-radius: 20px 20px 20px 20px;
+	color: #CCCCCC;
+	font-size: 18px;
+	margin-bottom: 30px;
+	padding: 50px;
+}
+.meet-greet-login-message:before {
+	color: #FFFFFF;
+	content: "Meet & Greet Photos";
+	display: block;
+	font-size: 30px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+/* photos grid */
+
+.meetgreet-main-content,
+.photos-main-content {
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+
+/* override overflow:hidden from .teaser-grid ul */
+.meetgreet-image-links ul.socialitejs {
+	min-height: 20px;
+	overflow: visible;
+}
+
+div.official-photos-container ul.teaser-grid, 
+div.meetgreet-photos-container ul.teaser-grid {
+	margin: 0;
+	min-height: 106px;
+	overflow: visible;
+	padding: 0;
+}
+.official-photos-container ul.teaser-grid li,
+.meetgreet-photos-container ul.teaser-grid li {
+	margin: 0 10px 10px 0;
+	padding: 0;
+	width: 106px;
+	height: auto;
+	overflow: visible;
+}
+
+
+/* Meet & Greet - zoom & Facebook reserved links */
+
+.meetgreet-main-content .meetgreet-image-links > div { /* container */
+	padding: 20px 0 0 5px;
+	min-height: 106px;
+	background: url(../../images/transparent_black_60.png) repeat scroll left top;
+	width: 106px;
+}
+/* zoom link */
+.meetgreet-main-content .meetgreet-image-links .image_zoom_link a {
+	background-color: #fff;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	color: #000;
+	display: block;
+	margin: 10px auto 0 auto;
+	text-align: center;
+	height: 0;
+	padding-top: 33px;
+	width: 40px;
+	font-size: 1px;
+	position: relative;
+}
+.meetgreet-main-content .meetgreet-image-links .image_zoom_link a:hover {
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+}
+/* Zoom Icon */
+.meetgreet-main-content .meetgreet-image-links .image_zoom_link a:before {
+	content: "A";
+	font-family: IcoMoonBasic;
+	font-size: 24px;
+	left: 8px;
+	position: absolute;
+	top: 5px;
+}
+
+
+/*-----------------------------------------
+
+ TOUR MERCHANDISE
+ 
+------------------------------------------*/
+
+.legacy-node-full .view-event-assets li.teaser-grid-row {
+	margin: 0 1.5% 1.5% 0;
+	width: 15%;
+}
+
+/*====================================!!! SIDEBAR !!!=========================================*/
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ RECENT SHOWS - LEGACY SIDEBAR BLOCK 
+
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.block-recent-legacy-sidebar-block {
+	padding-bottom: 20px;
+}
+
+/*---------------------------------------
+
+ single legacy date with image 
+ 
+----------------------------------------*/
+
+.block-recent-legacy-sidebar-block .block-main-content .view-content {
+	padding-bottom: 0;
+}
+
+/*--------------------------------------
+
+ legacy dates list views attachment 
+ 
+---------------------------------------*/
+
+.view-recent-legacy-sidebar .attachment_1-main-content .views-row {
+	padding: 5px 0;
+	border-bottom: 1px solid #777;
+}
+.view-recent-legacy-sidebar .views-field-field-date-hour {
+	display: inline-block;
+	margin-right: 10px;
+}
+.view-recent-legacy-sidebar .views-field-field-address {
+	display: inline-block;
+}
+
+
+/*-------------------------------------
+
+ IMAGES 
+ 
+-------------------------------------*/
+
+.region-sidebar-second .block-recent-legacy-sidebar-block .views-field-field-image {
+	margin-bottom: 10px;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ LEGACY - TOP DOWNLOADS sidebar block
+
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+#region-sidebar-second .block-views-events-dl-shows {
+	line-height: 18px;
+}
+#region-sidebar-second .legacy-event-location {
+	font-size: 18px;
+}
+#region-sidebar-second .legacy-event-venue {
+	font-size: 12px;
+}
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ LEGACY - List of TOUR GROUPS
+
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.page-legacy .teaser-grid li {
+	margin: 0 3% 3% 0;
+	text-align: center;
+	float: left;
+	border-bottom: 0;
+	background: none;
+	padding: 0;
+	width: 30%;
+}
+.page-legacy .teaser-grid li:hover {
+	background: none;
+}
+.event-group-poster-art-item {
+	height: 300px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.event-group-body /*text container */ {
+	height: 70px;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ LEGACY - MEET & GREET photos sidebar block
+
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+#block-views-tfp-custom-nodes-fp-meetgreet .fp_meetgreet-main-content, 
+#block-views-tfp-custom-nodes-fp-meetgreet .view-header {
+	overflow: hidden;
+	padding: 7%;
+}
+/* header call to action */
+#block-views-tfp-custom-nodes-fp-meetgreet .view-header p {
+	margin: 0;
+}
+
+/* grid items */
+.region-sidebar-second .block-tfp-custom-nodes-fp-meetgreet .views-row {
+	float: left;
+	font-size: 13px;
+	margin-bottom: 30px;
+	margin-right: 2%;
+	width: 48%;
+}

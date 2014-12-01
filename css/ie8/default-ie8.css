@@ -1,0 +1,839 @@
+/* This file will hold styles that are loaded using the same media query as the narrow, normal and wide grid. */
+
+
+/********* DEFAULT **********/
+
+/*--------------------------
+ ELEMENT SWITCHING BY SIZE
+ 
+ .omega-[size]-up : style applies to [size] and larger formats
+ .omega-[size]-only : style applies only the [size] format
+--------------------------*/
+
+.omega-mobile-only {
+	display:none !important;
+}
+
+
+
+
+/*====================================!!! LAYOUT !!!=========================================*/
+
+html {
+	background-color: #404040;
+}
+
+#section-content {
+	min-height: 500px;
+	margin-top: 300px;
+}
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ BACKGROUND IMAGES  
+
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+#page {
+	background: transparent url(../../images/bg-diagonal-lines.png) repeat fixed left top;
+}
+
+body.not-front {
+	background: transparent url(../../images/bg-interior-1.jpg) no-repeat fixed center 50px;
+	background-size: 100% auto;
+}
+
+
+
+
+
+
+/*====================================!!! HEADER SECTION !!!=========================================*/
+
+
+#section-header {
+	height: auto; /* do not change! - necessary for messages 
+					which add to total height */
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ FANTORRENT USER BAR  
+
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+#zone-user-bar-wrapper {
+	height: 40px;
+	position: fixed;
+	width: 100%;
+	overflow: visible;
+	top: 0px;
+	background-color: #2b2b2b;
+	z-index: 9999;
+}
+
+/* login block */
+#user-bar-login-form {
+	float: left;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ DASHBOARD LINKS 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/* User dashboard icon - style: button WITH text */
+#user-bar-user-dashboard-link a, 
+#user-bar-user-dashboard-link-mobile a {
+	line-height: 28px;
+	width: auto;
+	height: 30px;
+	padding-top: 0;
+}
+
+/* icon */
+#user-bar-user-dashboard-link a:before, 
+#user-bar-user-dashboard-link-mobile a:before {
+	float: left;	  
+	margin-right: 5px;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ USER BAR - HELP LINKS  (email signup, search, contact, faq)
+  
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.block-fantorrent-help-links {
+	right: 0;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ MAIN NAVIGATION
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+#zone-menu-wrapper {
+    position: fixed;
+    top: 40px;
+    width: 100%;
+    margin: 0;
+}
+.zone-menu-wrapper {
+	z-index: 998; /* one less than #fantorrent-user-bar */
+	background: #000 url(../../images/bg-nav-line.png) repeat-x scroll center center;
+	border-bottom: 1px solid #ee4949;
+}
+.zone-menu {
+	background-color: #000;
+}
+.not-front #block-superfish-1 {
+	display: block;
+}
+#block-superfish-1 ul li {
+	float: left;
+	margin: 0;
+	height: auto;
+}
+#block-superfish-1 ul li a {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background: transparent;
+	color: #b5b5b5;
+	font-weight: normal;
+	font: 22px/22px Lato,"Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	font-weight: 300;
+	border: 1px solid #000;
+	border-bottom: 0;
+}
+#block-superfish-1 ul li a:hover {
+	text-decoration: none;
+	border-color: #e01b1c;
+	color: #fff;
+	background-color: #000;
+}
+
+/*---------------------------------
+
+ HOME link - interior LOGO 
+ 
+----------------------------------*/
+
+.not-front li#menu-1174-1 {
+	width: 139px;
+}
+.not-front li#menu-1174-1 a {
+	background: url("../../images/logo-interior-ie8.png") no-repeat scroll center center #EE4949;
+	height: 0;
+	overflow: hidden;
+	padding: 44px 0 0;
+	border-color: #EE4949;
+	font-size: 17px;
+}
+
+
+/*---------------------------------------------
+ 
+ Sub navigation - Main menu
+ 
+----------------------------------------------*/
+
+#block-superfish-1 ul ul {
+	background-color: #ee4949;
+	margin-left: 0px;
+	display: block;
+}
+#block-superfish-1 ul li li {
+	padding: 0;
+	height: auto;
+	float: left;
+	width: auto;
+}
+#block-superfish-1 ul li li.last {
+	border-right: 0;
+}
+#block-superfish-1 ul li li a {
+	font-size: 16px;
+	text-shadow: none;
+	text-align: left;
+	display: block;
+	text-transform: lowercase;
+	color: #fff;
+	border: 0;
+}
+#block-superfish-1 ul li li a:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+/*-----------------------------------
+ Specific sub-nav menus 
+-----------------------------------*/
+
+/* news */
+li#menu-1176-1 ul {
+	width: 255px;
+}
+/* tour */
+li#menu-1178-1 ul {
+	width: 425px;
+}
+/* galleries */
+li#menu-1179-1 ul {
+	width: 180px;
+}
+/* music */
+li#menu-10382-1 ul {
+	width: 150px;
+}
+/* about */
+li#menu-1495-1 ul {
+	width: 315px;
+}
+/* fans-community */
+li#menu-1177-1 ul {
+	
+}
+/* store */
+li#menu-10115-1 ul {
+	
+}
+
+
+
+
+/*-------------------------------------------
+
+ Shopping Cart Link 
+ 
+--------------------------------------------*/
+
+#block-fantorrent-base-cart-link {
+	position: fixed;
+	right: 0;
+	top: 170px;
+	z-index: 999;
+}
+#user-bar-cart-link a {
+	height: 0;
+	overflow: hidden;
+	padding-top: 46px;
+	width: 46px;
+	font-size: 1px;
+	background-color: #7DB738;
+	color: #fff;
+	border-radius: 5px 0 0 5px;
+	display: block;
+}
+#user-bar-cart-link a:hover {
+	background-color: #fff;
+	color: #7DB738;
+}
+#user-bar-cart-link a:before {
+	display: block;
+	font-size: 29px;
+	line-height: 29px;
+	left: 9px;
+	margin-right: 5px;
+	position: absolute;
+	top: 11px;
+	width: auto;
+	
+}
+
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ LOGO - BRANDING
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+/* INTERIOR page logo is handled by the home main nav button */
+.not-front #zone-branding {
+	margin-left: -10000px;
+}
+
+.not-front #zone-branding-wrapper {
+	background-color: transparent;
+	padding: 120px 0 0 0; 
+	margin: 0;
+}
+
+/*--
+#fantorrent-logo-container {
+	width: 400px;
+	float: none;
+	margin: 0;
+	text-align: left;
+}
+a#fantorrent-logo-link {
+	color: #000;
+	font-size: 20px;
+	text-transform: uppercase;
+	display: block;
+	padding: 10px 0;
+}
+---*/
+
+/*====================================!!! CONTENT SECTION !!!=========================================*/
+
+
+/*----------------------------------------------
+
+ GRID and padding settings
+ 
+----------------------------------------------*/
+
+/* remove padding from outer grid elements */
+
+#zone-content.container-12 .grid-8,
+#zone-content.container-12 .grid-9 {
+	margin-left: 0;
+	margin-right: 0;
+}
+#zone-content.container-12 .grid-4,
+#zone-content.container-12 .grid-3 {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Pages with true sidebar 
+
+.page-news .region-content-inner,
+.node-type-article .region-content-inner,
+.node-type-user-group .region-content-inner,
+.node-type-post .region-content-inner,
+.page-legacy .region-content-inner,
+.page-faq-page .region-content-inner,
+.context-contact .region-content-inner,
+.page-partners .region-content-inner,
+.context-meet-greet-rules .region-content-inner {
+	padding: 4.5% 3.7%;
+}
+*/
+
+/*-------------------------------------------------
+
+ layout changes for sites with "open" content areas 
+ with background showing through the space between 
+ main content and sidebar. Also defines content area
+ on pages without sidebar. 
+ 
+-------------------------------------------------*/
+
+.region-content-inner {
+	background-color: #ffffff;
+	min-height: 450px;
+	padding: 2.7%;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+/* Pages with true sidebar */
+
+.page-news .region-content-inner, 
+.page-about .region-content-inner, 
+.node-type-article .region-content-inner,
+.node-type-user-group .region-content-inner,
+.node-type-post .region-content-inner,
+.page-legacy .region-content-inner,
+.page-faq-page .region-content-inner,
+.page-partners .region-content-inner,
+.context-meet-greet-rules .region-content-inner,
+.context-about .region-content-inner {
+	padding: 4.5%;
+	margin-right: 4%;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+
+/*------------------------------------------------------------
+--------------------------------------------------------------
+
+ System Messages 
+ 
+--------------------------------------------------------------
+------------------------------------------------------------*/
+
+#messages.grid-12 {
+	margin: 0 auto;
+	float: none;
+	width: auto;
+}
+div.messages {
+	font-size: 23px;
+	line-height: 28px;
+	padding: 30px 30px 30px 55px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	color: #fff;
+}
+div.status, table tr.ok {
+	background-color: #ee4949;
+}
+div.status {
+	border-color: #ee4949;
+	background-position: 20px 30px;
+}
+div.error {
+	background-position: 20px 30px;
+	margin: 0;
+}
+div.status a,
+div.error a {
+	color: #000;
+	text-decoration: underline;
+} 
+
+/*------------------------------------------------------------
+--------------------------------------------------------------
+
+ ADMIN TOOLBARS - corrects nav positioning 
+                  when logged in as admin
+
+--------------------------------------------------------------
+------------------------------------------------------------*/
+
+/* with drawer shortcuts ON */
+.logged-in.toolbar.toolbar-drawer #zone-user-bar-wrapper {
+	top: 65px;
+	position: fixed;
+}
+.logged-in.toolbar.toolbar-drawer #zone-menu-wrapper {
+	top: 105px;
+	position: fixed;
+}
+
+/* with drawer shortcuts OFF */
+.logged-in.toolbar #zone-user-bar-wrapper {
+	top: 30px;
+	position: fixed;
+}
+.logged-in.toolbar #zone-menu-wrapper {
+	top: 70px;
+	position: fixed;
+}
+.logged-in.toolbar #toolbar {
+	z-index: 1000;
+}
+
+/* logged in as admin mobile */
+.logged-in.toolbar.responsive-layout-mobile #page {
+	padding-top: 10px;
+}
+.logged-in.toolbar.responsive-layout-mobile #zone-menu-wrapper {
+	top: 10px;
+	position: relative;
+}
+.logged-in.toolbar.responsive-layout-mobile #zone-branding-wrapper {
+	padding-top: 0px;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ TEXT STYLES
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/*------------------
+ h1
+-------------------*/
+h1 {
+	font-size: 60px;
+	font-weight: 300;
+	border-bottom: 4px double #aaa;
+}
+
+.block-system-main {
+	font-size: 17px;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ General SIDEBAR BLOCK Styles 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/* all sidebar block containers */
+.region-sidebar-second-inner .block {
+	margin-bottom: 30px;
+	position: relative;
+	background-color: #000000;
+	padding: 0;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	color: #888; /* basic unlinked text color for all sidebar blocks */
+}
+
+/* Sidebar block title */
+.region-sidebar-second h2.block-title,
+#event-node-sidebar h2.block-title {
+	color: #000;
+	text-transform: uppercase;
+	border-bottom: 0;
+	font-size: 26px;
+	font-weight: 300;
+	padding: 4% 7%;
+	margin: 0;
+	background-color: #c0c0c0;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+
+/* Padding around content list */
+.region-sidebar-second .view-content {
+	padding: 0;
+}
+
+/* Sidebar footer (more link container) */
+.region-sidebar-second .view-footer {
+	padding: 10px 0;
+}
+
+/* sidebar block link colors */
+.region-sidebar-second-inner .block .view-content a,
+.region-sidebar-second .more-link a,
+.region-sidebar-second ul.pager a,
+.block-dash-nodes-activity .view-footer a /* community post node page */,
+.region-sidebar-second .teaser-list-row a,
+.region-sidebar-second .teaser-list-row a {
+	color: #ee4949;
+}
+
+/* sidebar button override color */
+.region-sidebar-second-inner .block .view-content .button a {
+	color: #fff; /* make same as .button text color */
+}
+
+/* Sidebar list & grid rows */
+.region-sidebar-second .teaser-list-row {
+	border-color: #545454;
+	padding: 4% 7%;
+	line-height: 130%;
+}
+.region-sidebar-second .teaser-grid-row,
+.song-videos .teaser-grid .teaser-grid-row /* song node */ {
+	line-height: 130%;
+	width: 48%;
+	margin: 0 4% 4% 0;
+	border-bottom: 0;
+	font-size: 12px;
+}
+.region-sidebar-second .teaser-grid-row .views-field-title,
+.song-videos .teaser-grid .teaser-grid-row .views-field-title {
+	text-align: center;
+}
+
+/* Sidebar row content titles */
+.region-sidebar-second .views-field-title, 
+.region-sidebar-second .field-title {
+	font-size: ;
+}
+.region-sidebar-second .teaser-grid-row .views-field-title {
+	padding: 5px;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ More Link - general settings
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.more-link {
+	text-align: right;
+}
+.more-link a {
+	display: block;
+	padding: 10px;
+	position: relative;
+	text-transform: uppercase;
+	vertical-align: bottom;
+	text-decoration: none;
+	font-size: 16px;
+	text-align: right;
+	vertical-align: middle;
+}
+.more-link a:hover {
+	text-decoration: none;
+}
+.more-link a:after {
+	background-color: transparent;
+	content: "\33";
+	display: inline-block;
+	font-family: "IcoMoonArrows";
+	font-size: 20px;
+	height: 22px;
+	line-height: 23px;
+	overflow: hidden;
+	padding: 0;
+	vertical-align: middle;
+	width: 20px;
+	speak: none;
+}
+
+/* ----------------------------
+
+ More Link - main content section
+ 
+-----------------------------*/
+
+.block-main .view-footer {
+	padding: 10px 0;
+}
+.block-main .more-link {
+	position: relative;	
+	left: 0;
+	top: 0;
+	background: none;
+}
+.block-main .more-link {
+	padding: 10px 0;
+}
+.block-main .more-link a {
+	width: auto;
+	padding: 10px;
+	text-align: right;
+}
+.block-main .more-link a:hover {
+	color: #fff;
+}
+.block-main .more-link a:after {
+	background: none;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+/*------------------------------
+
+ More Link - sidebar blocks only 
+ 
+-------------------------------*/
+
+.region-sidebar-second .more-link {
+	position: relative;
+}
+.region-sidebar-second .more-link a {
+	background-color: #c0c0c0;
+	padding: 0px;
+	-webkit-border-radius: 0 0 10px 10px;
+	border-radius: 0 0 10px 10px;
+	height: 50px;
+	color: #000;
+	line-height: 20px;
+	vertical-align: middle;
+}
+.region-sidebar-second .more-link a:hover {
+	color: #000;
+}
+
+.region-sidebar-second .more-link a:after {
+	background-color: #ee4949;
+	-webkit-border-radius: 0 0 10px;
+	border-radius: 0 0 10px;
+	content: "\33";
+	display: inline-block;
+	font-family: "IcoMoonArrows";
+	font-size: 20px;
+	height: 23px;
+	line-height: 23px;
+	overflow: hidden;
+	padding: 14px 14px 13px;
+	vertical-align: middle;
+	width: 23px;
+	color: #fff;
+	margin-left: 10px;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+.region-sidebar-second .more-link a:hover:after {
+	color: #000;
+	background-color: #fff;
+}
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ NODE COLUMN CONTAINER STYLES 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.node-column1-container, 
+.node-column2-container,
+.node-column3-container {
+	float: left;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ PAGERS
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+/*----------------------------------------
+
+ NODE PAGER - Previous / Next 
+ 
+-----------------------------------------*/
+
+/*-------------------------
+ ALL - list link 
+--------------------------*/
+
+.back-to-river-link-container { /* fix misspelled class */
+	margin-left: -30px;
+}
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ Email Newsletter Signup
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+/* remove this style if using jQuery to show/hide toggle */
+#block-id-mailing-list-mailchimp-mailing-list-mc-subscribe-form {
+ 	display: block; 
+}
+
+
+/*====================================!!! FOOTER SECTION !!!=========================================*/
+
+/*-------------------------------------------------------
+---------------------------------------------------------
+
+ FOOTER
+ 
+---------------------------------------------------------
+-------------------------------------------------------*/
+
+
+/*-------------------------------
+ 
+ Social Icons
+ 
+--------------------------------*/
+
+#social-icons ul {
+	float: right;
+}
+
+
+
+/*====================================!!! SPECIFIC PAGES !!!=========================================*/
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ ABOUT PAGE 
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+
+
+/*------------------------------------------------------
+--------------------------------------------------------
+
+ GALLERY - page
+ 
+--------------------------------------------------------
+------------------------------------------------------*/
+
+
+
+
+
+
+

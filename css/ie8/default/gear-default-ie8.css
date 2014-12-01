@@ -1,0 +1,151 @@
+
+/* Gear Pages Stylesheet - Default only */
+
+
+/*---------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+ GEAR NODE
+ 
+-----------------------------------------------------------------------
+---------------------------------------------------------------------*/
+
+
+/*--------------------------------------
+
+ IMAGES 
+ 
+--------------------------------------*/
+
+#gear-image-container {
+	margin-right: 5%;
+	width: 40%;
+}
+#gear-image-container .first-item {
+	margin-bottom: 5%;
+}
+#gear-image-container .not-first-item {
+	float: left;
+	margin: 0 5% 5% 0;
+	max-height: 130px;
+	overflow: hidden;
+	width: 30%;
+}
+#gear-image-container .not-first-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+/*-------------------------------------
+
+ INFO 
+ 
+-------------------------------------*/
+#gear-info-container {
+	float: left;
+	width: 55%;
+}
+
+/* Labels */
+#gear-info-container .field-gear-type .field-label {
+	margin-right: 10px;
+	float: left;
+}
+#gear-info-container .field-gear-type .field-item:first-child {
+	font-size: 20px;
+}
+
+/*------------------------------------
+
+ Tags 
+ 
+-------------------------------------*/
+
+/* Field items */
+
+#gear-tags-container .field-items {
+	margin: 0 0 30px 30px;
+}
+
+
+/*------------------------------------
+
+ RELATED GEAR ITEMS
+ 
+------------------------------------*/
+
+#gear-related-gears-container h2 {
+	font-size: 45px;
+}
+#gear-related-gears-container .view-content {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#gear-related-gears-container .views-row {
+	width: 150px;
+	height: 150px;
+	margin: 0 20px 20px 0;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+#gear-related-gears-container .views-row img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/*---------------------------
+ Title 
+---------------------------*/
+
+#gear-related-gears-container span.field-content {
+	display: block;
+	height: 100%;
+}
+#gear-related-gears-container .views-field-title {
+	width: 100%;
+	height: 100%;
+	background: transparent url(../../../images/transparent_black_60.png) repeat scroll left top;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 5;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	display: block; /* negates :none from .general-global.css */
+}
+#gear-related-gears-container .views-row:hover .views-field-title {
+	opacity: 1;
+}
+#gear-related-gears-container .views-field-title a {
+	font-size: 16px;
+	display: block;
+	text-align: center;
+	vertical-align: middle;
+	color: #fff;
+	padding: 20px;
+	text-decoration: none;
+	height: 100%;
+}
+
+/*-------------------------
+ More button 
+--------------------------*/
+
+#gear-related-gears-container .view-footer a {
+	width: 200px;
+}
+
+
+/*--------------------------------------
+
+ Gear Comments
+ 
+---------------------------------------*/
+
+#gear-comments-container {
+	float: none;
+}
