@@ -4239,12 +4239,13 @@ body.html.page-node-6826 #login-and-steps {
     body.html.page-node-6826 #login-and-steps p.share-again span.twitter {
       color: #3B5998; }
 
-
-
-
-
-
-
+/* Translation Block */
+section#block-locale-language {
+    position: relative;
+    left: 400px;
+    width: 300px;
+    height: 40px;
+}
 
 
 

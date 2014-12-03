@@ -141,6 +141,27 @@
 	font-style: normal;
 }
 
-
-
+/* Translation block */
+section#block-locale-language h2 {
+    display: none;
+}
+section#block-locale-language {
+    position: relative;
+    left: 100px;
+}
+section#block-locale-language li {
+    display: inline;
+    list-style-type: none;
+    padding: 0px;
+}
+section#block-locale-language li a {
+    padding: 5px 5px 5px 5px;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+section#block-locale-language ul {
+    padding-top: 10px;
+    height: 30px;
+}
 
