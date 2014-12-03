@@ -146,6 +146,9 @@ section#block-locale-language {
     display: inline-block;
     left: 13%;
 }
+body.not-logged-in section#block-locale-language {
+    position: relative;
+}
 section#block-locale-language h2 {
     display: none;
 }

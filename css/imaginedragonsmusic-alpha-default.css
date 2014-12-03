@@ -4245,6 +4245,9 @@ section#block-locale-language {
     display: inline-block;
     left: 5%;
 }
+body.not-logged-in section#block-locale-language {
+    left: 40%;
+}
 section#block-locale-language li a {
     padding: 5px 5px 5px 5px;
     color: white;

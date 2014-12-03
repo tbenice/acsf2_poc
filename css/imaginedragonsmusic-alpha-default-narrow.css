@@ -779,4 +779,6 @@ section#block-locale-language li a {
     text-align: center;
     font-size: 12px;
 }
-
+body.not-logged-in section#block-locale-language {
+    left: 50%;
+}
