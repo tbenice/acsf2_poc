@@ -4245,6 +4245,12 @@ section#block-locale-language {
     display: inline-block;
     left: 5%;
 }
+section#block-locale-language li a {
+    padding: 5px 5px 5px 5px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
 
 
 
