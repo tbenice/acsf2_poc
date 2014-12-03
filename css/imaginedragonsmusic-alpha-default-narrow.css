@@ -772,8 +772,11 @@ and (-webkit-min-device-pixel-ratio: 1){
 } */
 }
 
-
-
-
-
+/* Translation Block */
+section#block-locale-language li a {
+    padding: 5px 5px 5px 5px;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
 
